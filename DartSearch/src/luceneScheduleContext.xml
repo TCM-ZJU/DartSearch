@@ -1,0 +1,38 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" 
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="indexJobDetail"
+		class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass">
+			<value>edu.zju.tcmsearch.lucene.index.schedule.IndexBuildJob</value>
+		</property>
+		<property name="jobDataAsMap">
+			<map>
+				<entry key="message">
+					<value>This is a message from the Spring configuration file!</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="cronTrigger"
+		class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail">
+			<ref bean="indexJobDetail"/>
+		</property>
+		<property name="cronExpression">
+			<!-- run every morning at 1.15 am on every 21th every months -->
+			<value>${lucene.schedule.time}</value>
+			<!--<value>0 15 1 21 * ?</value>-->
+		</property>
+	</bean>
+	
+	<bean id="schedulerFactory"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref local="cronTrigger"/>
+			</list>
+		</property>
+	</bean>
+</beans>

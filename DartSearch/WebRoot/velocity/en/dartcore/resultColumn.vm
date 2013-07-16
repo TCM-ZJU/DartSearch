@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title> Data Searching  result</title>
+
+<script type='text/javascript' src='$rc.contextPath/dwr/interface/DwrSession.js'></script>
+<script type='text/javascript' src='$rc.contextPath/dwr/engine.js'></script>
+<script type="text/javascript">
+<!--
+var ColumnLength = ${queryResult.getColumnCount()}+1;
+var lastGroupID=null;
+var curGroupID;
+function CBackFun( not_care )
+{
+ if(lastGroupID!=null){
+   for(var i=0;i<ColumnLength;i++){
+    var node = document.getElementById(lastGroupID+"_"+i);
+    node.className="Table_grayitem";
+   }
+ }
+
+ for(var i=0;i<ColumnLength;i++){
+   var node = document.getElementById(curGroupID+"_"+i);
+   node.className="Table_HighItem";
+ }
+ 
+ lastGroupID=curGroupID;
+}
+
+function selectGroup(GroupNumber, GroupID)
+{
+ curGroupID=GroupID;
+ DwrSession.putString(null,"SearchResult_RowNo",GroupNumber);
+ DwrSession.putString(CBackFun,"SearchResult_PageNo",$pageNo);
+}
+//-->
+</script>
+</head>
+
+<body>
+	<br/>
+	<div class="ms-pagetitle" align="center">Ontology data searching result</div>
+	<br/>
+	<div align="center"  class="ms-vb">${queryResult.resultCount} records totally. &nbsp; 
+	   #if ($queryResult.isMultiPage())
+  	     Page counter: ${pageNo} of ${queryResult.pageList.maxPage},${queryResult.pageList.pageSize} records a page
+	   #end
+	</div><br/>
+	<div align="center" class="ms-vb"><a href="searchResultNav.htm?style=list&pageNo=1">Show data in columns.  </a>
+    <a href="javascript:return false;" onclick="javascript:window.open('${rc.contextPath}/exclude/sematicViewer.htm');"> Semantic explorer.</a>	
+    </div><br/>
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb">
+		 #if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.minPage}">FirstPage</a>
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}"> PrePage</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}"> Nextpage</a>
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.maxPage}"> LastPage</a>
+		#end
+		<a href="tcmBasicSearch.luc"> Return </a>
+		</div><br/>
+	#end	
+	<table align="center" class="std_Table" width="90%">
+	 #foreach ($resultData in ${queryResult.pageList.getPage($pageNo)})	
+		#set($GroupID  = $velocityCount)
+		<tr onclick='selectGroup($GroupID,"Group_$GroupID")'> 
+		 	<td class="Table_item" width="20%" >Index</td>
+		 	<td class="Table_grayitem" id=Group_${GroupID}_0>$velocityCount</td>		 			 	
+		</tr>		
+		
+		#foreach ($columnInfo in ${queryResult.columnInfos})	
+        <tr onclick='selectGroup($GroupID,"Group_$GroupID")'>					
+			<td class="Table_item" width="20%" >$!columnInfo.ontoName</td>	
+			<td class="Table_grayitem" id=Group_${GroupID}_${velocityCount}>$!resultData.getData($columnInfo.columnName)</td>
+		</tr>	
+		#end
+	    <tr>					
+			<td class="Table_grayitem" colspan="2">&nbsp;</td>	
+		</tr>	   
+	    #end
+	</table>
+	<br/>	
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb">
+		#if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.minPage}">FirstPage</a>
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}"> PrePage</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}"> NextPage</a>
+			<a href="searchResultNav.htm?style=column&pageNo=${queryResult.pageList.maxPage}"> LastPage</a>
+		#end
+		</div><br/><br/>
+	#end	
+	
+	
+	<br/>
+	
+	<table align="center" class="std_Table">
+	  <tr class="Table_grayitem">	
+          <td> Check DataSource </td>
+          <td> <a href='$rc.contextPath/datasource.htm?style=column&pageNo=$pageNo'/><img border='0' src='images/gosearch.gif' border="0"/></a> </td>		
+      </tr>  
+	</table> 	
+	</br>
+</body>
+</html>  

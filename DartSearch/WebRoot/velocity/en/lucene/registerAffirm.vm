@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Affirm User Information</title>
+
+<link href="css/register.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<br>
+<br>
+<br>
+<br>
+	
+
+<BODY topmargin="30" marginheight="30">
+<form name="affirmForm" action ="${rc.contextPath}/registerAffirm.luc" method="post">
+<table width="60%" cellpadding=4 cellspacing=1 align=center class="tableBorder1">
+<TBODY> 
+
+<TR align=middle> 
+<Th colSpan=2 height=24>Affirm User registering information</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>TrueName</B>：</TD>
+<TD width=60%  class="TableBody1"> 
+<INPUT maxLength="10" size=30 name=name value="${account.userInfo.contact_name}"disabled>&nbsp;&nbsp
+
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>Gender</B>：</TD>
+<TD width=60%  class="TableBody1">
+ #if (${account.userInfo.sex}=="1")
+ <INPUT maxLength="10" size=30 name=name value="男"disabled>
+ #if (${account.userInfo.sex}=="0")
+ <INPUT maxLength="10" size=30 name=name value="女"disabled>
+ 
+
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Contact</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.userInfo.contact}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>LoginType</B>：</font></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{MessageMapper.get(${account.loginType})}" disabled>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>ChargeType</B>：</font></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{MessageMapper.get(${account.chargeType})}" disabled>
+</TR>
+
+
+
+<TR> 
+<TD width=40% class="TableBody1"><B>UserName</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.username}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Password(6 characters at least)</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.password}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>IP Address</B></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.IPAddress}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Sub net mask</B></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.mask}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Total Month</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.totalDate}"  disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Start date</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.startDate}" disabled>
+</TD>
+</TR>
+
+
+ 
+<TR> 
+<TD width=40% class="TableBody1"><B>Total Flow</B>:</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="${account.totalFlow}" disabled>
+</TD>
+</TR>
+
+</tbody>
+</table>
+
+<table cellpadding=0 cellspacing=0 border=0 width=97% align=center>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr>
+<td width=50% align=center >
+<input type=submit value="Confirm" name=Submit >
+</tr>
+</table>
+</form>
+</BODY>
+</HTML>

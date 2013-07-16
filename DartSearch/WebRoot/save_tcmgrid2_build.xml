@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+
+<project name="tcmsearch" basedir="." default="usage">
+    <property file="build.properties"/>
+	<property name="dartcorelib.dir" value="../DartGridV3/lib"/>
+	<property name="dartcoresrc.dir" value="../DartGridV3/DartCore/src"/>
+	<property name="dartcoreclasses.dir" value="dartcoreclasses"/>
+	<path id="all-libs">
+		<fileset dir="${weblib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="servlet-libs">
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="dartcore-libs">
+		<fileset dir="${dartcorelib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="dist-libs">
+		<fileset dir="${dist.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="web-classes">
+		<pathelement location="WEB-INF/classes"/>
+	</path>
+	
+
+<!--
+	<target name="clean" description="Clean all output dirs (dist, javadocs, classes, test-classes, etc)">
+		<delete dir="${dist.dir}"/>
+	</target>
+	-->
+
+	<!--
+		Compile the main source tree.
+		This task depends on the Commons Attributes compile step,
+		as some classes must ship with attributes.
+	-->
+	<target name="dartcoreCompile" description="Compile main source tree java files into class files">
+		<mkdir dir="${dartcoreclasses.dir}"/>
+		<javac  encoding="${javac.encoding}" destdir="${dartcoreclasses.dir}" source="1.5" target="1.5"
+					 deprecation="false" optimize="false" failonerror="true" debug="true">
+			<src path="${dartcoresrc.dir}"/>
+			<classpath refid="dartcore-libs"/>
+		</javac>
+	</target>
+
+	<target name="dartcoreBuild" depends="dartcoreCompile" description="Create module-specific JAR files">
+		<jar jarfile="${weblib.dir}/dartgrid-core-1.0b.jar">
+			<fileset dir="${dartcoreclasses.dir}">
+				<include name="cn/edu/zju/dart/**"/>
+			</fileset>
+		</jar>
+	</target>
+     
+
+	<target name="usage">
+
+		<echo message=""/>
+		<echo message="tcm grid build file"/>
+		<echo message="------------------------------------------------------"/>
+		<echo message=""/>
+		<echo message="Available targets are:"/>
+		<echo message=""/>
+		<echo message="clean    --> Clean output dirs"/>
+		<echo message="build    --> Compile main Java sources and copy libraries"/>
+		<echo message="tests    --> run tests"/>
+		<echo message="warfile  --> Build the web application archive"/>
+		<echo message="all      --> Clean, build, warfile"/>
+		<echo message=""/>
+		<echo message="javadoc  --> generate javadoc api"/>
+		<echo message="tests      --> test the usecase"/>
+		<echo message="testsummary      --> test the usecase and generate report"/>
+		<echo message=""/>
+	</target>
+
+
+	<target name="clean" description="Clean output dirs (build, weblib, dist)">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${testclasses.dir}"/>
+		<delete dir="${target.mockclasses.dir}"/>
+		<delete dir="${target.junit.reports.dir}"/>
+		<delete dir="${target.junit.summary.dir}"/>
+		<delete dir="${javadoc.dir}"/>
+		<delete file="${client.dir}/${name}.jar"/>
+	</target>
+	
+	
+	<target name="compile" depends="clean" description="Compile main source tree java files into class files">
+		<mkdir dir="${build.dir}"/>
+		<javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+					deprecation="false" optimize="false" failonerror="true">
+				<src path="${src.dir}"/>
+				<classpath refid="all-libs"/>
+				<classpath refid="servlet-libs"/>
+		</javac>
+
+    	<copy todir="${build.dir}" preservelastmodified="true">
+			<fileset dir="${src.dir}">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+    	<copy todir="${build.dir}" preservelastmodified="true">
+			<fileset dir="${springcfg.dir}">
+				<include name="*.xml"/>
+			</fileset>
+		</copy>		
+	</target>
+	
+	<target name="compileTest" depends="clean" description="Compile main source tree java files into class files">
+		<mkdir dir="${build.dir}"/>
+		<javac destdir="${build.dir}" source="1.5" target="1.5" debug="true"
+					deprecation="false" optimize="false" failonerror="true">
+				<src path="${test.dir}"/>
+				<classpath refid="all-libs"/>
+			</javac>
+	</target>	
+
+	<target name="build" depends="clean,compile,compileTest" description="generate jar files">		
+		<mkdir dir="${dist.dir}"/>
+
+		<jar jarfile="${dist.dir}/${name}.jar" compress="true" basedir="${build.dir}"/>
+		<!--<copy file="${weblib.dir}/${name}.jar" tofile="${client.dir}/${name}.jar"/>-->
+	</target>
+
+
+	<target name="dist" depends="warfile">
+		<!-- 
+			Delegate to warfile target by depending on it. dist is just to offer
+			a generic target name across all Spring sample apps that may be used
+			for autobuilds testing.
+		-->
+	</target>
+
+
+	<target name="warfile" depends="clean" description="Build the web application archive">
+
+		<mkdir dir="${dist.dir}"/>
+
+		<war warfile="${dist.dir}/${name}.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+			<include name="*"/>
+			<include name="images/**"/>
+			<include name="JS/**"/>
+			<include name="css/**"/>
+			<include name="log/**"/>	
+			<include name="decorators/**"/>
+			<include name="velocity/**"/>
+			<include name="WEB-INF/**"/>
+			<include name="WEB-INF/classes/**"/>
+			<exclude name="WEB-INF/web.xml"/>
+			<exclude name="WEB-INF/lib/servlet-api.jar"/>
+			<exclude name="src/**"/>			
+			<exclude name="work/**"/>
+			<exclude name="test/**"/>
+			<exclude name="**/.*"/>
+		</war>
+	</target>
+
+    <target name="all" depends="clean,build,warfile" description="Clean,build,warfile"/>	
+
+	<target name="javadoc" description="Generate framework Javadocs.">
+		<mkdir dir="${javadocs.dir}"/>
+		<javadoc sourcepath="${src.dir}" destdir="${javadocs.dir}" windowtitle="Spring Framework"
+				additionalparam="-breakiterator" source="1.5" access="package" author="true" version="true" use="true" defaultexcludes="true">
+			<doctitle><![CDATA[<h1>Spring Framework</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Copyright (C) 2003-2004 The Spring Framework Project.</i>]]></bottom>
+			<classpath refid="all-libs"/>
+			<packageset dir="${src.dir}">
+				<include name="edu/zju/**"/>
+			</packageset>		
+		</javadoc>
+	</target>
+
+	<target name="clean_javadoc" depends="clean, javadoc"/>	
+	 
+	
+	<taskdef name="testng"
+		classname="org.testng.TestNGAntTask" 
+		classpathref="all-libs"/>
+
+	<target name="run-tests">
+		<echo message="running tests"/>
+		<testng fork="yes" classpathref="all-libs" outputDir="${target.testclasses.dir}">
+			<fileset dir="."><include name="testng.xml"/></fileset>
+			<jvmarg value="-ea"/>
+		</testng>
+	</target>
+	
+	<target name="reports" depends="run-tests">
+		<mkdir dir=""/>
+		<junitreport todir="${target.junit.reports.dir}">
+			<fileset dir=".">
+				<include name="*.xml"/>
+			</fileset>
+			<report format="noframes" todir=""/>
+		</junitreport>
+	</target>
+	
+	<target name="buildIndex">
+		<echo>building an index</echo>
+		<java maxmemory="1024M" classname="edu.zju.tcmsearch.lucene.index.IndexBuilderMain" fork="true" classpath="WEB-INF/classes">
+			<classpath refid="all-libs"/>
+			<classpath refid="web-classes"/>
+		</java>
+	</target>	
+	
+	<target name="buildIndexSchedule">
+		<echo>building index Schedule</echo>
+		<java maxmemory="1024M" classname="edu.zju.tcmsearch.lucene.index.schedule.IndexBuildScheduleMain" fork="true"  classpath="WEB-INF/classes">
+			<classpath refid="all-libs"/>
+			<classpath refid="web-classes"/>
+		</java>
+	</target>	
+	
+	<target name="buildAndIndex" depends="build,buildIndex" />
+	
+	<target name="buildAndSchedule" depends="build,buildIndexSchedule" />
+
+</project>

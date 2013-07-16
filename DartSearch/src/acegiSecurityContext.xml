@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+
+<beans>
+   <!-- ======================== FILTER CHAIN ======================= -->
+
+	<!--  if you wish to use channel security, add "channelProcessingFilter," in front
+	      of "httpSessionContextIntegrationFilter" in the list below -->
+	<bean id="filterChainProxy" class="net.sf.acegisecurity.util.FilterChainProxy">
+      <property name="filterInvocationDefinitionSource">
+         <value>
+		    CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+		    PATTERN_TYPE_APACHE_ANT
+            /**=httpSessionContextIntegrationFilter,authenticationProcessingFilter,anonymousProcessingFilter,securityEnforcementFilter
+         </value>
+      </property>
+    </bean>
+
+   <!-- ======================== AUTHENTICATION ======================= -->
+
+   <bean id="authenticationManager" class="net.sf.acegisecurity.providers.ProviderManager">
+      <property name="providers">
+         <list>
+			<ref local="accountAuthProvider"/>
+            <ref local="anonymousAuthenticationProvider"/>
+            <!--<ref local="rememberMeAuthenticationProvider"/> -->
+         </list>
+      </property>
+   </bean>
+   <!-- ===========================  Test =========================== -->
+
+	
+   <bean id="accountAuthProvider" class="edu.zju.tcmsearch.secure.acegi.AccountAuthenticationProvider">
+	   <property name="accountManager"><ref bean="accountManager"/></property>
+   </bean>			
+
+		   		   
+   <!-- ===========================  Test  End =========================== -->	
+   
+   <bean id="jdbcDaoImpl" class="net.sf.acegisecurity.providers.dao.jdbc.JdbcDaoImpl">
+      <property name="dataSource"><ref bean="acegiDataSource"/></property>
+   </bean>
+
+
+   <bean id="anonymousProcessingFilter" class="net.sf.acegisecurity.providers.anonymous.AnonymousProcessingFilter">
+      <property name="key"><value>foobar</value></property>
+      <property name="userAttribute"><value>anonymousUser,ROLE_ANONYMOUS</value></property>
+   </bean>
+
+   <bean id="anonymousAuthenticationProvider" class="net.sf.acegisecurity.providers.anonymous.AnonymousAuthenticationProvider">
+      <property name="key"><value>foobar</value></property>
+   </bean>
+
+   <bean id="httpSessionContextIntegrationFilter" class="net.sf.acegisecurity.context.HttpSessionContextIntegrationFilter">
+   </bean>
+
+
+	
+   <!-- ===================== HTTP REQUEST SECURITY ==================== -->
+
+   <bean id="securityEnforcementFilter" class="net.sf.acegisecurity.intercept.web.SecurityEnforcementFilter">
+      <property name="filterSecurityInterceptor"><ref local="filterInvocationInterceptor"/></property>
+      <property name="authenticationEntryPoint"><ref local="authenticationProcessingFilterEntryPoint"/></property>
+   </bean>
+
+
+	
+   <!-- =========================== Test ============================= -->
+   <bean id="authenticationProcessingFilter" class="edu.zju.tcmsearch.secure.acegi.AccountAuthenticationProccessingFilter">
+      <property name="authenticationManager"><ref bean="authenticationManager"/></property>
+      <property name="authenticationFailureUrl"><value>/acegilogin.luc?login_error=1</value></property>
+      <property name="defaultTargetUrl"><value>/</value></property>
+      <property name="filterProcessesUrl"><value>/j_acegi_security_check</value></property>
+      <!--<property name="rememberMeServices"><ref local="rememberMeServices"/></property> -->
+   </bean>		
+
+   <bean id="authenticationProcessingFilterEntryPoint" class="net.sf.acegisecurity.ui.webapp.AuthenticationProcessingFilterEntryPoint">
+      <property name="loginFormUrl"><value>/acegilogin.luc</value></property>
+      <property name="forceHttps"><value>false</value></property>
+   </bean>
+
+   <bean id="httpRequestAccessDecisionManager" class="net.sf.acegisecurity.vote.UnanimousBased">
+      <property name="allowIfAllAbstainDecisions"><value>false</value></property>
+      <property name="decisionVoters">
+         <list>
+			<ref bean="tableAccessVoter"/>
+			<ref bean="ontologyAccessVoter"/>
+   		    <ref bean="roleVoter"/> 
+         </list>
+      </property>
+   </bean>
+
+   <!-- Note the order that entries are placed against the objectDefinitionSource is critical.
+        The FilterSecurityInterceptor will work from the top of the list down to the FIRST pattern that matches the request URL.
+        Accordingly, you should place MOST SPECIFIC (ie a/b/c/d.*) expressions first, with LEAST SPECIFIC (ie a/.*) expressions last -->
+   <bean id="filterInvocationInterceptor" class="net.sf.acegisecurity.intercept.web.FilterSecurityInterceptor">
+      <property name="authenticationManager"><ref bean="authenticationManager"/></property>
+      <property name="accessDecisionManager"><ref local="httpRequestAccessDecisionManager"/></property>
+      <property name="objectDefinitionSource">
+         <value>
+         CONVERT_URL_TO_LOWERCASE_BEFORE_COMPARISON
+		 PATTERN_TYPE_APACHE_ANT
+
+  		 /secure/tablecontentdetail.luc*  = ROLE_USER, TABLE_ACCESS_TAG 
+         /secure/accounteditoronself.luc* = ROLE_USER
+         /secure/tableaccessprivilegesignmentonuser.luc* = ROLE_USER
+				
+		 /secure/accounteditor.luc* = ROLE_CUSTOMER_ADMIN
+		 /secure/accountresults.luc*= ROLE_CUSTOMER_ADMIN
+		 /secure/accountstatus.luc*                   = ROLE_CUSTOMER_ADMIN
+		 /secure/tableaccessprivilegesignment.luc*    = ROLE_CUSTOMER_ADMIN
+		 /secure/ontologyaccessprivilegesignment.luc* = ROLE_CUSTOMER_ADMIN
+			 
+         /secure/tablepricesignment.luc*              = ROLE_TECH_ADMIN
+
+		 /ontoclassify.cla*       = ROLE_TECH_ADMIN
+		 /metacategory.cla*       = ROLE_TECH_ADMIN
+		 /ontocategoryedit.cla*   = ROLE_TECH_ADMIN
+			 
+         <!--/ontologyinfo.htm*	      = ROLE_USER,ONTOLOGY_ACCESS_TAG //-->
+         <!--/searchresult.htm*   = ROLE_USER,ONTOLOGY_ACCESS_TAG //-->
+         /searchresultnav.htm*      = ROLE_USER,ONTOLOGY_ACCESS_TAG 
+         /secure/accessrecord.luc*  = ROLE_USER			
+         
+		 /secure/chinesetablename.luc*                = ROLE_TECH_ADMIN
+	     /secure/buildindex.luc*                      = ROLE_TECH_ADMIN
+			
+		<!--	delete by zhm temporarily  
+         /secure/baseontologysequence.luc*            = ROLE_TECH_ADMIN
+	     /secure/valueontologysequence.luc*		      = ROLE_TECH_ADMIN
+          //-->		 		 
+         </value>
+      </property>
+   </bean>
+
+   <!-- An access decision voter that reads ROLE_* configuration settings -->
+   <bean id="roleVoter" class="net.sf.acegisecurity.vote.RoleVoter"/>
+
+
+    <bean id="UserInfoDAO" class="edu.zju.tcmsearch.dao.impl.secure.UserInfoDAOImpl">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>			
+	</bean>
+
+
+	<bean id="acegiDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${acegi.jdbc.driverClassName}</value></property>
+		<property name="url"><value>${acegi.jdbc.url}</value></property>
+		<property name="username"><value>${acegi.jdbc.username}</value></property>
+		<property name="password"><value>${acegi.jdbc.password}</value></property>		
+	</bean>
+	
+   <bean id="accessRecordVoter" class="edu.zju.tcmsearch.secure.acegi.AccessRecordVoter"/>
+
+   <bean id="tableAccessVoter" class="edu.zju.tcmsearch.secure.acegi.TableAccessVoter">    
+	   <property name="tableAccessPrivDao"><ref local="tableAccessPrivDao"/></property>
+	   <property name="feeManager"><ref local="feeManager"/></property>
+   </bean>
+	
+	<bean id="ontologyAccessVoter" class = "edu.zju.tcmsearch.secure.acegi.OntologyAccessVoter">
+		<property name="ontologyAccessPrivDao" ref="ontologyAccessPrivDao"/>
+		<property name="feeManager"><ref local="feeManager"/></property>
+	</bean>
+	
+	<bean id="tableAccessPrivDao" class="edu.zju.tcmsearch.dao.impl.secure.TableAccessPrivDao">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>
+	</bean>
+
+	<bean id="ontologyAccessPrivDao" class="edu.zju.tcmsearch.dao.impl.secure.OntologyAccessPrivDao">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>
+	</bean>	
+	
+	<bean id="tablePriceDao" class="edu.zju.tcmsearch.dao.secure.TablePriceDao">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>
+	</bean>		
+	
+	<bean id="recordDAO"  class="edu.zju.tcmsearch.dao.impl.secure.AccessRecordDAO">
+		<property name="dataSource"><ref local="acegiDataSource"/></property>
+	</bean>
+	<bean id="recordManager" class="edu.zju.tcmsearch.secure.service.access.impl.RecordManager" destroy-method="close">
+		<property name="recordDAO"><ref local="recordDAO"/></property>
+		<property name="threshold"><value>10</value></property>
+	</bean>
+	
+	<bean id="AccountDAO" class="edu.zju.tcmsearch.dao.impl.secure.AccountDAO">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>			
+	</bean>
+	
+	<bean id="accountManager" class="edu.zju.tcmsearch.secure.service.account.impl.AccountManager">
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 
+		<property name="accountIdentityGenerator"><ref bean="accountIdentityGenerator"/></property> 
+	</bean>
+	
+	<bean id="accountIdentityGenerator" class="edu.zju.tcmsearch.secure.service.account.AccountIdentityGenerator">
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 
+	</bean>
+	
+	<bean id="userInfoManager" class="edu.zju.tcmsearch.secure.service.account.impl.UserInfoManagerImpl">
+           <property name="userInfoDAO" ref="UserInfoDAO"/>
+    </bean>		
+	
+	<bean id="feeManager" class="edu.zju.tcmsearch.secure.service.fee.impl.FeeManager" init-method="initialize" destroy-method="destroy">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="tablePriceDao" ref="tablePriceDao"/>
+		<property name="feeDao" ref="feeDao"/>
+		<property name="cacheThreshold" value="1"/>
+	</bean>
+	
+	<bean id="feeDao" class="edu.zju.tcmsearch.dao.impl.secure.FeeDao">
+		<property name="dataSource" ref="acegiDataSource"/>
+	</bean>
+  
+	<bean id="HttpSessionListenerProxy" class="edu.zju.tcmsearch.secure.service.HttpSessionListenerProxy">
+		<property name="listener" ref="accountManager"></property>
+	</bean>
+		
+</beans>

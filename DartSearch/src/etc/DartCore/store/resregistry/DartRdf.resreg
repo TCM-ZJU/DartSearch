@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resregister>
+  <dbResInfo>
+    <dbResQname>
+      <namespace>http://dart.zju.edu.cn</namespace>
+      <localpart>myRes</localpart>
+    </dbResQname>
+   <!-- <localDbResType dbType="Oracle">
+    	<jdbcUrl>jdbc:oracle:thin:@10.214.33.111:1521:tcm</jdbcUrl>
+    	<jdbcDriver>oracle.jdbc.driver.OracleDriver</jdbcDriver>
+    	<jdbcUser>tcm</jdbcUser>
+    	<jdbcPwd>tcm</jdbcPwd>
+    </localDbResType>
+    <tableNameFilter>
+    	<regex>TCM.JMZ_DZZ</regex>
+    </tableNameFilter> -->
+  
+   <localDbResType dbType="MySQL">
+      <jdbcUrl>jdbc:mysql://localhost:3306/dartsearch</jdbcUrl>
+      <jdbcDriver>com.mysql.jdbc.Driver</jdbcDriver>
+      <jdbcUser>root</jdbcUser>
+      <jdbcPwd>841020</jdbcPwd>
+    </localDbResType>
+    <tableNameFilter>
+ <!--        <regex>jmz_dzz</regex>   
+      <regex>jmz_lczl</regex> 
+       <regex>jmz_syjc</regex>  -->
+       <regex>TCM.JMZ_LCZL</regex>
+       <regex>TCM.JMZ_SYJC</regex>
+	   <regex>TCM.JMZ_DZZ</regex> 
+       <regex>TCM.JMZ_ZJLF</regex> 
+       <regex>TCM.JMZ_AMLF</regex> 
+       <regex>TCM.JMZ_QTLF</regex> 
+       <regex>TCM.JMZ_XYLF</regex> 
+       <regex>TCM.JMZ_YFLF</regex> 
+       <regex>TCM.JMZ_YW</regex> 
+       <regex>TCM.JMZ_YWCF</regex> 
+       <regex>TCM.JMZ_JB</regex>        
+       <regex>TCM.JMZ_ZH</regex> 
+       <regex>TCM.JMZ_LCZZ</regex> 
+       <regex>TCM.JMZ_JTZLGC</regex> 
+       <regex>TCM.JMZ_CXLCYJDX</regex> 
+       <regex>TCM.JMZ_ZHZZGL</regex>   
+       <regex>TCM.JMZ_ZLGCDXGL</regex> 
+       <regex>TCM.JMZ_JBZHGL</regex> 
+       <regex>TCM.JMZ_JBZZGL</regex> 
+       <regex>TCM.JMZ_XW</regex>  -->
+    </tableNameFilter>  
+  </dbResInfo>
+</resregister>

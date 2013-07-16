@@ -1,0 +1,20 @@
+   <TABLE class="ms-bannerframe" cellSpacing="0" cellPadding="0" width="100%" border="0">
+		<TR>
+			<TD vAlign="middle" noWrap><IMG id="onetidHeadbnnr0" alt="Logo" src="$rc.contextPath/images/dws.gif" style="CURSOR: hand"></TD>
+			<TD class="ms-banner" id="HBN100" vAlign="middle" noWrap width="99%">
+				<table border="0" cellpadding="0" cellspacing="1" width="50%">
+				      <tr>
+				      	<td class="ms-banner"><div align="center"><a href="$rc.contextPath/tcmSearch.luc">全文检索</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.htm">共享</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.html">共建</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.tmh">共建查询</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/ontoClassify.cla">管理</a></div></td>
+						<td class="ms-banner"><div align="center"><a href="$rc.contextPath/help.htm">帮助</a></div></td>
+						<td class="ms-banner"><div align="center"><a href="$rc.contextPath/about.htm">关于</a></div></td>
+				      </tr>
+				</table>
+			</TD>
+			<TD class="ms-banner">&nbsp;&nbsp;</TD>
+			<TD class="ms-banner" style="PADDING-RIGHT: 7px" noWrap><A><NOBR>欢迎光临</NOBR></A></TD>
+		</TR>
+	</TABLE>

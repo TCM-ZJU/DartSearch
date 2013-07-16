@@ -1,0 +1,20 @@
+    <div class='ms-vb'>
+    <br/><div class='ms-pagetitle' align='center'>Searching Condition</div>
+    <!--    
+    <br/><div align='center'  class='ms-GRFontSize'><a href='searchResult.htm'>Refresh</a></div>
+    //-->
+    <br/><div align='center'  class='ms-GRFontSize'><a href='conditionClear.htm'>Clear Searching condition</a></div><br/>
+    
+    #if ($treeNode.childNodeCount>0)
+	<P  align="center" title="Related ontology with ${treeNode.ontology.name}">Search in relative ontology</P>
+		#foreach ($childNode in ${treeNode.childNodes})
+		&nbsp;&nbsp;
+		<img src="$rc.contextPath/images/RDFNode/instancesmall4.gif"/>
+	    <a href="$rc.contextPath/secondLinkQuery.htm?nodeIdentity=${childNode.getNodeIdentityEncoded()}">${childNode.ontology.name}</a>
+	    </br>
+		#end
+	#else
+	</br>
+	&nbsp;&nbsp;
+	No Related Ontology
+	#end

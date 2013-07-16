@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableregister>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_LCYJ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/kb#男性观察数量</ontologyURI>
+            <tableColumn name="MGCLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#年龄分组</ontologyURI>
+            <tableColumn name="NLZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#病例采集地区</ontologyURI>
+            <tableColumn name="J_DQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#病例采集时间</ontologyURI>
+            <tableColumn name="BLCJSJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#传染途径</ontologyURI>
+            <tableColumn name="J_CRTJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#传染源</ontologyURI>
+            <tableColumn name="J_CRY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#男性观察数量</ontologyURI>
+            <tableColumn name="FGCLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#观察总数量</ontologyURI>
+            <tableColumn name="GCZZLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#病原体</ontologyURI>
+            <tableColumn name="J_BY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究分组</ontologyURI>
+            <tableColumn name="YJFZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究分类</ontologyURI>
+            <tableColumn name="YJFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究名称</ontologyURI>
+            <tableColumn name="LCYJMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究单位</ontologyURI>
+            <tableColumn name="LCYJDW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究结果</ontologyURI>
+            <tableColumn name="JG"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_LCZL</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床诊断</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疗效标准分类</ontologyURI>
+            <tableColumn name="ZDZBFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床诊断编号</ontologyURI>
+            <tableColumn name="LCZL_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疗效标准来源</ontologyURI>
+            <tableColumn name="LXBZLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#总有疗效</ontologyURI>
+            <tableColumn name="ZYXL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#指标项目</ontologyURI>
+            <tableColumn name="ZBXM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#指标权重</ontologyURI>
+            <tableColumn name="ZBQZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名</ontologyURI>
+            <tableColumn name="BZZMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#中医治疗</ontologyURI>
+            <tableColumn name="ZYZDFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#诊断标准</ontologyURI>
+            <tableColumn name="LXBZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#诊断标准来源</ontologyURI>
+            <tableColumn name="ZDBZLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗器械</ontologyURI>
+            <tableColumn name="ZDYQ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_SYJC</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床观察</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#变化指标</ontologyURI>
+            <tableColumn name="BHZB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床观察编号</ontologyURI>
+            <tableColumn name="SYJC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#观察组</ontologyURI>
+            <tableColumn name="GCFZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#观察名称</ontologyURI>
+            <tableColumn name="JCXM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#观察时间</ontologyURI>
+            <tableColumn name="JCSJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_DZZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#对抗疗法</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#对抗疗法编号</ontologyURI>
+            <tableColumn name="DZZ_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#对抗疗法名称</ontologyURI>
+            <tableColumn name="DZZMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#病例采集总数量</ontologyURI>
+            <tableColumn name="LS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床检查</ontologyURI>
+            <tableColumn name="JC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗用药</ontologyURI>
+            <tableColumn name="ZLYW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗类型</ontologyURI>
+            <tableColumn name="NL"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_ZJLF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸疗法</ontologyURI>
+        <instanceSpace>ISSP:ZJLF</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸次数</ontologyURI>
+            <tableColumn name="ZCCS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸器械</ontologyURI>
+            <tableColumn name="ZJQX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸手法</ontologyURI>
+            <tableColumn name="ZJFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸技巧</ontologyURI>
+            <tableColumn name="ZCSF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#经络</ontologyURI>
+            <tableColumn name="JL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_AMLF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#按摩疗法</ontologyURI>
+        <instanceSpace>ISSP:AMLF</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#经络</ontologyURI>
+            <tableColumn name="JL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#按摩频次</ontologyURI>
+            <tableColumn name="AMCS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#按摩手法</ontologyURI>
+            <tableColumn name="AMFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#按摩技巧</ontologyURI>
+            <tableColumn name="AMSF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#按摩时间</ontologyURI>
+            <tableColumn name="AMSJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_QTLF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#其他疗法</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法处方</ontologyURI>
+            <tableColumn name="FFMS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法名称</ontologyURI>
+            <tableColumn name="FFMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_XYLF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#西药疗法</ontologyURI>
+        <instanceSpace>ISSP:wst</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/kb#西药用药时间</ontologyURI>
+            <tableColumn name="GYSJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物剂型</ontologyURI>
+            <tableColumn name="YWJX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物名称</ontologyURI>
+            <tableColumn name="YWMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物用法</ontologyURI>
+            <tableColumn name="GYFS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZLYZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_YFLF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#中药疗法</ontologyURI>
+        <instanceSpace>ISSP:tcm</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物剂型</ontologyURI>
+            <tableColumn name="YFJX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物名称</ontologyURI>
+            <tableColumn name="YFMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物用法</ontologyURI>
+            <tableColumn name="GYFS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_YW</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物成分</ontologyURI>
+        <instanceSpace>ISSP:yw</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物成分名称</ontologyURI>
+            <tableColumn name="YWMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#全局编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物编号</ontologyURI>
+            <tableColumn name="YW_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗药物用量</ontologyURI>
+            <tableColumn name="YWJL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗药物用量单位</ontologyURI>
+            <tableColumn name="JLDW"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_YWCF</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物成分</ontologyURI>
+        <instanceSpace>ISSN:YW</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物成分名称</ontologyURI>
+            <tableColumn name="YWCFMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#全局编号</ontologyURI>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#药物编号</ontologyURI>
+            <tableColumn name="YWCF_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗药物用量</ontologyURI>
+            <tableColumn name="YWCFJL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗药物用量单位</ontologyURI>
+            <tableColumn name="JLDW"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_JB</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病编号</ontologyURI>
+            <tableColumn name="JB_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病名称</ontologyURI>
+            <tableColumn name="JBMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症侯</ontologyURI>
+            <tableColumn name="ZH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病病原</ontologyURI>
+            <tableColumn name="YFB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#并发症</ontologyURI>
+            <tableColumn name="BFZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治则</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_ZH</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症侯</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯编号</ontologyURI>
+            <tableColumn name="ZH_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名称</ontologyURI>
+            <tableColumn name="ZHMC"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_LCZZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症状</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名称编号</ontologyURI>
+            <tableColumn name="ZZ_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名称名称</ontologyURI>
+            <tableColumn name="ZZMC"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_JTZLGC</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床诊断编号</ontologyURI>
+            <tableColumn name="LCBZXH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="JTZLGC_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗时间</ontologyURI>
+            <tableColumn name="ZLSJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗类型</ontologyURI>
+            <tableColumn name="ZLLX"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_CXLCYJDX</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床研究编号</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床病例研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床病例研究编号</ontologyURI>
+            <tableColumn name="CXDX_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯类型</ontologyURI>
+            <tableColumn name="BZZLX"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_ZHZZGL</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症状</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名称编号</ontologyURI>
+            <tableColumn name="ZZ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症侯</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯编号</ontologyURI>
+            <tableColumn name="ZH_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_ZLGCDXGL</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床病例研究</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床病例研究编号</ontologyURI>
+            <tableColumn name="CXDX_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法编号</ontologyURI>
+            <tableColumn name="JTZLGC_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_JBZHGL</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症侯</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯编号</ontologyURI>
+            <tableColumn name="ZH_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病编号</ontologyURI>
+            <tableColumn name="JB_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_JBZZGL</tableName>
+    <ontologies>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病编号</ontologyURI>
+            <tableColumn name="JB_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#疾病症状</ontologyURI>
+        <instanceSpace>ISSP:02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#症侯名称编号</ontologyURI>
+            <tableColumn name="ZZ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn</dbNamespace>
+    <dbLocalpart>myRes</dbLocalpart>
+    <tableSchema>TCM</tableSchema>
+    <tableName>JMZ_XW</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#针灸穴位</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#穴位分类</ontologyURI>
+            <tableColumn name="XWLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#穴位编号</ontologyURI>
+            <tableColumn name="XW_ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#穴位名称</ontologyURI>
+            <tableColumn name="XWMC"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+      <ontology isMainOnto="false">
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#治疗方法</ontologyURI>
+        <instanceSpace>ISSP:01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/v2#临床诊断编号</ontologyURI>
+            <constraintExpress></constraintExpress>
+            <tableColumn name="ZLGC_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+</tableregister>

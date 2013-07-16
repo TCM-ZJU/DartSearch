@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
+<suite thread-count="5" verbose="1" name="all Tests suite" parallel="false" annotations="1.5">	
+	<test name="testng all">
+	  <groups>
+		<run>
+		  <include name="allTest"/>
+		  <exclude name="dartCoreTest"/>
+		</run>
+	  </groups> 
+	 <classes>
+		<class name="edu.zju.tcmsearch.query.domain.DartQueryTest"/>
+	  </classes>
+	</test>
+</suite>

@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+</meta>
+<link href="${rc.contextPath}/css/register.css" rel="stylesheet" type="text/css">
+<title>用户管理</title>
+</head>
+
+
+<BODY>
+#if($isLogin=="false")
+
+
+</br></br>
+<div align="center">对不起，您无权查看此页面</div>
+
+
+#elseif($isLogin=="admin")
+<!-------------------------- Large else part "admin" ----------------------------//-->
+
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder2" width="80%" >
+<tr><td height=25 valign=middle>
+<img src="${rc.contextPath}/images/dws.gif" align=absmiddle width=48>→ 
+用户管理</a>
+</td>&nbsp;&nbsp;&nbsp</td>
+<td align="right">
+<a href="${rc.contextPath}/secure/tablePriceSignment.luc">数据资费</a> &nbsp;&nbsp;
+<a href="${rc.contextPath}/ontoCategoryEdit.cla">专题维护</a> &nbsp;&nbsp;
+<a href="${rc.contextPath}/secure/chineseTableName.luc?pageID=1">数据库中文命名</a> &nbsp;&nbsp;
+</td>
+</table>
+<br>
+
+<form atction="${rc.contextPath}/accountResults.luc" method=POST>
+<input type=hidden name=cmd value=query/>
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder1" width="80%" >
+<tr>
+<td>帐户名称：<input name="username" value=""/></td>
+<td>IP地址：<input name="ipaddress" value=""/></td>
+</tr>
+<tr>
+<td>
+<SELECT NAME="chargetype" SIZE="1">
+<OPTION VALUE="">&nbsp</OPTION>
+<OPTION VALUE="CHARGE_TYPE_ONMONTH">包月</OPTION>
+<OPTION VALUE="CHARGE_TYPE_ONFLOW" SELECTED>流量</OPTION>
+</SELECT>
+</td>
+<TD>
+<SELECT NAME="loginType" SIZE="1">
+<OPTION VALUE="">&nbsp</OPTION>
+<OPTION VALUE="LOGIN_TYPE_USERPASSWORD">帐号</OPTION>
+<OPTION VALUE="LOGIN_TYPE_IP" SELECTED>IP地址</OPTION>
+</SELECT>
+</TD>
+</tr>
+<tr>
+<td>
+<input type=submit value="提交"/>
+</td>
+<td>
+<input type=reset value="重置"/>
+</tr>
+</table>
+</form>
+<br>
+
+
+			 <table align="center"  class="tableBorder1" width="70%">
+			 	<TR >
+					<Th colSpan=1 height=24>帐户名称</Th>
+					<Th colSpan=1 height=12>帐户状态</Th>
+					<Th colSpan=1 height=12>本体权限</Th>
+					<Th colSpan=1 height=12>数据库权限</Th>
+					<Th colSpan=1 height=12>消费记录</Th>
+					<Th colSpan=1 height=12>操作</Th>
+				</TR>
+				
+				#foreach ($accountResult in ${accountResults})
+				
+				<TR >
+					 <TD class="TableBody1"> 
+					    #if(${accountResult.hasAuthority("ROLE_TECH_ADMIN")})
+					    <image src ="$rc.contextPath/images/role_tech.bmp" height =13  width=13/>
+					    #elseif(${accountResult.hasAuthority("ROLE_CUSTOMER_ADMIN")})
+					    <image src ="$rc.contextPath/images/role_ser.bmp" height =13  width=13/>
+					    #else
+					    <image src ="$rc.contextPath/images/role_user.bmp" height =13  width=13/>
+					    #end
+					    
+					    #if(${accountResult.loginType} == "LOGIN_TYPE_USERPASSWORD")
+					    <a href="${rc.contextPath}/secure/accountEditor.luc?AccountId=${accountResult.id}" target="_blank">${accountResult.username}</a> 
+					    #else
+					    <a href="${rc.contextPath}/secure/accountEditor.luc?AccountId=${accountResult.id}" target="_blank">${accountResult.IPAddress}</a> 
+					    #end
+					    #if(${accountResult.isNewUser()})
+					    <FONT COLOR = RED> &nbsp;新用户</FONT>
+					    #end
+	    			 </TD>	
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="${rc.contextPath}/secure/accountStatus.luc?userid=${accountResult.id}">${MessageMapper.get($accountResult.status)}
+					    #if(${manager.isLogin(${accountResult})})
+					    [在线:${manager.getRuntimeAccount(${accountResult}).getConcurrenceSize()}]
+					    #end
+					    </a> 
+	    			 </TD>
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="${rc.contextPath}/secure/ontologyAccessPrivilegeSignment.luc?accountId=${accountResult.id}">配置</a> 
+					    #if(${accountResult.hasNewOntology()})
+					    <FONT COLOR = RED> &nbsp;已更新</FONT>
+					    #end					    
+	    			 </TD>
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="${rc.contextPath}/secure/tableAccessPrivilegeSignment.luc?accountId=${accountResult.id}">配置</a> 
+					    #if(${accountResult.hasNewTable()})
+					    <FONT COLOR = RED> &nbsp;已更新</FONT>
+					    #end
+	    			 </TD>	    	
+
+	    			 <TD class="TableBody1"  align="center"> 
+					    <a href="${rc.contextPath}/secure/accessRecord.luc?accountId=${accountResult.id}">查看</a> 
+	    			 </TD>
+	    			 	 	    			 	    			 
+	    			 <TD class="TableBody1"  align="center"> 
+					    <a href="${rc.contextPath}/secure/accountDelete.luc?userid=${accountResult.id}">删除</a> 
+					    <a href="${rc.contextPath}/secure/accountLogOffOnFource.luc?accountId=${accountResult.id}">下线</a> 
+	    			 </TD>		    			 
+				</TR>								
+			    
+				#end
+            </table>
+            
+          <Table  width="100%">
+          <TR>&nbsp;</TR>
+          <TR height="20">
+          <TD align="center">
+             <a href="${rc.contextPath}/secure/accountResults.luc?pageID=$priorpage&cmd=next">上一页</a>&nbsp;&nbsp;
+             <a href="${rc.contextPath}/secure/accountResults.luc?pageID=$nextpage&cmd=next">下一页</a>&nbsp;&nbsp;
+             <a href="${rc.contextPath}/tcmBasicSearch.luc">返回首页</a>
+          </TD>
+          </TR>
+          </Table>
+<!-------------------------- Large else part (end here) "admin" ----------------------------//-->
+
+
+#elseif($isLogin=="servent")
+
+
+<!-------------------------- Large else part  "servent" ----------------------------//-->
+
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder2" width="80%" >
+<tr><td height=25 valign=middle>
+<img src="${rc.contextPath}/images/dws.gif" align=absmiddle width=48>→ 
+用户管理</a>
+</td>&nbsp;&nbsp;&nbsp</td>
+<td align="right" DISABLED>
+<a href="#">数据资费</a> &nbsp;&nbsp;
+<a href="#">专题维护</a> &nbsp;&nbsp;
+</td>
+</table>
+<br>
+<br>
+
+
+			 <table align="center"  class="tableBorder1" width="70%">
+			 	<TR >
+					<Th colSpan=1 height=24>帐户名称</Th>
+					<Th colSpan=1 height=12>帐户状态</Th>
+					<Th colSpan=1 height=12>本体权限</Th>
+					<Th colSpan=1 height=12>数据库权限</Th>
+					<Th colSpan=1 height=12>访问记录</Th>
+					<Th colSpan=1 height=12>操作</Th>
+				</TR>
+				
+				#foreach ($accountResult in ${accountResults})
+				
+				<TR >
+    			 	    			 
+					 <TD class="TableBody1">
+					    #if(${accountResult.hasAuthority("ROLE_TECH_ADMIN")})
+					    <image src ="$rc.contextPath/images/role_tech.bmp" height =13  width=13/>
+					    #elseif(${accountResult.hasAuthority("ROLE_CUSTOMER_ADMIN")})
+					    <image src ="$rc.contextPath/images/role_ser.bmp" height =13  width=13/>
+					    #else
+					    <image src ="$rc.contextPath/images/role_user.bmp" height =13  width=13/>
+					    #end
+					    					  
+					    #if(${accountResult.loginType} == "LOGIN_TYPE_USERPASSWORD")
+					    <a href="${rc.contextPath}/secure/accountEditor.luc?AccountId=${accountResult.id}" target="_blank">${accountResult.username}</a> 
+					    #else
+					    <a href="${rc.contextPath}/secure/accountEditor.luc?AccountId=${accountResult.id}" target="_blank">${accountResult.IPAddress}</a> 
+					    #end
+					    #if(${accountResult.isNewUser()})
+					    <FONT COLOR = RED> &nbsp;新用户</FONT>
+					    #end
+	    			 </TD>	
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="#">${MessageMapper.get($accountResult.status)}
+					    #if(${manager.isLogin(${accountResult})})
+					    [在线:${manager.getRuntimeAccount(${accountResult}).getConcurrenceSize()}]
+					    #end
+					    </a> 
+	    			 </TD>
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="${rc.contextPath}/secure/ontologyAccessPrivilegeSignment.luc?accountId=${accountResult.id}">配置</a> 
+					    #if(${accountResult.hasOntology()})
+					    <FONT COLOR = RED> &nbsp;已更新</FONT>
+					    #end					    
+	    			 </TD>
+	    			 
+	    			 <TD class="TableBody1" align="center"> 
+					    <a href="${rc.contextPath}/secure/tableAccessPrivilegeSignment.luc?accountId=${accountResult.id}">配置</a> 
+					    #if(${accountResult.hasNewTable()})
+					    <FONT COLOR = RED> &nbsp;已更新</FONT>
+					    #end
+	    			 </TD>						    
+    	
+
+	    			 <TD class="TableBody1"  align="center"> 
+					    <a href="${rc.contextPath}/secure/accessRecord.luc?accountId=${accountResult.id}">查看</a> 
+	    			 </TD>
+	    			 	 	    			 	    			 
+	    			 <TD class="TableBody1"  align="center"> 
+					    <a href="${rc.contextPath}/secure/accountLogOffOnFource.luc?accountId=${accountResult.id}">下线</a> 					     
+	    			 </TD>		    			 
+				</TR>								
+			    
+				#end
+            </table>
+            
+          <Table  width="100%">
+          <TR>&nbsp;</TR>
+          <TR height="20">
+          <TD align="center">
+             <a href="${rc.contextPath}/secure/accountResults.luc?pageID=$priorpage&cmd=next">上一页</a>&nbsp;&nbsp;
+             <a href="${rc.contextPath}/secure/accountResults.luc?pageID=$nextpage&cmd=next">下一页</a>&nbsp;&nbsp;
+             <a href="${rc.contextPath}/tcmBasicSearch.luc">返回首页</a>
+          </TD>
+          </TR>
+          </Table>
+<!-------------------------- Large else part (end here) "servent" ----------------------------//-->
+#end
+</body>
+</html>

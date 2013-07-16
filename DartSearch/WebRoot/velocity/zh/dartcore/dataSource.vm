@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>中医药综合查询数据来源</title>
+</head>
+<body>
+	
+	<P align="center" class="ms-pagetitle">从以下数据源查得数据</P>
+	<form action="ontologyInfo.htm" method="POST" name="ontologyInfoForm"> 
+	<input type="hidden" name="nodeIdentity" value="${treeNode.nodeIdentity}"/>
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+			<td align="center">序号</td>
+			<td align="center">数据库</td>
+			<td align="center">数据表</td>
+			<td align="center">数据表名称</td>
+		</tr>
+		#foreach ($relation in ${relationUsed.getUsedRelation()})
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td>${relationUsed.getRelationDBSource($relation)}</td>
+			<td>$relation.getRelationName()</td>
+			<td>${chineseTableName.get(${relationUsed.getRelationID($relation)})}</td>
+		</tr>
+		#end
+	</table>
+	
+ 
+	<P>
+	<br/>
+	<table align="center" class="std_Table">
+	  <tr class="Table_grayitem">	
+          <td> 返回 </td>
+          <td> <a href='$rc.contextPath/searchResultNav.htm?style=${style}&pageNo=${pageNo}'/><img border='0' src='images/gosearch.gif' border="0"/></a> </td>		
+      </tr>  
+	</table>    
+	
+	</form>
+	<br/>
+</body>
+</html>  

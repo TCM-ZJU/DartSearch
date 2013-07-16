@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableregister>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2000A_35</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2001</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#医学史</ontologyURI>
+            <tableColumn name="HST"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2002</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_03</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药药理作用</ontologyURI>
+            <tableColumn name="ZYYLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2003</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_04</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2004</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_05</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药药理作用</ontologyURI>
+            <tableColumn name="ZYYLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__2005</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_06</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX__99</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_07</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX49__83</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_08</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX84__87</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_09</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#团体著者</ontologyURI>
+            <tableColumn name="COP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药药理作用</ontologyURI>
+            <tableColumn name="ZYYLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX88__91</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_10</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX92__94</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_11</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX95__96</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_12</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_WX</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>WX97__98</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期刊文献</ontologyURI>
+        <instanceSpace>Insp_wx_13</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者单位</ontologyURI>
+            <tableColumn name="AFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#第一著者地址</ontologyURI>
+            <tableColumn name="ADDR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分类号</ontologyURI>
+            <tableColumn name="CLC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#个人著者</ontologyURI>
+            <tableColumn name="AUT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#关键词</ontologyURI>
+            <tableColumn name="KW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#卷</ontologyURI>
+            <tableColumn name="PART1"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#刊名</ontologyURI>
+            <tableColumn name="TIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#年份</ontologyURI>
+            <tableColumn name="YR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#期</ontologyURI>
+            <tableColumn name="PART2"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#顺序号</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特征词</ontologyURI>
+            <tableColumn name="TAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#团体著者</ontologyURI>
+            <tableColumn name="COP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文献类型</ontologyURI>
+            <tableColumn name="TYP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#文摘</ontologyURI>
+            <tableColumn name="ABS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#页码</ontologyURI>
+            <tableColumn name="PAG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文题名</ontologyURI>
+            <tableColumn name="TIT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#语种</ontologyURI>
+            <tableColumn name="LAN"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文题名</ontologyURI>
+            <tableColumn name="TIC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题词</ontologyURI>
+            <tableColumn name="MES"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主题姓名</ontologyURI>
+            <tableColumn name="NAM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#专题名</ontologyURI>
+            <tableColumn name="PRJ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+</tableregister>

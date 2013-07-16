@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Ontology data searching result</title>
+
+<script type='text/javascript' src='$rc.contextPath/dwr/interface/DwrSession.js'></script>
+<script type='text/javascript' src='$rc.contextPath/dwr/engine.js'></script>
+<script type="text/javascript">
+<!--
+var lastRowSelected=null;
+var curRowNode;
+function CBackFun( not_care )
+{
+ if(lastRowSelected!=null)
+    lastRowSelected.className="Table_grayitem";
+    
+ curNode.className="Table_HighItem";
+ lastRowSelected=curNode;  
+}
+
+function selectRow(rowNumber, rowNode)
+{
+ curNode=rowNode;
+    
+ DwrSession.putString(null,"SearchResult_RowNo",rowNumber);
+ DwrSession.putString(CBackFun,"SearchResult_PageNo",$pageNo);
+}
+//-->
+</script>
+</head>
+
+<body>
+	<br/>
+	<div class="ms-pagetitle" align="center">Ontology data searching result</div>
+	<br/>
+	<div align="center"  class="ms-vb">${queryResult.resultCount} records totally.&nbsp; 
+	   #if ($queryResult.isMultiPage())
+  	     Page counter:${pageNo} of ${queryResult.pageList.maxPage}, ${queryResult.pageList.pageSize} records a page
+	   #end
+	</div><br/>
+	<div align="center" class="ms-vb"><a href="searchResultNav.htm?style=column&pageNo=1">Show data in rows.  </a>
+    <a href="javascript:return false;" onclick="javascript:window.open('${rc.contextPath}/exclude/sematicViewer.htm');"> Semantic explorer. </a>	
+    </div><br/>	
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb">
+	    #if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.minPage}">FirstPage</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}"> PrePage</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}"> NextPage</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.maxPage}"> LastPage</a>
+		#end
+		</div><br/>
+	#end
+	
+	<table align="center" class="std_Table" width="98%">
+		<tr class="Table_item"> 
+		 	<td>序号</td>
+		#foreach ($columnInfo in ${queryResult.columnInfos})			
+			<td>$!columnInfo.ontoName</td>	
+		#end
+	   </tr>
+	   #foreach ($resultData in ${queryResult.pageList.getPage($pageNo)})	
+		#if ($velocityCount % 2 == 0) 
+		<tr class="Table_grayitem" onclick='selectRow($velocityCount,this)'>
+		#else 
+		<tr class="Table_grayitem" onclick='selectRow($velocityCount,this)'> 
+		#end  
+			<td>$velocityCount</td>
+			#foreach ($columnInfo in ${queryResult.columnInfos})			
+			<td>$!resultData.getData($columnInfo.columnName)</td>	
+			#end
+		</tr>
+		#end	
+	</table>	
+	<br/>
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb" class="ms-vb">
+		#if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.minPage}">FirstPage</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}"> PrePage</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))	
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}"> NextPage</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.maxPage}"> LastPage</a>
+		#end
+		</div><br/><br/>
+	#end
+	
+	<br/>	
+	<table align="center" class="std_Table">
+	  <tr class="Table_grayitem">	
+          <td > Check DataSource </td>
+          <td> <a href='$rc.contextPath/datasource.htm?style=list&pageNo=$pageNo'/><img border='0' src='images/gosearch.gif' border="0"/></a> </td>		
+      </tr>  
+	</table>
+	</br> 
+</body>
+
+
+</html>  

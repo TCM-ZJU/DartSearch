@@ -1,0 +1,20 @@
+   <TABLE class="ms-bannerframe" cellSpacing="0" cellPadding="0" width="100%" border="0">
+		<TR>
+			<TD vAlign="middle" noWrap><IMG id="onetidHeadbnnr0" alt="Logo" src="$rc.contextPath/images/dws.gif" style="CURSOR: hand"></TD>
+			<TD class="ms-banner" id="HBN100" vAlign="middle" noWrap width="99%">
+				<table border="0" cellpadding="0" cellspacing="1" width="50%">
+				      <tr>
+				      	<td class="ms-banner"><div align="center"><a href="$rc.contextPath/tcmSearch.luc">Full_text Search</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.htm"> DataShare</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.html"> Cobuild</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/index.tmh"> Cobuild Data Query</a></div></td>
+				        <td class="ms-banner"><div align="center"><a href="$rc.contextPath/ontoClassify.cla"> Management</a></div></td>
+						<td class="ms-banner"><div align="center"><a href="$rc.contextPath/help.htm"> Help</a></div></td>
+						<td class="ms-banner"><div align="center"><a href="$rc.contextPath/about.htm"> About</a></div></td>
+				      </tr>
+				</table>
+			</TD>
+			<TD class="ms-banner">&nbsp;&nbsp;</TD>
+			<TD class="ms-banner" style="PADDING-RIGHT: 7px" noWrap><A><NOBR>Welcome to TCMGRID</NOBR></A></TD>
+		</TR>
+	</TABLE>

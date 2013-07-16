@@ -1,0 +1,2035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableregister>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZCY_2005</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中草药</ontologyURI>
+        <instanceSpace>DartTCMNS_01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#别名</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应及治疗</ontologyURI>
+            <tableColumn name="BLFYJZL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#采收和储藏</ontologyURI>
+            <tableColumn name="CSYZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#出处</ontologyURI>
+            <tableColumn name="CC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#动植物形态</ontologyURI>
+            <tableColumn name="DZWXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#毒理学</ontologyURI>
+            <tableColumn name="DLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GJLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效分类</ontologyURI>
+            <tableColumn name="GXFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#归经</ontologyURI>
+            <tableColumn name="GJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#汉语拼音</ontologyURI>
+            <tableColumn name="HYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#剂型</ontologyURI>
+            <tableColumn name="JX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#考证</ontologyURI>
+            <tableColumn name="KZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#科属分类</ontologyURI>
+            <tableColumn name="KSFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#拉丁文名</ontologyURI>
+            <tableColumn name="YCLDM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#拉丁植物动物矿物名</ontologyURI>
+            <tableColumn name="LDZWDWKWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#理化性质</ontologyURI>
+            <tableColumn name="LHXZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床运用</ontologyURI>
+            <tableColumn name="LCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#炮制方法</ontologyURI>
+            <tableColumn name="PZFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#配伍及机制</ontologyURI>
+            <tableColumn name="YWPW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生态环境</ontologyURI>
+            <tableColumn name="STHJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生药材鉴定</ontologyURI>
+            <tableColumn name="SYCJD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#性味</ontologyURI>
+            <tableColumn name="YX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#选方</ontologyURI>
+            <tableColumn name="XF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="YCJY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药代动力学</ontologyURI>
+            <tableColumn name="YDDLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药典收录</ontologyURI>
+            <tableColumn name="YDSL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理学</ontologyURI>
+            <tableColumn name="YLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YWZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药名</ontologyURI>
+            <tableColumn name="YM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物应用鉴别</ontologyURI>
+            <tableColumn name="YWYYJB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药用部位</ontologyURI>
+            <tableColumn name="YYBW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药用植物栽培</ontologyURI>
+            <tableColumn name="YYZWZP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药化学成分</ontologyURI>
+            <tableColumn name="ZYHXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药有效成分结构式的测定</ontologyURI>
+            <tableColumn name="ZYYXCFJGSCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药制药工艺</ontologyURI>
+            <tableColumn name="ZYZYGY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#资源分布</ontologyURI>
+            <tableColumn name="ZYFB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药化学鉴定</ontologyURI>
+            <tableColumn name="ZYHXJD"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZANGYAO</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中草药</ontologyURI>
+        <instanceSpace>DartTCMNS_02</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#别名</ontologyURI>
+            <tableColumn name="YM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应及治疗</ontologyURI>
+            <tableColumn name="BLFYJZL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#采收和储藏</ontologyURI>
+            <tableColumn name="YCCSYCC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#动植物形态</ontologyURI>
+            <tableColumn name="DZWXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#毒理学</ontologyURI>
+            <tableColumn name="DLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GJLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#归经</ontologyURI>
+            <tableColumn name="GJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#汉语拼音</ontologyURI>
+            <tableColumn name="HYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药化学鉴定</ontologyURI>
+            <tableColumn name="ZYHXJD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#剂型</ontologyURI>
+            <tableColumn name="ZYJX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#考证</ontologyURI>
+            <tableColumn name="KZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#拉丁文名</ontologyURI>
+            <tableColumn name="LDM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#理化性质</ontologyURI>
+            <tableColumn name="LHXZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床运用</ontologyURI>
+            <tableColumn name="LCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#炮制方法</ontologyURI>
+            <tableColumn name="PZFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#配伍及机制</ontologyURI>
+            <tableColumn name="YWPW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生态环境</ontologyURI>
+            <tableColumn name="DZWSTHJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生药材鉴定</ontologyURI>
+            <tableColumn name="SYCJD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#实验动物的品种</ontologyURI>
+            <tableColumn name="SYDWPZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#销售地区</ontologyURI>
+            <tableColumn name="XSDX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#性味</ontologyURI>
+            <tableColumn name="YX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#选方</ontologyURI>
+            <tableColumn name="XF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="ZYCJY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药代动力学</ontologyURI>
+            <tableColumn name="YDDLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YWZYYYLXY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药名</ontologyURI>
+            <tableColumn name="YM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物应用鉴别</ontologyURI>
+            <tableColumn name="YWYYJB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药用部位</ontologyURI>
+            <tableColumn name="YYBW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药用植物栽培</ontologyURI>
+            <tableColumn name="YYDZWZP"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWPW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YYJY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药化学成分</ontologyURI>
+            <tableColumn name="ZYHXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药有效成分结构式的测定</ontologyURI>
+            <tableColumn name="ZYYXCFJGSCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药制药工艺</ontologyURI>
+            <tableColumn name="ZYZYGY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#资源分布</ontologyURI>
+            <tableColumn name="DZWZYFB"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZHONGGYY</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中草药</ontologyURI>
+        <instanceSpace>DartTCMNS_03</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#别名</ontologyURI>
+            <tableColumn name="BIEM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#采收和储藏</ontologyURI>
+            <tableColumn name="CJJG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#出处</ontologyURI>
+            <tableColumn name="CHUC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#动植物形态</ontologyURI>
+            <tableColumn name="XTTZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#二级分类</ontologyURI>
+            <tableColumn name="EJFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#附注</ontologyURI>
+            <tableColumn name="FUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#化学成分参考文献</ontologyURI>
+            <tableColumn name="HXCFCKWX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床运用</ontologyURI>
+            <tableColumn name="CTYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#性味</ontologyURI>
+            <tableColumn name="XINGW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#选方</ontologyURI>
+            <tableColumn name="FANGL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="LAIY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理参考文献</ontologyURI>
+            <tableColumn name="YLCKWX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YAOL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药名</ontologyURI>
+            <tableColumn name="MINGC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#一级分类</ontologyURI>
+            <tableColumn name="YJFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中药化学成分</ontologyURI>
+            <tableColumn name="HXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#资源分布</ontologyURI>
+            <tableColumn name="STFB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瑶文名称</ontologyURI>
+            <tableColumn name="YAOW"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZYYD</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中草药</ontologyURI>
+        <instanceSpace>DartTCMNS_04</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#出处</ontologyURI>
+            <tableColumn name="YAODCC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#附注</ontologyURI>
+            <tableColumn name="ZHUYSX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GEJLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效分类</ontologyURI>
+            <tableColumn name="ZUOYFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#归经</ontologyURI>
+            <tableColumn name="GUIJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床运用</ontologyURI>
+            <tableColumn name="LINCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#配伍及机制</ontologyURI>
+            <tableColumn name="PEIWJZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#性味</ontologyURI>
+            <tableColumn name="XINGW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药名</ontologyURI>
+            <tableColumn name="YAODMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>HXCF0</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#化学成分</ontologyURI>
+        <instanceSpace>DartTCMNS_05</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应.</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#参考文献</ontologyURI>
+            <tableColumn name="CKWX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#成分分类</ontologyURI>
+            <tableColumn name="CFFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#毒性</ontologyURI>
+            <tableColumn name="DX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分子量</ontologyURI>
+            <tableColumn name="FZL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分子式</ontologyURI>
+            <tableColumn name="FZS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#构效关系</ontologyURI>
+            <tableColumn name="GXGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#化学成分ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#化学号</ontologyURI>
+            <tableColumn name="HXH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#化学名称</ontologyURI>
+            <tableColumn name="HXM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#来源</ontologyURI>
+            <tableColumn name="LY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#理化性质</ontologyURI>
+            <tableColumn name="LHXZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床</ontologyURI>
+            <tableColumn name="LC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#品名</ontologyURI>
+            <tableColumn name="PM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药化作用</ontologyURI>
+            <tableColumn name="ZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文异名</ontologyURI>
+            <tableColumn name="YM_ENG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用途分类</ontologyURI>
+            <tableColumn name="YTFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中文异名</ontologyURI>
+            <tableColumn name="YM_CHI"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>YWBLFY</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应</ontologyURI>
+        <instanceSpace>DartTCMNS_06</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应别名</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应机制</ontologyURI>
+            <tableColumn name="BLFYJZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应情况</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应预防</ontologyURI>
+            <tableColumn name="BLFYFZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#对生长的干扰</ontologyURI>
+            <tableColumn name="DSZYX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#对实验诊断的干扰</ontologyURI>
+            <tableColumn name="DSYZDGR"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#儿童用药</ontologyURI>
+            <tableColumn name="ETYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#过量</ontologyURI>
+            <tableColumn name="YWGL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#过敏反应</ontologyURI>
+            <tableColumn name="GMFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#呼吸系统</ontologyURI>
+            <tableColumn name="HXXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#肌肉骨骼系统</ontologyURI>
+            <tableColumn name="JRGGXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#老年患者用药</ontologyURI>
+            <tableColumn name="LNYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#泌尿系统</ontologyURI>
+            <tableColumn name="MNXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#名称</ontologyURI>
+            <tableColumn name="MC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#内分泌与代谢</ontologyURI>
+            <tableColumn name="NFMDX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#皮肤和相关组织</ontologyURI>
+            <tableColumn name="PFHXGZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#其他</ontologyURI>
+            <tableColumn name="QT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#神经系统</ontologyURI>
+            <tableColumn name="SJXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生殖系统</ontologyURI>
+            <tableColumn name="SZXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#特殊器官</ontologyURI>
+            <tableColumn name="TSQG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#停药反应</ontologyURI>
+            <tableColumn name="TYFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#微生物耐药性</ontologyURI>
+            <tableColumn name="WSWNYX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#危险状态</ontologyURI>
+            <tableColumn name="WXZK"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#消化系统</ontologyURI>
+            <tableColumn name="XHXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#心血管系统</ontologyURI>
+            <tableColumn name="XXGXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#血液系统</ontologyURI>
+            <tableColumn name="XYXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物相互作用</ontologyURI>
+            <tableColumn name="YWXHZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#孕妇及哺乳期妇女用药</ontologyURI>
+            <tableColumn name="YFJPRQFNYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#治疗与解救</ontologyURI>
+            <tableColumn name="ZLYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#中西药分类</ontologyURI>
+            <tableColumn name="ZXYFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#作用与注意</ontologyURI>
+            <tableColumn name="ZYYZY"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>XDFJ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂</ontologyURI>
+        <instanceSpace>DartTCMNS_07</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#不良反应.</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方来源</ontologyURI>
+            <tableColumn name="CFLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#毒性实验</ontologyURI>
+            <tableColumn name="DXSY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂别名</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂化学成分</ontologyURI>
+            <tableColumn name="HXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂名称</ontologyURI>
+            <tableColumn name="FM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂主治</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#附注</ontologyURI>
+            <tableColumn name="BZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GJLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#剂型</ontologyURI>
+            <tableColumn name="JX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#加减</ontologyURI>
+            <tableColumn name="JJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#理化作用</ontologyURI>
+            <tableColumn name="LHXZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用</ontologyURI>
+            <tableColumn name="LCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生产厂家</ontologyURI>
+            <tableColumn name="SCCJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#制备方法</ontologyURI>
+            <tableColumn name="ZBFF"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZYFJ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂</ontologyURI>
+        <instanceSpace>DartTCMNS_08</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方来源</ontologyURI>
+            <tableColumn name="CHUFLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂别名</ontologyURI>
+            <tableColumn name="BIEM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂名称</ontologyURI>
+            <tableColumn name="FANGM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方剂主治</ontologyURI>
+            <tableColumn name="ZUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#附注</ontologyURI>
+            <tableColumn name="BEIZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GEJLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#加减</ontologyURI>
+            <tableColumn name="JIAJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用</ontologyURI>
+            <tableColumn name="LINCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YAOLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YAOWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YONGYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#制备方法</ontologyURI>
+            <tableColumn name="ZHIBFF"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZYCFBZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_09</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物别名</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="PY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#标准号</ontologyURI>
+            <tableColumn name="BZH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方来源</ontologyURI>
+            <tableColumn name="CFLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物剂型</ontologyURI>
+            <tableColumn name="YFJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YFJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制备方法</ontologyURI>
+            <tableColumn name="ZBFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#检查</ontologyURI>
+            <tableColumn name="JC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#含量测定</ontologyURI>
+            <tableColumn name="HLCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#浸出物</ontologyURI>
+            <tableColumn name="JCW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="BZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZYBZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_10</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#标准号</ontologyURI>
+            <tableColumn name="BIAOZH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方名</ontologyURI>
+            <tableColumn name="FANGM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#藏方药名</ontologyURI>
+            <tableColumn name="ZANGFYM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="HANYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YINGWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="YAOCJY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YAOWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XINGZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物炮制方法</ontologyURI>
+            <tableColumn name="PAOZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性味</ontologyURI>
+            <tableColumn name="XINGW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制备方法</ontologyURI>
+            <tableColumn name="ZHIBFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物剂型</ontologyURI>
+            <tableColumn name="JIX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GUIG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZHUYSX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YONGYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZHUC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JIANB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#检查</ontologyURI>
+            <tableColumn name="JIANC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#含量测定</ontologyURI>
+            <tableColumn name="HANLCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="BEIZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZYXYPZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_11</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="ZSPM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药品类型</ontologyURI>
+            <tableColumn name="YPLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物剂型</ontologyURI>
+            <tableColumn name="JX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#研究单位</ontologyURI>
+            <tableColumn name="YJDW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#研究单位省份</ontologyURI>
+            <tableColumn name="SSSF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生产单位</ontologyURI>
+            <tableColumn name="SCDW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生产单位省份</ontologyURI>
+            <tableColumn name="SCDWSF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#申请编号</ontologyURI>
+            <tableColumn name="SQBH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#申请日期</ontologyURI>
+            <tableColumn name="SQRQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#新药证书号</ontologyURI>
+            <tableColumn name="XYZSBH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#批准文号</ontologyURI>
+            <tableColumn name="PZWH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#标准号</ontologyURI>
+            <tableColumn name="BZH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#保护期</ontologyURI>
+            <tableColumn name="BHQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#批件号</ontologyURI>
+            <tableColumn name="PJH"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#批准日期</ontologyURI>
+            <tableColumn name="PZRQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZYSX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#包装</ontologyURI>
+            <tableColumn name="BZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#有效期</ontologyURI>
+            <tableColumn name="YXQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制备方法</ontologyURI>
+            <tableColumn name="ZBFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#检查</ontologyURI>
+            <tableColumn name="JC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#含量测定</ontologyURI>
+            <tableColumn name="HLCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="FL"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>OTC</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_12</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方名</ontologyURI>
+            <tableColumn name="FANGM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物别名</ontologyURI>
+            <tableColumn name="BIEM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="HANYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YINGWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药分类</ontologyURI>
+            <tableColumn name="YONGYFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#作用分类</ontologyURI>
+            <tableColumn name="ZUOYLB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YAOWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XINGZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物剂型</ontologyURI>
+            <tableColumn name="JIX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YONGYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BULFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制备方法</ontologyURI>
+            <tableColumn name="ZHIBFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GUIG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YAOLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#检查</ontologyURI>
+            <tableColumn name="JIANC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JIANB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#含量测定</ontologyURI>
+            <tableColumn name="HANLCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#浸出物</ontologyURI>
+            <tableColumn name="JINCW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZHUC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="BEIZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方来源</ontologyURI>
+            <tableColumn name="CHUFLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#标准号</ontologyURI>
+            <tableColumn name="BIAOZH"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>GJJBYW</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_13</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="YAOM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#作用分类</ontologyURI>
+            <tableColumn name="ZHONGXYFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YINGWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="PINY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物别名</ontologyURI>
+            <tableColumn name="BIEM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YAOWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XINGZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用与配方</ontologyURI>
+            <tableColumn name="YONGT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方解</ontologyURI>
+            <tableColumn name="FANGJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YAOLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#体内过程</ontologyURI>
+            <tableColumn name="TINGC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物剂型</ontologyURI>
+            <tableColumn name="JIX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GUIG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BULFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZHUYSX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZHUC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="BEIZ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>ZGYD</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_14</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="MC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="HYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方来源</ontologyURI>
+            <tableColumn name="CFLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="JY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#检查</ontologyURI>
+            <tableColumn name="JC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#浸出物</ontologyURI>
+            <tableColumn name="SCW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#含量测定</ontologyURI>
+            <tableColumn name="HLCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用与配方</ontologyURI>
+            <tableColumn name="YT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物炮制方法</ontologyURI>
+            <tableColumn name="PZFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性味</ontologyURI>
+            <tableColumn name="XW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物归经</ontologyURI>
+            <tableColumn name="GJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制剂</ontologyURI>
+            <tableColumn name="ZJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制备方法</ontologyURI>
+            <tableColumn name="YWZF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#提取物</ontologyURI>
+            <tableColumn name="TQW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物化学成分</ontologyURI>
+            <tableColumn name="HXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分子式</ontologyURI>
+            <tableColumn name="FZSYFZL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#效价测定</ontologyURI>
+            <tableColumn name="XJCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生物分布</ontologyURI>
+            <tableColumn name="SWFB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#放射化学纯度</ontologyURI>
+            <tableColumn name="FSHXCD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#放射性核活度</ontologyURI>
+            <tableColumn name="FSXHHD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#放射性活度</ontologyURI>
+            <tableColumn name="FSXHD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#放射性浓度</ontologyURI>
+            <tableColumn name="FSXND"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#生物制品制备</ontologyURI>
+            <tableColumn name="SWZPZB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#有效期</ontologyURI>
+            <tableColumn name="YXQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZYSX"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>GJYPBZ_HXY</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_15</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物别名</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#商品名</ontologyURI>
+            <tableColumn name="SPM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YWM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="HYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物化学成分</ontologyURI>
+            <tableColumn name="HXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分子式</ontologyURI>
+            <tableColumn name="FZS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#分子量</ontologyURI>
+            <tableColumn name="FZL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性状</ontologyURI>
+            <tableColumn name="XZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理学</ontologyURI>
+            <tableColumn name="YLDL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药代动力学</ontologyURI>
+            <tableColumn name="YDDLX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="SYZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BLFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="JJZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZYSX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#孕妇及哺乳期妇女用药</ontologyURI>
+            <tableColumn name="YFJPRQFNYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#儿童用药</ontologyURI>
+            <tableColumn name="ETYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#老年患者用药</ontologyURI>
+            <tableColumn name="LNYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物相互作用</ontologyURI>
+            <tableColumn name="YWXHZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物过量</ontologyURI>
+            <tableColumn name="YWGL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#包装</ontologyURI>
+            <tableColumn name="BZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#有效期</ontologyURI>
+            <tableColumn name="YXQ"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>GB_ZWMY</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_16</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="YAOPMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物异名</ontologyURI>
+            <tableColumn name="CENGYM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="CHENGF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药品类型</ontologyURI>
+            <tableColumn name="YAOWFL"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>LZYYPWZN</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_17</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="MINGC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物异名</ontologyURI>
+            <tableColumn name="YIM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#处方用名</ontologyURI>
+            <tableColumn name="CHUFYM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="JIY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#备注</ontologyURI>
+            <tableColumn name="GAIS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#动植物形态</ontologyURI>
+            <tableColumn name="DZWXT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物毒理学</ontologyURI>
+            <tableColumn name="DULX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#采集加工</ontologyURI>
+            <tableColumn name="CAIJJG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#贮藏</ontologyURI>
+            <tableColumn name="ZHUC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物炮制方法</ontologyURI>
+            <tableColumn name="PAOZFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YONGYYJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物化学成分</ontologyURI>
+            <tableColumn name="HUAXCF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鉴别</ontologyURI>
+            <tableColumn name="JIANB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物性味</ontologyURI>
+            <tableColumn name="XINGW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物归经</ontologyURI>
+            <tableColumn name="GUIJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#性味归经来源</ontologyURI>
+            <tableColumn name="XWGJLY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理学</ontologyURI>
+            <tableColumn name="XIANDYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#配伍应用</ontologyURI>
+            <tableColumn name="PEIWYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#配方</ontologyURI>
+            <tableColumn name="PEIF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用与配方</ontologyURI>
+            <tableColumn name="LINCYY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#各家论述</ontologyURI>
+            <tableColumn name="GEJLS"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  <table>
+    <dbNamespace>SUN3500_TCM_ADMIN</dbNamespace>
+    <dbLocalpart>http://edu.zju.cn/dart</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>LINCYYXZ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物</ontologyURI>
+        <instanceSpace>DartTCMNS_18</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物名称</ontologyURI>
+            <tableColumn name="MINGC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物汉语拼音</ontologyURI>
+            <tableColumn name="HANYPY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#英文名</ontologyURI>
+            <tableColumn name="YINGWMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物别名</ontologyURI>
+            <tableColumn name="BIEM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物组成</ontologyURI>
+            <tableColumn name="YAOWZC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药材基源</ontologyURI>
+            <tableColumn name="JIY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#临床应用与配方</ontologyURI>
+            <tableColumn name="YONGT"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物功效</ontologyURI>
+            <tableColumn name="GONGX"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#主治与适应症</ontologyURI>
+            <tableColumn name="ZHUZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用法用量</ontologyURI>
+            <tableColumn name="YONGFYL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#用药禁忌</ontologyURI>
+            <tableColumn name="YONGYJJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#方解</ontologyURI>
+            <tableColumn name="FANGJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物制剂</ontologyURI>
+            <tableColumn name="ZHIJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#规格</ontologyURI>
+            <tableColumn name="GUIG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物不良反应</ontologyURI>
+            <tableColumn name="BULFY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理作用</ontologyURI>
+            <tableColumn name="YAOLZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药理学</ontologyURI>
+            <tableColumn name="YAOLDL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#药物相互作用</ontologyURI>
+            <tableColumn name="YAOWXHZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#注意事项</ontologyURI>
+            <tableColumn name="ZHUYSX"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+</tableregister>

@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type='text/javascript' src='./JS/showItemDetail.js'></script>
+<script type='text/javascript' src='./JS/vmlGraph.js'></script>
+<title>中医药搜索引擎查询结果</title>
+</head>
+<script>
+<!--
+function doSubmit(searchInResult){
+  //alert(document.tcmResultSearchForm.searchContent.value);
+  if (document.tcmResultSearchForm.searchContent.value!=""){
+    document.tcmResultSearchForm.action="tcmResultSearch.luc?searchInResult="+searchInResult;
+    document.tcmResultSearchForm.submit();
+  }
+}
+
+function doSubmit2(searchInResult){
+  //alert(document.tcmResultSearchForm2.searchContent.value);
+  if (document.tcmResultSearchForm2.searchContent.value!=""){
+    document.tcmResultSearchForm2.action="tcmResultSearch.luc?searchInResult="+searchInResult;
+    document.tcmResultSearchForm2.submit();
+  }
+}
+//-->
+</script>
+<BODY>
+
+<table align="center" width="100%" valign="top">
+ <tr>
+  	<td>  
+		<FORM name="tcmResultSearchForm" action="tcmResultSearch.luc" method="POST" >	
+			<table align="left" width="100%" height="89">
+				<tr>
+					<td align="left" width="20%">				 			   
+						<A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+							<IMG height=70 alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm_sm.jpg" width="208" vspace=5 border=0>
+						</A>   				
+					</td>
+					<td align="left" width="65%">		
+						&nbsp;&nbsp;&nbsp;&nbsp;<B>全文检索</B>&nbsp;&nbsp;&nbsp;&nbsp;
+  		    			<A class=q href="${rc.contextPath}/index.htm" target="_blank">本体搜索</A>
+  		    			<br/>		 			   
+						<INPUT maxLength="100"  size="25" name="searchContent">			 			   
+						<INPUT type="button" value="中医药搜索" onclick="doSubmit('false')">
+				      	<INPUT type="button" value="结果中搜索" onclick="doSubmit('true')">	    				
+					</td>
+					<td align="right" valign="top" width="15%">
+						<a href="$rc.ContextPath/tcmBasicSearch.luc">回首页</a> | <a href="$rc.ContextPath/acegilogout.luc">退出登陆<br></a>&nbsp;
+					</td>		
+				</tr>				
+			</table>
+		</FORM> 
+   </td>
+  </tr>	
+  <tr>
+		<td width="100%" bgcolor="#0080ff" height="1px"></td>
+</tr>	
+  <tr  bgColor="#e5ecf9" width="100%" height="25">
+  	 <td align="left"> 
+  	<img border="0" src="${rc.contextPath}/images/ico_web.gif"> 
+  		<b>DartSearch搜索结果</b> &nbsp;&nbsp;&nbsp;	  
+	 	共${searchResults.resultCount}条结果&nbsp;&nbsp;耗时${stopWatch.totalTimeSeconds}秒 
+		共${searchResults.pageCount}页&nbsp;&nbsp;当前第${searchResults.curPageId}页 
+		&nbsp;&nbsp;&nbsp;<a href="$rc.ContextPath/acegilogout.luc"></a>
+ 	</td>
+  </tr>   
+
+  <tr>
+  	<td>
+  	  <table align="center"  class="std_Table" width="100%">
+  	    <tr valign="top">
+  	      <td width="16%" valign="top">
+		 	<table>
+		 		<tr>
+		 			<td align="left" width="6%"><b>相关信息</b></td>
+		 			<td align="left" width="8%"><b>相关度</b></td> 
+		 		</tr>
+		 		#foreach ($hitOnto in ${searchResults.hitOntoList})
+		 		  <tr>
+		 		  	<td><a href="ontologyInfo.htm?nodeIdentity=${hitOnto.ontoIdentity}& ontoIdentity=${hitOnto.ontoIdentity}">${hitOnto.ontoName}</a></td> 
+		 		  	<td>${hitOnto.scoreStr}</td> 
+		 		  </tr>
+		 		#end
+	 		</table>
+		 	
+		 </td>		 
+		 
+		 <td width="60%" valign="top">		 
+			<table align="left"  class="std_Table" width="660" style="width: 660px; height: 336px;">
+				#foreach ($searchResult in ${searchResults.getPage(${searchResults.curPageId})})								
+				<tr class="Table_linkTitle">
+					<td>
+					  <div>${velocityCount}.
+					  #if (${searchResult.primaryKey}!="0")					
+					   <a href="${rc.contextPath}/secure/tableContentDetail.luc?tableIdentity=${searchResult.tableIdentity}&primaryKey=${searchResult.primaryKey}" target="_blank">${searchResult.title}</a>&nbsp; 
+					   <img border="0" src="${rc.contextPath}/images/vml.gif" onclick="GetDetailInfo('${searchResult.tableIdentity}','${searchResult.primaryKey}',${velocityCount})" alt="显示图形化结果"></img>
+					  </div> 
+					   <div id="detailInfo${velocityCount}"  style="display: none" >
+					  </div>	  
+					  #else
+					     ${searchResult.title}
+					  #end
+	    			 </td>
+				</tr>								
+				<tr class="Table_whiteitem">
+					<td>&nbsp; ${searchResult.highlightShowContent}<!--<br>${searchResult.showContent}--> </td>
+				</tr>
+			
+				<tr class="Table_whiteitem">
+					<td>
+						<table>
+						    <!--
+							<tr>
+								<td class="resultTitle">
+								   #foreach ($ontologyInfo in ${searchResult.ontologyInfos})
+								   	数据来源${velocityCount}:
+								   <a href="ontologyInfo.htm?nodeIdentity=${ontologyInfo.ontoIdentity}" target="_blank">${ontologyInfo.ontoName}</a> &nbsp;&nbsp; 						
+								   #if (${ontologyInfo.childOntologies.size()}>0) 
+								   	  关联数据:
+								   #end
+			  						  #foreach ($childOnto in ${ontologyInfo.childOntologies})
+									   <a href="ontologyInfo.htm?nodeIdentity=${childOnto.identity}" target="_blank">${childOnto.name}</a>&nbsp;&nbsp;
+									   <a href="secondQuery.htm?tableIdentity=${searchResult.tableIdentity}&primaryKey=${searchResult.primaryKey}&parentNodeIdentity=${ontologyInfo.ontoIdentity}&nodeIdentity=${ontologyInfo.ontoIdentity}|${childOnto.identity}" target="_blank">${childOnto.name}</a>&nbsp;&nbsp;
+									  #end
+								   #end							   
+								</td>
+								<td class="resultTitle">
+								  数据表:${searchResult.tableIdentity}&nbsp;&nbsp;	
+								  匹配度: ${searchResult.scoreStr} 
+								</td>
+							</tr>
+							//-->
+
+							<tr>
+								<td class="resultTitle">
+								 <table>
+								 <tr><td>
+								   数据来源:
+								   #foreach ($ontologyInfo in ${searchResult.ontologyInfos})
+								   <a href="tcmSecondLinkSearch.luc?ontoName=${ontologyInfo.ontoName}">${ontologyInfo.ontoName}</a> &nbsp;&nbsp; 						
+								   #end
+								 </td></tr>
+								 <tr><td>  
+								   #set($linkOntoSet = ${helper.getLinkOntologySet($searchResult)})
+								   #if (${linkOntoSet.size()}>0) 
+								   	  关联数据:
+			  						  #foreach ($childOnto in ${linkOntoSet})
+									   <a href="tcmSecondLinkSearch.luc?ontoName=${childOnto.name}">${childOnto.name}</a>&nbsp;&nbsp;
+									  #end
+								   #end	
+								 </td></tr>
+								 </table>  						   
+								</td>
+								
+								<td class="resultTitle" algin="right">
+								 <table>
+								 <tr>
+								 <td>
+								  数据表:${chineseTableName.get(${searchResult.tableIdentity})}
+							
+								 </td>
+								 </tr>
+								 <tr>
+								 <td>
+								 	 匹配度: ${searchResult.scoreStr}
+								 </td>
+								 </tr>
+								 </table>
+								</td>
+							</tr>							
+							
+						</table>
+			        </td>
+				</tr>
+				<tr class="Table_grayitem">
+					<td width="100%" bgcolor="#d7d7d7" height="1px"></td>
+				</tr>	
+			    <tr class="Table_whiteitem">
+					<td>&nbsp;</td>
+				</tr>	
+				#end
+			</table>
+		 </td>
+		<td width="24%" valign="top">
+		
+		 <table bgcolor="#d7d7d7"  border="0" cellpadding="2" cellspacing="1">
+        <tr bgcolor="#FFFFFF">
+		<td>
+		
+		<table>
+		<tr>
+		<td bgcolor="#e5ecf9">
+		<img  src="${rc.contextPath}/images/ico_photo.gif"><strong>相关图片</strong>
+		</td>
+		</tr>
+		   
+     
+     
+     #foreach ($PictureInfo in ${searchResults.pictureList})   
+    	<tr>
+		<td>
+		<a href=${PictureInfo.bigPicLink} target="_blank" >	
+		<img border="1" width="90" height="60" ${PictureInfo.smallPicLink}>
+		</a>&nbsp;&nbsp;
+		<a href=${PictureInfo.originalWebsite} target="_blank">${PictureInfo.picName}</a>      
+    </td>
+    </tr>
+     #end  							
+		
+    
+		
+		</table>
+		
+		</td>
+		</tr>
+		</table>
+		
+		
+		</td>
+						</tr>
+	  </table>
+   </td>
+  </tr>
+  <tr>
+  	<td>
+  		&nbsp;
+	  </td>
+  </tr>
+ <tr>
+  	<td>	
+  		#if (${searchResults.pageCount}>1)
+		<table align="center">
+			<tr>
+   			  	<td align="right">
+				<IMG src="${rc.contextPath}/images/nav_first.gif" border=0><br>&nbsp;
+				#if (!${searchResults.isFirstPage()})	
+   				  <a href="tcmResultNav.luc?pageId=${searchResults.prevPageId}">上一页</a>&nbsp;
+   				#end
+   				</td>   			  	 			  		
+   			  		#foreach ($curPageId in ${searchResults.pageIdList})
+	   			  		<td>  
+	   			  			<IMG src="${rc.contextPath}/images/nav_page.gif" border=0><br>
+							#if (${searchResults.isCurPage($curPageId)})
+								$curPageId
+							#else
+							  <a href="tcmResultNav.luc?pageId=$curPageId">$curPageId</a>&nbsp;
+							#end
+						</td>
+				   #end	  			 
+	  			 <td align="left">
+	 				<IMG src="${rc.contextPath}/images/nav_next.gif" border=0><br>&nbsp;
+					#if (!${searchResults.isLastPage()})
+					  <a href="tcmResultNav.luc?pageId=${searchResults.nextPageId}">下一页</a>&nbsp;
+					#end
+				</td>
+			</tr>							
+		</table>  
+		#end		
+    </td>
+  </tr>
+   <tr>
+  	<td>
+  		&nbsp;
+	  </td>
+  </tr>
+  <tr>
+		<td width="100%" bgcolor="#0080ff" height="1px"></td>
+</tr>
+ <tr  bgColor="#e5ecf9" height="50">
+  	<td valign="middle">  
+		<FORM name="tcmResultSearchForm2" action="tcmResultSearch.luc" method="POST" >	
+			<table align="center" width="90%">
+				<tr>
+					<td align="center" valign="middle">	
+			   
+						<INPUT maxLength="100"  size="25" name="searchContent">			 			   
+						<INPUT type="button" value="中医药搜索" onclick="doSubmit2('false')">
+				      	<INPUT type="button" value="结果中搜索" onclick="doSubmit2('true')"> 				      				
+					</td>	
+						
+				</tr>				
+			</table>
+		</FORM> 
+   </td>
+  </tr>
+   <tr>
+		<td width="100%" bgcolor="#0080ff" height="1px"></td>
+</tr>	  
+  <tr>
+  	<td align="center"><br>@2008 DartGrid<br><br>  
+	  </td>
+  </tr>
+
+ 
+  
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<title>中医药搜索引擎首页</title>
+	</head>
+	<BODY onload=document.tcmSearchForm.queryExperssion.focus()>
+
+		<table width="100%">
+			<tr>
+				<td width="80%">
+					&nbsp;&nbsp;&nbsp; #if($isLogin=="false")
+					<a href="${rc.contextPath}/acegilogin.luc">登陆</a> #else
+					<a
+						href="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${id}">
+						欢迎${username} #if(${runOutFee}=="yes") &nbsp <font color=#ff0000>[帐户余额不足]</font>
+						#end </a> #end &nbsp;&nbsp;&nbsp;
+					<a href="${rc.contextPath}/register.luc">注册</a>
+
+					#if(!($isLogin=="false")) &nbsp;&nbsp;&nbsp;
+					<a href="${rc.contextPath}/acegilogout.luc">退出</a> #end
+
+					#if($isLogin=="admin") &nbsp;&nbsp;&nbsp;
+					<a href="${rc.contextPath}/secure/accountResults.luc?cmd=query">管理</a>
+					#end
+				</td>
+				<td width="20%" align="right">
+					<a href="${rc.contextPath}/userDedicatedLanguage.luc?language=en">English</a>
+					|
+					<a href="${rc.contextPath}/userDedicatedLanguage.luc?language=zht">繁体中文</a>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" colspan="2" bgcolor="#0080ff" height="1px"></td>
+			</tr>
+		</table>
+
+
+
+
+		<FORM name="tcmSearchForm" action="tcmBasicSearch.luc" method="POST">
+			<TABLE cellSpacing=0 cellPadding=0 width="60%" border=0
+				align="center">
+				<TR height="50">
+					<TD noWrap align="center"></TD>
+				</TR>
+				<TR>
+					<TD align="center">
+						<A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> <IMG
+								title="Dart Search Logo" height="110"
+								alt="Welcome to Dart Search"
+								src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0 />
+						</A>
+					</TD>
+				</TR>
+				<TR height="30">
+					<TD align="center">
+						<A class=q href="http://10.214.33.100:8888/DartSearchV3/tcmBasicSearch.luc" target="_blank">全文搜索</A>&nbsp;&nbsp;&nbsp;&nbsp;
+						<A class=q href="http://10.214.33.100:8888/DartQuery/index.htm" target="_blank">本体搜索</A>
+						&nbsp;&nbsp;
+						<a href="tcmAdvanceSearch.luc">高级搜索</a>
+					</TD>
+				</TR>
+				<tr>
+					<td bgcolor="#0000ff" height="1px"></td>
+				</tr>
+				<tr height="40">
+
+					<TD border=1 align="center" bgcolor="#dfddf3" bordercolor="#0000ff">
+						#springBind("simpleSearchForm.queryExperssion")
+						<INPUT size="25" name="${status.expression}" />
+
+						#springBind("simpleSearchForm.ontologyName")
+						<select name="${status.expression}">
+							<option value="empty" #if("$!status.value" =="empty") selected="selected" #end>
+								全选
+							</option>
+
+							#foreach($option in $ontoOptions.keySet())
+							<option value="${option}" #if("$!status.value" =="$option")	selected="selected" #end>
+								${ontoOptions.get($option)}
+							</option>
+							#end
+						</select>
+						<INPUT class=btn_mouseout id=submit2
+							onmouseover="this.className='btn_mouseover'"
+							onmouseout="this.className='btn_mouseout'" type=submit
+							onclick="doSubmit()" value=搜索>
+					</TD>
+				</tr>
+				<tr>
+					<td bgcolor="#0000ff" height="1px"></td>
+				</tr>
+			</TABLE>
+		</FORM>
+		<div id="footer">
+			<table width="100%">
+				<tr>
+					<td width="100%" colspan="2" bgcolor="#0080ff" height="1px"></td>
+				</tr>
+				<TR>
+					<TD width="80%" align="left">
+						<FONT size=-1>&nbsp;@2008 DartGrid | <A
+							href="http://www.cintcm.com/">中医药在线</A> | <A
+							href="http://ccnt.zju.edu.cn/projects/dartgrid/">中医药数据网格</A> | <A
+							href="http://ccnt.zju.edu.cn/projects/dartgrid/">DartGrid</A>
+						</FONT>
+					</TD>
+					<TD width="20%" align="right">
+						<FONT size=-1> <A
+							onclick="h(this,'http://localhost:8080${rc.contextPath}')"
+							href="${rc.contextPath}">设为首页</A> | <A class=nav
+							onclick=addfavorite();return(false)
+							href="http://localhost:8080${rc.contextPath}">收藏本站</A>
+						</FONT> &nbsp;
+					</TD>
+				</TR>
+			</table>
+		</div>
+	</BODY>
+</html>

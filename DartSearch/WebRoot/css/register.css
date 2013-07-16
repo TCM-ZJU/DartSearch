@@ -1,0 +1,93 @@
+a:link, a:active, a:visited {
+ text-decoration: none;
+ color:#000000;
+}
+a:hover {
+ text-decoration: underline;
+ color:#4455aa;
+}
+
+BODY{
+
+font-size: 12px;
+color: #000000;
+font-family: ËÎÌו;
+background-color: #FFFFFF; 
+
+}
+TD{
+font-family: ËÎÌו;
+font-size: 12px;
+line-height: 15px;
+}
+th
+{
+background-image: url('skin/default/bg1.gif');
+background-color: #4455aa;
+color: white;
+font-size: 12px;
+font-weight:bold
+}
+td.TableTitle2
+{
+background-color: #E4E8EF;
+}
+td.TableBody1
+{
+background-color: #FFFFFF;
+}
+td.TableBody2
+{
+background-color: #E4E8EF;
+}
+td.TopDarkNav
+{
+background-image: url('skin/default/topbg.gif');
+}
+td.TopLighNav
+{
+background-image: url('skin/default/bottombg.gif');
+}
+td.TopLighNav1
+{
+background-image: url('skin/default/tabs_m_tile.gif');
+}
+td.TopLighNav2
+{
+background-color:#FFFFFF
+}
+.tableBorder1
+{
+
+border: 1px; 
+background-color: #6595D6;
+}
+.tableBorder2
+{
+width:90%;
+border: 1px; 
+background-color: #DEDEDE;
+}
+
+#TableTitleLink A:link, #TableTitleLink A:visited, #TableTitleLink A:active {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+#TableTitleLink A:hover {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: underline;}
+
+input, select, textarea{
+font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15px;}
+}
+.normalTextSmall 
+{ 
+    font-size : 11px;
+    color : #000000; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a.mainjs
+{
+ font-size: 9pt;
+ line-height: 14pt;
+}

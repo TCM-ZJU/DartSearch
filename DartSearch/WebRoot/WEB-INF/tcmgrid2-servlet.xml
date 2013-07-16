@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for "example" DispatcherServlet.
+  - Heavily depended on web infrastructure, naturally.
+  -->
+
+<beans>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" >
+		<property name="basename"><value>messages</value></property>
+	</bean>
+
+		<!--
+	  - Locale resolution via cookie instead of evaluating the browser locale.
+	  - Locale changes will send a new cookie to the client.
+	  -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+	
+
+	<!--
+	  - Theme resolution via cookie instead of the fixed one named "theme".
+	  - Theme changes will send a new cookie to the client.
+	  -->
+	<bean id="themeResolver" class="org.springframework.web.servlet.theme.CookieThemeResolver"/>
+   
+   <!--  以下是使用Velocity的配置 -->
+   <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath"><value>/velocity/</value></property>
+		<property name="configLocation"><value>/WEB-INF/velocity.properties</value></property>			
+   </bean>
+
+	<!-- ========================= VIEW DEFINITIONS ========================= -->
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="requestContextAttribute"><value>rc</value></property>
+		<property name="prefix"><value>/</value></property>
+		<property name="suffix"><value>.vm</value></property>
+		<property name="exposeSpringMacroHelpers"><value>true</value></property>
+		<property name="contentType"><value>text/html; charset=UTF-8</value></property>
+	</bean>
+
+	<!-- ========================= MAPPING DEFINITIONS ========================= -->
+
+	<!--
+	 - Explicit URL handler mapping instead of default BeanNameUrlHandlerMapping.
+	 -->
+	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="interceptors">
+			<list>			
+			<ref local="multiLinguaInterceptor"/> 
+			</list>
+		</property>		
+		<property name="urlMap">
+			<map>
+				<entry key="/banner.htm"><ref local="bannerController"/></entry>
+				<entry key="/title.htm"><ref local="titleController"/></entry>
+				<entry key="/navigator.htm"><ref local="navigatorController"/></entry>			
+				<entry key="/footer.htm"><ref local="footerController"/></entry>			
+				<entry key="/index.htm"><ref local="indexController"/></entry>	
+				<entry key="/ontologyInfo.htm"><ref local="ontologyInfoController"/></entry>		
+				<entry key="/searchResult.htm"><ref local="searchResultController"/></entry>	
+				<entry key="/dartQueryInfo.htm"><ref local="dartQueryInfoController"/></entry>	
+				<entry key="/conditionClear.htm"><ref local="conditionClearController"/></entry>	
+				<entry key="/searchResultNav.htm"><ref local="searchResultNavController"/></entry>
+				<entry key="/about.htm"><ref local="aboutController"/></entry>
+				<entry key="/help.htm"><ref local="helpController"/></entry>
+				<entry key="/datasource.htm"><ref local="dataSourceController"/></entry>				
+				<!-- <entry key="/metaCategory.htm"><ref local="metaCategoryController"/></entry> //-->
+				<entry key="/secondLinkQuery.htm"><ref local="secondLinkQueryController"/></entry>
+				<entry key="/exclude/sematicViewer.htm"><ref local="sematicViewerController"/></entry>
+				
+				<entry key="/exclude/cnkiQuery.htm"><ref local="CnkiQueryController"/></entry>
+				<entry key="/exclude/cnki.htm"><ref local="CnkiCotroller"/></entry>
+			</map>
+		</property>
+	</bean>
+
+    <bean id="multiLinguaInterceptor" class="edu.zju.tcmsearch.web.interceptor.MultiLinguaInterceptor">
+		<property name="realResolver"><ref local="viewResolver"/></property> 
+		<property name="resolverPrefix" value="/"/>
+		<property name="XMLContext" value="tcmgrid2-servlet.xml"/>
+	</bean>	
+	
+	<bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver"></bean>
+
+	
+	<bean id="bannerController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="banner"/>
+	</bean>
+	
+	<bean id="titleController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="title"/>
+	</bean>
+	
+	<bean id="navigatorController" class="edu.zju.tcmsearch.web.controller.query.NavigatorController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="rootImg" value="images/RDFNode/instancesmall2.gif"/>
+		<property name="leafImg" value="images/RDFNode/instancesmall3.gif"/>
+		<property name="nodeImg" value="images/RDFNode/instancesmall4.gif"/>
+		<property name="css" value="ms-nav"/>
+		<property name="navPage" value="ontologyInfo.htm"/>
+	</bean>	
+	
+	<bean id="footerController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="footer"/>
+	</bean>	
+	
+	<bean id="indexController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="index"/>
+	</bean>	
+	
+	<bean id="aboutController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="about"/>
+	</bean>	
+	
+	<bean id="helpController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="help"/>
+	</bean>		
+	
+	<bean id="ontologyInfoController" class="edu.zju.tcmsearch.web.controller.query.OntologyInfoController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="dartcore/ontologyInfo"/>
+		<property name="successView" value="dartcore/resultList"/>
+		<property name="commandName"><value>searchConditionForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.query.SearchConditionForm</value></property>	
+	</bean>
+	
+	<bean id="searchResultController" class="edu.zju.tcmsearch.web.controller.query.SearchResultController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="queryTemplate" ref="queryTemplate"/>
+		<property name="columnThreshold" value="8"/>
+		<property name="listPageSize" value="30"/>
+		<property name="columnPageSize" value="10"/>
+	</bean>			
+	
+	<bean id="dartQueryInfoController" class="edu.zju.tcmsearch.web.controller.query.DartQueryInfoController">
+		<property name="instanceImg" value="images/RDFNode/instancesmall2.gif"/>
+		<property name="valueImg" value="images/RDFNode/valuesmall4.gif"/>
+		<property name="css" value="ms-vb"/>
+	</bean>
+	
+	<bean id="searchResultNavController" class="edu.zju.tcmsearch.web.controller.query.SearchResultNavController"></bean>
+	
+	<bean id="conditionClearController" class="edu.zju.tcmsearch.web.controller.query.ConditionClearController"/>
+
+	<bean id="dataSourceController" class="edu.zju.tcmsearch.web.controller.query.DataSourceController">
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>
+	</bean>	
+
+	<!--
+	<bean id="metaCategoryController" class="edu.zju.tcmsearch.web.controller.query.MetaCategoryController">
+		<property name="metaCategoryDAO"><ref bean="metaCategoryDAO"/></property> 
+		<property name="expandImg" value="images/treeimg/openfld.gif"/>
+		<property name="encloseImg" value="images/treeimg/clsfld.gif"/>
+		<property name="css" value="ms-nav"/>
+		<property name="navPage" value="index.htm"/>
+		<property name="showAllLink" value="true"/>		
+	</bean>
+    //-->
+	
+    <!-- lucence to ontoQuery 
+	<bean id="secondQueryController" class="edu.zju.tcmsearch.web.controller.query.SecondQueryController">
+		<property name="dbContentRetriever"><ref bean="dbContentRetriever"/></property> 
+		<property name="ontoService"><ref bean="ontoService"/></property> 		
+	</bean>
+	-->
+	
+	<bean id="secondLinkQueryController" class="edu.zju.tcmsearch.web.controller.query.SecondLinkQueryController"/>
+
+	<bean id="sematicViewerController" class="edu.zju.tcmsearch.web.controller.query.SemanticViewerController"/>
+	
+	<bean id="CnkiQueryController" class="edu.zju.tcmsearch.web.controller.cnki.CnkiQueryController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="cnki/cnki"/>
+		<property name="successView" value="cnki/cnki"/>
+		<property name="commandName"><value>DocList</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.controller.cnki.CnkiQueryController$DocumentList</value></property>	
+	</bean>	
+	
+	<bean id="CnkiCotroller" class="edu.zju.tcmsearch.web.controller.cnki.CnkiCotroller"/>
+
+</beans>
+

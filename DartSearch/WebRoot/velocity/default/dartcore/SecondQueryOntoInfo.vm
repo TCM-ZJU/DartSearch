@@ -1,0 +1,20 @@
+    <div class='ms-vb'>
+    <br/><div class='ms-pagetitle' align='center'>查询条件基本信息</div>
+    <!--    
+    <br/><div align='center'  class='ms-GRFontSize'><a href='searchResult.htm'>刷新查询结果</a></div>
+    //-->
+    <br/><div align='center'  class='ms-GRFontSize'><a href='conditionClear.htm'>清除查询条件</a></div><br/>
+    
+    #if ($treeNode.childNodeCount>0)
+	<P  align="center" title="与${treeNode.ontology.name}相关联的概念">继续查询关联概念</P>
+		#foreach ($childNode in ${treeNode.childNodes})
+		&nbsp;&nbsp;
+		<img src="$rc.contextPath/images/RDFNode/instancesmall4.gif"/>
+	    <a href="$rc.contextPath/secondLinkQuery.htm?nodeIdentity=${childNode.getNodeIdentityEncoded()}">${childNode.ontology.name}</a>
+	    </br>
+		#end
+	#else
+	</br>
+	&nbsp;&nbsp;
+	没有相关联的本体
+	#end

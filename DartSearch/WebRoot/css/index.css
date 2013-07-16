@@ -1,0 +1,37 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px/1.5 arial; PADDING-TOP: 0px; HEIGHT: 100%
+}
+HTML {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 12px/1.5 arial; PADDING-TOP: 0px; HEIGHT: 100%
+}
+#container {
+	MIN-HEIGHT: 100%; POSITION: relative
+}
+#content {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 60px; PADDING-TOP: 10px
+}
+#footer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 100%; BOTTOM: 0px; PADDING-TOP: 0px; POSITION: absolute; 
+}
+#footer H1 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: 20px/2 Arial; PADDING-TOP: 0px
+}
+
+A {
+	COLOR: #222222; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 12px
+}
+#top {
+	BORDER-TOP: #e7e7e7 1px solid; FONT-SIZE: 80%; MARGIN: 0px 0px 30px; WIDTH: 100%; BORDER-BOTTOM: #e7e7e7 1px solid; HEIGHT: 26px; BACKGROUND-COLOR: #f6f7f7; TEXT-ALIGN: center
+}
+.btn_mouseout {
+	BORDER-RIGHT: #3266cc 1px solid; PADDING-RIGHT: 2px; PADDING-TOP: 0px;BORDER-TOP: #3266cc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 13px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#E5EBF9); PADDING-BOTTOM: 2px; MARGIN-LEFT: 6px; BORDER-LEFT: #3266cc 1px solid; WIDTH: 80px; CURSOR: hand; COLOR: black; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #3266cc 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 23px
+}
+.btn_mouseover {
+	BORDER-RIGHT: #3266cc 1px solid; PADDING-RIGHT: 2px; PADDING-TOP: 0px;BORDER-TOP: #3266cc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 13px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#5D8CE7); PADDING-BOTTOM: 2px; MARGIN-LEFT: 6px; BORDER-LEFT: #3266cc 1px solid; WIDTH: 80px; CURSOR: hand; COLOR: black; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #3266cc 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 23px
+}
+v\:* { BEHAVIOR: url(#default#VML) }
+
+

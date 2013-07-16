@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>中医药数据审校系统--查询结果查看</title>
+</head>
+<body>
+	<div align="center"  class="ms-vb">查询结果一共有${model.records.size()}条记录</div>
+	<table align="center" class="std_Table">
+		#foreach ($record in ${model.records})
+			
+		<tr class="Table_grayitem">
+			<td class="Table_deepgrayitem">${velocityCount}</td>
+			#foreach($value in $record)
+				<td class="ms-GRFontSize">${value}</td>
+				#if(${velocityCount} == 1)
+				<TD class="ms-GRFontSize">
+					<a href="recordInfo.tmh?id=${value}&nodeIdentity=${model.nodeIdentity}"><img src="$rc.contextPath/images/magnify.gif"/></a>
+				</TD>
+				#end
+			#end
+		</tr>		
+		#end
+	</table>
+</body>
+</html>

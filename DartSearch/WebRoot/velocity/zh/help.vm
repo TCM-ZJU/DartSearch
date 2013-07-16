@@ -1,0 +1,10 @@
+    <p>&nbsp;</p>
+    <p align="center" class="ms-pagetitle">中医药数据网格帮助</p>
+
+	<table width="70%" border="0" align="center" cellpadding="0" cellspacing="0" class="signature">
+			<tr><td align="center"><img src="${rc.contextPath}/images/dart_icon_media.gif"/></td></tr>
+			<tr><td align="center"><a href="${rc.contextPath}/images/help.avi" target="_blank">点击此处查看视频帮助</a></td></tr>
+	</table>						
+    </p>
+  
+				

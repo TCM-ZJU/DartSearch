@@ -1,0 +1,40 @@
+<hmtl>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>User Accessing Records</title>
+</head>
+<body>
+    </br></br>
+    
+    #if(${recordList.size()}==0)
+    <p align="center">No Accessing  Records </p>
+    #else
+    <p align="center">Accessing  Records</p>
+	<table align="center" BORDER="1">
+		<tr >
+            <td align="center">Date</td>
+            <td align="center"> Type</td>
+            <td align="center"> Page</td>
+            <td align="center"> Content</td>
+            <td align="center"> Cost</td>
+        </tr>
+        #foreach ($rec in $recordList)
+        <tr >
+        <td>$rec.time</td>
+        <td>#if($rec.type==1)Full_text Search #elseif($rec.type==2) Ontology DataQuery#end</td>
+        <td>$rec.content</td>
+        <td>$rec.goodsIdentity</td>
+        <td>$rec.fee</td>
+        </tr>
+        #end
+     </table>
+     #end
+     <br/>
+     <div align=center>
+     #if($onself=="no")
+     <a href="${rc.contextPath}/secure/accountResults.luc">Return</a>
+     #elseif($onself=="yes")
+     <a href="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${accId}">Return</a>
+     #end
+     </div>
+</body>

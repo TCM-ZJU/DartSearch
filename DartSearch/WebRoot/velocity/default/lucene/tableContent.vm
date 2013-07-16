@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+</meta>
+<title>中医药搜索引擎数据查看</title>
+</head>
+<script>
+<!--
+function doSubmit(searchInResult){
+  //alert(document.tcmResultSearchForm.searchContent.value);
+  if (document.tcmResultSearchForm.searchContent.value!=""){
+    document.tcmResultSearchForm.action="tcmResultSearch.luc?searchInResult="+searchInResult;
+    document.tcmResultSearchForm.submit();
+  }
+}
+
+//-->
+</script>
+<BODY>
+    <table valign="top" width="100%">
+	    <tr>
+	  	<td>  
+			<FORM name="tcmResultSearchForm" action="tcmResultSearch.luc" method="POST" >	
+				<table align="left" width="90%">
+					<tr>
+						<td align="left" width="10%">				 			   
+							<A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+								<IMG height=55 alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm_sm.jpg" width=150 vspace=12 border=0>
+							</A>   				
+						</td>
+						<td align="left">		
+							&nbsp;&nbsp;&nbsp;&nbsp;<B>全文检索</B>&nbsp;&nbsp;&nbsp;&nbsp;
+	  		    			<A class=q href="${rc.contextPath}/index.htm" target="_blank">本体搜索</A>
+	  		    			<br/>		 			   
+							<INPUT maxLength="100"  size="25" name="searchContent">			 			   
+							<INPUT type="button" value="中医药搜索" onclick="doSubmit('false')">
+					      	<INPUT type="button" value="结果中搜索" onclick="doSubmit('true')">	    				
+						</td>		
+					</tr>				
+				</table>
+			</FORM> 
+	   </td>
+	  </tr>	
+  </table>
+	<P align="center" class="ms-pagetitle">查看表${dbRecData.tableInfo.tableIdentity}数据</P>
+    
+	<table align="center"  class="std_Table" width="90%">
+		#foreach ($fieldValue in ${dbRecData.fieldValueList})			
+		<tr  class="Table_grayitem">
+			<td width="20%">${fieldValue.columnInfo.ontologyName}</td>
+			<td width="80%">${fieldValue.value}</td>
+		</tr>
+		#end
+	</table>
+	<P align="center">
+	  <a href="$rc.ContextPath/tcmBasicSearch.luc">回首页</a>  
+	  <a href="$rc.ContextPath/acegilogout.luc">退出登录</a> 	 
+	</P>
+</body>
+</html>

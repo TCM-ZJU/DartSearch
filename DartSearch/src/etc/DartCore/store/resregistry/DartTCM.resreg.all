@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resregister>
+  <dbResInfo>
+    <dbResQname>
+      <namespace>SUN3500_TCM_ADMIN</namespace>
+      <localpart>http://edu.zju.cn/dart</localpart>
+    </dbResQname>
+    <localDbResType canBeTempDb="true" dbType="oracle">
+      <jdbcUrl> jdbc:oracle:thin:@192.168.200.66:1521:sun3500</jdbcUrl>
+      <jdbcDriver>oracle.jdbc.driver.OracleDriver</jdbcDriver>
+      <jdbcUser>tcm_admin</jdbcUser>
+      <jdbcPwd>35</jdbcPwd>
+    </localDbResType>
+    <tableNameFilter>
+      <regex>TCM_ADMIN(\.)GJJBYW</regex>
+      <regex>TCM_ADMIN(\.)XDFJ</regex>
+      <regex>TCM_ADMIN(\.)ZANGYAO</regex>
+      <regex>TCM_ADMIN(\.)ZYBZ</regex>
+      <regex>TCM_ADMIN(\.)ZYCFBZ</regex>
+      <regex>TCM_ADMIN(\.)ZYYD</regex>
+      <regex>TCM_ADMIN(\.)ZGYD</regex>
+      <regex>TCM_ADMIN(\.)YWBLFY</regex>
+      <regex>TCM_ADMIN(\.)GJYPBZ_HXY</regex>
+      <regex>TCM_ADMIN(\.)ZCY_2005</regex>
+      <regex>TCM_ADMIN(\.)ZHONGGYY</regex>
+      <regex>TCM_ADMIN(\.)GB_ZWMY</regex>
+      <regex>TCM_ADMIN(\.)ZYFJ</regex>
+      <regex>TCM_ADMIN(\.)LZYYPWZN</regex>
+      <regex>TCM_ADMIN(\.)LINCYYXZ</regex>
+      <regex>TCM_ADMIN(\.)HXCF0</regex>
+      <regex>TCM_ADMIN(\.)OTC</regex>
+      <regex>TCM_ADMIN(\.)ZYXYPZ</regex>
+    </tableNameFilter>
+  </dbResInfo>
+  <dbResInfo>
+    <dbResQname>
+      <namespace>SUN3500_WX</namespace>
+      <localpart>http://edu.zju.cn/dart</localpart>
+    </dbResQname>
+    <localDbResType canBeTempDb="true" dbType="oracle">
+      <jdbcUrl> jdbc:oracle:thin:@192.168.200.66:1521:sun3500</jdbcUrl>
+      <jdbcDriver>oracle.jdbc.driver.OracleDriver</jdbcDriver>
+      <jdbcUser>wx</jdbcUser>
+      <jdbcPwd>35</jdbcPwd>
+    </localDbResType>
+    <tableNameFilter>
+      <regex>WX(\.)WX49__83</regex>
+      <regex>WX(\.)WX84__87</regex>
+      <regex>WX(\.)WX88__91</regex>
+      <regex>WX(\.)WX92__94</regex>
+      <regex>WX(\.)WX95__96</regex>
+      <regex>WX(\.)WX97__98</regex>
+      <regex>WX(\.)WX__99</regex>
+      <regex>WX(\.)WX__2000A_35</regex>
+      <regex>WX(\.)WX__2001</regex>
+      <regex>WX(\.)WX__2002</regex>
+      <regex>WX(\.)WX__2003</regex>
+      <regex>WX(\.)WX__2004</regex>
+      <regex>WX(\.)WX__2005</regex>
+    </tableNameFilter>
+  </dbResInfo>
+</resregister>

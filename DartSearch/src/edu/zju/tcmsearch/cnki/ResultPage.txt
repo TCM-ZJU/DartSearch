@@ -1,0 +1,705 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0236)http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46 -->
+<HTML><HEAD><TITLE>跨库检索</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<META content="MSHTML 6.00.2900.2912" name=GENERATOR></HEAD>
+<BODY leftMargin=0 topMargin=0 onload=GetSetFirst()>
+<DIV id=pHintMsg 
+style="LEFT: 200px; CURSOR: move; POSITION: absolute; TOP: 150px; solid: ">
+<TABLE cellSpacing=2 cellPadding=4 width=400 bgColor=#000000 border=0>
+  <TBODY>
+  <TR>
+    <TD align=middle bgColor=#f4f4f4 height=18><B><FONT color=red 
+      size=4>正在检索[全部数据库]，请稍候...</FONT></B></TD></TR></TBODY></TABLE></DIV>
+<SCRIPT language=javascript>
+			//功能：处理数据库导航列表鼠标移动事件
+			function GetSetFirst()
+			{
+				window.parent.execScript('dyniframesize();');
+								
+				var PageNums ='0' ;
+				var MaxPages =Number(PageNums) ;
+				if (MaxPages >=1)
+				{
+					WriteDIV(1);
+					if(MaxPages >1)
+					{
+					document.all("newpage").value ="1" ;
+					}
+				}
+			}
+			
+			function WriteDIV(num)//当前页)
+			{
+				var arr ;
+				var MoreText ="" ;
+				var ListText ="" ;
+				var StrMaxPage ='0' ;
+				var MaxPage =Number(StrMaxPage) ;
+				arr = document.getElementById("ALLContent").value.split(";") ;
+				var CurPage = num ;				
+				if(MaxPage >1)
+				{			
+				var BefoPage = CurPage -1 ;      //  前一页
+				var NextPage = CurPage +1 ;		//  下一页
+				if( CurPage <=1)
+				{
+					CurPage  = 1 ;
+					MoreText +="<Table width =\"100%\">" ;
+					MoreText +="<Tr>";
+					MoreText +="<Td>" ;
+					MoreText +="首页&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText +="上一页&nbsp;&nbsp;&nbsp;&nbsp;" ;
+					MoreText +="<a href='#' onclick=\"WriteDIV(" + NextPage + ")\">下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText +="<a href='#' onclick=\"WriteDIV(" + MaxPage + ")\">末页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText +="<input id=\"newpage\" type=\"text\" onkeyup=\"this.value=this.value.replace(/\\D/gi,'')\" maxlength=4 style=\"Width: 40px;HEIGHT: 19px;font-size: 12px\">/"+MaxPage.toString() ;
+					MoreText +="&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"javascript:checkpage()\" ><img   src=\"images/zhuanye01.gif\" border=0 align=middle ></a>"
+					MoreText +="</td></tr></table>";					
+				}
+				if( CurPage >= MaxPage )
+				{
+					CurPage     = MaxPage ;
+					MoreText    +="<Table width =\"100%\">" ;
+					MoreText    +="<Tr>";
+					MoreText    +="<Td>" ;
+					MoreText    +="<a href='#' onclick=\"WriteDIV(1)\">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText	+="<a href='#' onclick=\"WriteDIV(" + BefoPage + ")\">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;" ;
+					MoreText	+="下一页&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText    +="末页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+					MoreText +="<input id=\"newpage\" type=\"text\" onkeyup=\"this.value=this.value.replace(/\\D/gi,'')\" maxlength=4 style=\"Width: 40px;HEIGHT: 19px;font-size: 12px\">/"+MaxPage.toString();
+					MoreText +="&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"javascript:checkpage()\" ><img   src=\"images/zhuanye01.gif\" border=0 align=middle ></a>"
+					MoreText	+="</td></tr></table>";						
+				}
+				if( CurPage >1 && CurPage < MaxPage)
+				{
+					MoreText    +="<Table width =\"100%\">" ;
+					MoreText    +="<Tr>";
+					MoreText    +="<Td>" ;
+					MoreText    +="<a href='#' onclick=\"WriteDIV(1)\">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText	+="<a href='#' onclick=\"WriteDIV(" + BefoPage + ")\">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;" ;
+					MoreText	+="<a href='#' onclick=\"WriteDIV(" + NextPage + ")\">下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText	+="<a href='#' onclick=\"WriteDIV(" + MaxPage + ")\">末页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+					MoreText	+="<input id=\"newpage\" type=\"text\" onkeyup=\"this.value=this.value.replace(/\\D/gi,'')\" maxlength=4 style=\"Width: 40px;HEIGHT: 19px;font-size: 12px\">/"+MaxPage.toString();
+					MoreText +="&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"javascript:checkpage()\" ><img   src=\"images/zhuanye01.gif\" border=0 align=middle ></a>"
+					MoreText	+="</td></tr></table>";						
+				}						
+				}				
+				var start = (CurPage -1)*9;
+				var end =CurPage * 9 ;
+				if(end > arr.length)
+				{
+					end =arr.length ;
+				}
+				for(var i=start ;i<end ;i++)
+				{
+					var dist = arr[i] ;
+					if( dist == null)	
+					{
+						dist = "";
+					}	
+					var text= dist ;						
+					if(i%3 == 0)	ListText += "<table width =\"100%\" bgcolor=\"#F5F5F5\"><tr>";					
+					ListText += "<td width=\"33%\"><a href='#' onclick=\"SetMainWord('"+dist+"')\">" +text + "</a></td>";
+					if(i%3 == 2)	ListText += "</tr>";		
+				}
+				if(ListText.substring(ListText.length-5,ListText.length) == "</td>")
+				ListText += "</tr></table>";
+				
+				var str ="<table width=\"100%\" bgcolor=\"#E7F3FB\"><tr><td width=\"50%\">";
+				var LabelText = '' ;
+				str += LabelText;
+				str += "</td>" ;
+				str += "<td width=\"50%\" align=\"right\">" ;
+				str += MoreText ;
+				str += "</td></tr><tr width =\"100%\"><td colspan=2 width =\"100%\">";
+				str += ListText ;
+				str += "</td></tr></table>" ;	
+				document.getElementById("div").innerHTML = str;
+				if(MaxPage >1)
+				{
+					document.all("newpage").value =CurPage.toString() ;
+				}								
+			}
+			function checkpage()
+			{
+				var sss= document.all("newpage").value ;
+				if(sss== null)
+				{
+					sss = 1 ;
+				}				
+				var newpage =Number(sss) ;
+				WriteDIV(newpage) ;
+				
+			}
+			function fOnMouseOver(objSrc)
+			{
+				var sBgColor = objSrc.style.backgroundColor;
+				if(sBgColor.toUpperCase() != "#FFFFFF")
+					objSrc.style.backgroundColor = "#A8D8F6";
+			}
+			function fOnMouseOut(objSrc)
+			{
+				var sBgColor = objSrc.style.backgroundColor;
+				if(sBgColor.toUpperCase() == "#A8D8F6")
+					objSrc.style.backgroundColor = "#E9F2F9";
+			}
+			function CheckInput()
+			{
+				if (document.all("advancedvalue1").value.indexOf('<') > -1 || document.all("advancedvalue1").value.indexOf('>') > -1 )
+				{ 
+					alert('您所输入的检索词中含有"<"或者">"符号！');
+					return false;
+				}
+				else
+				{
+					if ( document.all("advancedfield1").value == "主题词"  
+							&& document.all("advancedvalue1").value != ""  
+							&& document.all("mainwordsearchno").value == "#")
+					{
+						var url = "../Chkd_MainWordList.aspx?mainword=" +  escape(document.all("advancedvalue1").value);
+						window.open(url,'','width=300,height=350');
+						return false;
+					}
+					document.all("ID").value = '0';
+					return true;
+				}
+				
+			}
+			
+			function SetMainWord(ItemValue)
+			{
+				//用于填充新的主题词检索词
+				var disValue =ItemValue;
+				parent.document.all("txtBaseSearchValue").value = disValue;	
+				parent.focus();
+				//txtBaseSearchValue
+			}
+		</SCRIPT>
+
+<META content="Microsoft Visual Studio .NET 7.1" name=GENERATOR>
+<META content=C# name=CODE_LANGUAGE>
+<META content=JavaScript name=vs_defaultClientScript>
+<META content=http://schemas.microsoft.com/intellisense/ie5 
+name=vs_targetSchema><LINK href="images/gridcss.css" type=text/css 
+rel=stylesheet><!--"window.parent.execScript('dyniframesize();');"--><!-- 项部banner start --><!-- 项部banner end --><!-- 概览 start-->
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <FORM onsubmit="return CheckInput();" action=cdbBrief.aspx method=post>
+  <TBODY>
+  <TR>
+    <TD class=navibg style="DISPLAY: none" vAlign=top width=191 
+    background=images/kns_25.gif><!-- 导航树 开始 -->
+      <TABLE id=navitree cellSpacing=0 cellPadding=0 width="100%" align=center 
+      border=0>
+        <TBODY>
+        <TR>
+          <TD class=navibg height=2><IMG 
+        src="images/whilte_bg.gif"></TD></TR>
+        <TR>
+          <TD class=navibg vAlign=top><IMG src="images/whilte_bg.gif"> 
+            <SPAN class=datatitle>跨库检索 </SPAN><IMG 
+            src="images/whilte_bg.gif"> </TD></TR>
+        <TR>
+          <TD class=navibg height=2><IMG height=4 
+            src="images/whilte_bg.gif"></TD></TR><!-- blue分隔条start-->
+        <TR>
+          <TD bgColor=#003399 height=6></TD></TR><!-- blue分隔条end -->
+        <TR>
+          <TD class=navibg vAlign=top align=left width=198><BR><IMG 
+            src="images/whilte_bg.gif"> <IMG height=6 
+            src="images/dot2.gif" width=11 align=absMiddle><IMG 
+            src="images/whilte_bg.gif">您所选择的数据库为： <BR><BR><!-- 现有数据库列表start--><SPAN id=currentDatabase>
+            <TABLE cellSpacing=0 cellPadding=0 width="91%" align=center 
+border=0>
+              <TBODY>
+              <TR onmouseover=fOnMouseOver(this) onmouseout=fOnMouseOut(this)>
+                <TD height=23><IMG height=7 
+                  src="images/tu_xiaoshizi.gif" width=8><A 
+                  href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=U&ID=0&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46" 
+                  name=a跨库检索><FONT 
+                color=#0000ff><STRONG>跨库检索</STRONG></FONT></A></TD>
+                <TD align=right><B><SPAN id=tab0><FONT color=orange><IMG 
+                  height=16 src="images/searchdb.gif" 
+                  width=16></FONT></SPAN></B>
+                <TD></TD>
+              <TR onmouseover=fOnMouseOver(this) onmouseout=fOnMouseOut(this)>
+                <TD height=23>&nbsp;&nbsp;<IMG height=7 
+                  src="images/tu_yuanquan.gif" width=8><A 
+                  href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=L&ID=1&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46" 
+                  name=aCHKD期刊全文数据库>CHKD期刊全文数据库</A></TD>
+                <TD align=right><B><SPAN id=tab1><FONT color=orange><IMG 
+                  height=16 src="images/searchdb.gif" 
+                  width=16></FONT></SPAN></B>
+                <TD></TD>
+              <TR onmouseover=fOnMouseOver(this) onmouseout=fOnMouseOut(this)>
+                <TD height=23>&nbsp;&nbsp;<IMG height=7 
+                  src="images/tu_yuanquan.gif" width=8><A 
+                  href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=L&ID=2&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46" 
+                  name=aCHKD博硕士学位论文全文数据库>CHKD博硕士学位论文全文数据库</A></TD>
+                <TD align=right><B><SPAN id=tab2><FONT color=orange><IMG 
+                  height=16 src="images/searchdb.gif" 
+                  width=16></FONT></SPAN></B>
+                <TD></TD>
+              <TR onmouseover=fOnMouseOver(this) onmouseout=fOnMouseOut(this)>
+                <TD height=23>&nbsp;&nbsp;<IMG height=7 
+                  src="images/tu_yuanquan.gif" width=8><A 
+                  href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=L&ID=3&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46" 
+                  name=aCHKD会议论文全文数据库>CHKD会议论文全文数据库</A></TD>
+                <TD align=right><B><SPAN id=tab3><FONT color=orange><IMG 
+                  height=16 src="images/searchdb.gif" 
+                  width=16></FONT></SPAN></B>
+                <TD></TD>
+              <TR onmouseover=fOnMouseOver(this) onmouseout=fOnMouseOut(this)>
+                <TD height=23>&nbsp;&nbsp;<IMG height=7 
+                  src="images/tu_yuanquan.gif" width=8><A 
+                  href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=L&ID=4&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46" 
+                  name=aCHKD报纸全文数据库>CHKD报纸全文数据库</A></TD>
+                <TD align=right><B><SPAN id=tab4><FONT color=orange><IMG 
+                  height=16 src="images/searchdb.gif" 
+                  width=16></FONT></SPAN></B>
+                <TD></TD></TR></TBODY></TABLE><INPUT type=hidden value=0 
+            name=ID><INPUT type=hidden value=46 name=KuaKuID><IFRAME 
+            src="images/cdbFresh.htm" width=0 height=0></IFRAME></SPAN> <!-- 现有数据库列表end -->
+            <P></P></TD></TR></TBODY></TABLE><!-- 导航树结束 --></TD><!-- 分隔符Start-->
+    <TD style="DISPLAY: none" width=10 
+      background=images/kns_24.gif><IMG src="images/kns_24.gif"> 
+
+    <TD><!-- 分隔符End-->
+    <TD vAlign=top align=middle><!-- 修饰图 start-->
+      <TABLE style="DISPLAY: none" cellSpacing=0 cellPadding=0 width="100%" 
+      background=images/kns_19.gif border=0>
+        <TBODY>
+        <TR>
+          <TD width="100%" height=10></TD></TR></TBODY></TABLE><!-- 修饰图 end--><!--searchItem start-->
+      <TABLE style="DISPLAY: none" cellSpacing=1 cellPadding=1 width="100%" 
+      align=center border=0><!-- 分隔线 start -->
+        <TBODY>
+        <TR>
+          <TD background=images/dian.gif height=1></TD></TR><!-- 分隔线 end -->
+        <TR bgColor=#f4f5f6>
+          <TD vAlign=top height=46><SPAN id=searchItem></SPAN></TD></TR><!-- 分隔线 start -->
+        <TR>
+          <TD background=images/dian.gif height=1><FONT 
+          face=宋体></FONT></TD></TR><!-- 分隔线 end --></TBODY></TABLE><!--searchItem end -->
+      <TABLE id=result cellSpacing=1 cellPadding=1 width="100%" border=0><!-- searchResult start--><!--<tr>
+									<td><FONT face="宋体"></FONT></td>
+								</tr>-->
+        <TBODY>
+        <TR>
+          <TD width="100%">
+            <DIV id=div></DIV><INPUT id=MainWcPage type=hidden> </TD></TR>
+        <TR>
+          <TD id=DBName><B><FONT color=#0000ff>【<SPAN 
+            id=curDB>跨库检索</SPAN>】</FONT></B> 检索结果显示如下： <SPAN 
+            id=lblCondition><SPAN id=spnCount 
+            style="DISPLAY: none"></SPAN></SPAN></TD></TR><!--searchResult end --><!--DBGrid start-->
+        <TR>
+          <TD id=DBGrid>
+            <SCRIPT language=JavaScript>
+<!--
+	function OnChangePagenum(pagenum)
+	{
+		return false;
+	}
+//-->
+</SCRIPT>
+
+            <SCRIPT language=JavaScript>
+<!--
+function updateCounter() {
+}
+function numMarked() {
+company = "cnki";
+cookie = new String(getCookie("FileNameM"));
+if ((cookie.substring(0,cookie.indexOf(":")) != company)) {
+return 0;
+}
+a=cookie.split(",");
+			return a.length;
+}
+function checkAll(form) {
+e = document.forms(0).elements;
+for (i=0; i<e.length; i++) {
+if (e[i].type == "checkbox"  && e[i].name == "FileNameM") {
+if (numMarked()==50) {
+alert("不能超过50个,若要重新选择,请按清除按钮,再进行选取操作");
+break;
+} else {
+if (e[i].checked==false) {
+addToCookie(e[i].value);
+e[i].checked=true;
+}
+}
+}
+}
+updateCounter();
+}
+function clearAllMarks(form) {
+e = document.forms(0).elements;
+for (i=0; i<e.length; i++) {
+if (e[i].type == "checkbox" &&  e[i].name == "FileNameM" ) {
+e[i].checked=false;
+}
+}
+setCookie("FileNameM", "cnki:");
+updateCounter();
+}
+		function getCookie(Name) {
+var search = Name + "=";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search);
+if (offset != -1) {
+offset += search.length;
+end = document.cookie.indexOf(";", offset);
+if (end == -1)
+end = document.cookie.length;
+return unescape(document.cookie.substring(offset, end));
+}
+}
+}
+function setCookie(name, value) {
+document.cookie = name + "=" + escape(value)+";"+"path=/";
+}
+function addToCookie(v) {
+company = "cnki";
+cookie= new String(getCookie("FileNameM"));
+if ((cookie.length > 0) && ((cookie.substring(0,cookie.indexOf(':')) == company))){
+if (cookie.length - 1 == cookie.indexOf(':')) {
+setCookie("FileNameM", cookie+v);
+} else {
+			       setCookie("FileNameM", cookie+","+v);
+			   }
+} else {
+setCookie("FileNameM", company + ":" + v);
+}
+}
+function removeFromCookie(v) {
+var company = "cnki";
+var cookie = new String(getCookie("FileNameM"));
+if (cookie.substring(0,cookie.indexOf(':')) == company) {
+cookie = cookie.substring(cookie.indexOf(':')+1,cookie.length);
+re = new RegExp("^"+v+"$");
+cookie=cookie.replace(re, "");
+re = new RegExp("^"+v+",");
+cookie=cookie.replace(re, "");
+re = new RegExp(","+v+"$");
+cookie=cookie.replace(re, "");
+re = new RegExp(","+v+",");
+cookie=cookie.replace(re, ",");
+} else { cookie = ""; }
+if (cookie!="") { setCookie("FileNameM", company + ":" + cookie);}
+else { setCookie("FileNameM", company + ":");}
+}
+function checkMark(c) {
+if (c.checked == true) {
+if (numMarked()==50) {
+alert("不能超过50个,若要重新选择,请按清除按钮,再进行选取操作");
+c.checked=false;
+} else {
+addToCookie(c.value);
+}
+}else {
+removeFromCookie(c.value);
+}
+updateCounter();
+}
+//-->
+</SCRIPT>
+
+            <SCRIPT language=javascript>
+function windowOpener(loadpos)
+{
+alert('请先选取左边的数据库,然后进行存盘操作');}
+</SCRIPT>
+
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center 
+            border=0>
+              <TBODY>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=left colSpan=5>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width="70%">
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                              border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 
+                                height=30>共有记录5171818条&nbsp;</TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30></TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30>上页</TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30><A 
+                                href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?curpage=2&RecordsPerPage=10&QueryID=46&ID=&turnpage=1&advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=U&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46">下页</A></TD></TD></TR></TBODY></TABLE></TD>
+                            <TD width="30%">
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                              border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #ffffff; WORD-WRAP: break-word" 
+                                vAlign=center align=middle bgColor=#f4f5f6 
+                                height=30>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE style="TABLE-LAYOUT: fixed" cellSpacing=1 cellPadding=3 
+                  width="100%" align=center bgColor=#6595d6 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD 
+                      style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                      align=middle width="12%" bgColor=#a8d8f6>序号</TD>
+                      <TD 
+                      style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                      align=middle width="38%" bgColor=#a8d8f6>题名</TD>
+                      <TD 
+                      style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                      align=middle width="15%" bgColor=#a8d8f6>来源</TD>
+                      <TD 
+                      style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                      align=middle width="8%" bgColor=#a8d8f6>年期</TD>
+                      <TD 
+                      style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                      align=middle width="17%" bgColor=#a8d8f6>来源数据库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXV2BHSrokb45kWMZ1ZztyTlxGNBpmMv9WcH9iWmFmZaZVarQWWv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=1" 
+                        target=_blank>1</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=1" 
+                        target=_blank>糖皮质激素对记忆巩固和提取的影响</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国科学院研究生院学报</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXV00Wd6pkb45kWMZ1ZztyTlxGNBpmMv9WcH9iWmFmZaZVarQWWv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=2" 
+                        target=_blank>2</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=2" 
+                        target=_blank>药物高通量亲合色谱筛选中定性定量模型的建立</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>中国科学院研究生院学报</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVohVQJpkNohkezUVSodlS0MET2YHaNZFb1MjWmFmZaZVarQWWv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=3" 
+                        target=_blank>3</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=3" 
+                        target=_blank>牛磺酸对细胞的保护功能</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>首都师范大学学报(自然科学版)</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVwEnUG9SORtUW4FFTlxEOaFkUmFWVvVHe2EHOKxGZyg2SJdmYv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=4" 
+                        target=_blank>4</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=4" 
+                        target=_blank>罗匹尼罗中间体4-(2-苯甲酰氧乙基)-3-氯-1,3-二氢-2H-吲哚啉-2-酮的合成</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>化学工业与工程</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVEBnbTJWeRtUW4FFTlxEOaFkUmFWVvVHe2EHOKxGZyg2SJdmYv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=5" 
+                        target=_blank>5</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=5" 
+                        target=_blank>新一代心血管药物氨氯地平的合成</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>化学工业与工程</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVTFlV2lXVWRFaCN2NLx2VwE3NvZlQilWcOZGOKxGZyg2SJdmYv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=6" 
+                        target=_blank>6</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=6" 
+                        target=_blank>壳聚糖及其衍生物基因载体的研究进展</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>高分子通报</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVDdTUXZFcLBDRilWNoNXelVWMDRmR1A1cKRjWmFmZaZVarQWWv0Uc38Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=7" 
+                        target=_blank>7</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=7" 
+                        target=_blank>计算机数显辅助摆位技术在放疗中的应用</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>大众科技</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVplmQzA3TqJEashnTXxUO1UnbWR2Na5kbMV3VLRmdsJUWZFGeXFFO08Wbap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=8" 
+                        target=_blank>8</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=8" 
+                        target=_blank>感冒虽分寒热 用药也不必愁</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>百姓</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVvJ3QVhEc30mVitkdytSSrMTQF9WVN5kYwpXVvNVQTR0avN3Qml2cxhUaap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=9" 
+                        target=_blank>9</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=9" 
+                        target=_blank>电泳迁移率变动分析化学发光法检测T细胞NF-κB活性</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>蚌埠医学院学报</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      bgColor=#ffffff>中国医院知识仓库期刊全文库</TD></TR>
+                    <TR>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/download.aspx?filename=s5EWQRWSrRDWB52Yxo2U0E2RtxGWIJ3aXlmU4k1cihUTtlFSvQEVxFTOK9GbHpmVuZGT5RkRHVXSrFXVyJ3QVhEc30mVitkdytSSrMTQF9WVN5kYwpXVvNVQTR0avN3Qml2cxhUaap2TollbPVEaMVkbERmYvdWM&tablename=CHKJ2006" 
+                        target=_blank><IMG 
+                        src="images/login_download.gif" border=0></A><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=10" 
+                        target=_blank>10</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe><A 
+                        href="http://192.168.200.80/kns50/scdbsearch/scdetail.aspx?QueryID=46&CurRec=10" 
+                        target=_blank>肿瘤坏死因子-α转换酶基因金属蛋白酶区的克隆及表达</A></TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>蚌埠医学院学报</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left bgColor=#f1f7fe>2006/01</TD>
+                      <TD style="FONT-SIZE: 9pt; WORD-WRAP: break-word" 
+                      align=left 
+                  bgColor=#f1f7fe>中国医院知识仓库期刊全文库</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" align=center 
+                  border=0>
+                    <TBODY>
+                    <TR>
+                      <TD align=left colSpan=5>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width="70%">
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                              border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 
+                                height=30>共有记录5171818条&nbsp;</TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30></TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30>上页</TD>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #000000; WORD-WRAP: break-word" 
+                                vAlign=center bgColor=#f4f5f6 height=30><A 
+                                href="http://192.168.200.80/kns50/scdbsearch/cdbbrief.aspx?curpage=2&RecordsPerPage=10&QueryID=46&ID=&turnpage=1&advancedvalue1=&advancedfield1=&secondorderby=&searchInResult=&tpagemode=U&Fields=%e4%b8%bb%e9%a2%98%e8%af%8d%7c%e5%85%b3%e9%94%ae%e8%af%8d%7c%e9%a2%98%e5%90%8d%7c%e4%bd%9c%e8%80%85%7c%e6%9d%a5%e6%ba%90%7c%e6%91%98%e8%a6%81%7c%e5%85%a8%e6%96%87%7c&KuaKuID=46">下页</A></TD></TD></TR></TBODY></TABLE></TD>
+                            <TD width="30%">
+                              <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                              border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                style="FONT-SIZE: 9pt; COLOR: #ffffff; WORD-WRAP: break-word" 
+                                vAlign=center align=middle bgColor=#f4f5f6 
+                                height=30>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><INPUT 
+            id=tpagemode type=hidden value=U name=tpagemode> </TD></TR>
+        <TR>
+          <TD><INPUT id=AllContent 
+      type=hidden></TD></TR><!--DBGrid end --></TBODY></TABLE></TD></TR></FORM></TBODY></TABLE><!-- 概览 end --><!-- 版权信息 开始 --><!-- 版权信息 结束 -->
+<SCRIPT>
+window.parent.document.all("KuaKuID").value = document.all("KuaKuID").value;
+//alert(window.parent.document.all("KuaKuID").value);
+		</SCRIPT>
+</BODY></HTML>

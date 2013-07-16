@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"></meta>
+<title>中医药搜索引擎首页</title>
+</head>
+<script>
+<!--
+function doSubmit(searchInResult){
+  if (document.tcmSearchForm.queryExperssion.value!=""){
+    document.tcmSearchForm.submit();
+  }
+}
+
+
+function h(obj,url){
+   obj.style.behavior='url(#default#homepage)';
+   obj.setHomePage(url);
+}
+
+//-->
+</script>
+<BODY text="#000000" vLink="#551a8b" aLink="#ff0000" link="#0000cc" bgColor="#ffffff" topMargin="0" marginheight="3" onload=document.tcmSearchForm.queryExperssion.focus()>
+</br>
+&nbsp;&nbsp;&nbsp;
+#if($isLogin=="false")
+<a href="${rc.contextPath}/acegilogin.luc">登陆</a>
+#else
+<a href="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${id}">欢迎${username}</a>
+#end
+
+&nbsp;&nbsp;&nbsp;
+<a href="${rc.contextPath}/register.luc">注册</a>
+
+#if(!($isLogin=="false"))
+&nbsp;&nbsp;&nbsp;
+<a href="${rc.contextPath}/acegilogout.luc">退出</a>
+#end
+
+#if($isLogin=="admin")
+&nbsp;&nbsp;&nbsp;
+<a href="${rc.contextPath}/secure/accountResults.luc?cmd=query">管理</a>
+#end
+
+
+<FORM name="tcmSearchForm" action="tcmBasicSearch.luc" method="POST" >	  
+<TABLE cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+  <TR height="50">
+    <TD noWrap align="center"></TD>
+  </TR>
+  <TR>
+    <TD align="center">
+		 <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+		 	<IMG title="Dart Search Logo" height="110" alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0/>
+		 </A>   
+    </TD>
+  </TR>
+  <TR height="50">
+  	<TD align="center">
+  			<B>全文检索</B>&nbsp;&nbsp;&nbsp;&nbsp;
+  		    <A class=q href="${rc.contextPath}/index.htm" target="_blank">本体搜索</A>
+  		    &nbsp;&nbsp;
+  		    <a href="tcmAdvanceSearch.luc">高级搜索</a>
+	 </TD>
+  </TR>
+  <tr height="50">
+	<TD align="center">
+  		 #springBind("simpleSearchForm.queryExperssion")
+		<INPUT maxLength="100"  size="35" name="${status.expression}"/>
+
+		#springBind("simpleSearchForm.ontologyName")
+		<select name="${status.expression}">
+			<option value="empty"
+				#if("$!status.value" == "empty")
+					selected="selected"
+				#end>
+				全选
+			</option>
+
+			#foreach($option in $ontoOptions.keySet())
+				<option value="${option}"
+				#if("$!status.value" == "$option")
+					selected="selected"
+				#end>
+				${ontoOptions.get($option)}
+				</option>
+			#end
+		</select>
+		
+		
+	 </TD>  	
+  </tr>
+ <TR>
+    <TD align="center"><INPUT type="button" value="中医药搜索"  onclick="doSubmit()"></TD>
+  </TR>  
+ <TR height=30>
+    <TD noWrap align="center"></TD>
+  </TR>
+ <TR>
+    <TD noWrap align="center">
+		<FONT size=-1><A href="http://www.cintcm.com/">中医药在线</A> - 
+		<A href="http://ccnt.zju.edu.cn/projects/dartgrid/">中医药数据网格</A> - <B>
+		<A href="http://ccnt.zju.edu.cn/projects/dartgrid/">DartGrid</A></FONT>
+   </TD>
+  </TR>
+ <TR>
+    <TD align="center">
+        <br/><A  onclick="h(this,'http://localhost:8080${rc.contextPath}')"   href="${rc.contextPath}"><FONT size=-1>将 DartSearch 设为首页!</FONT></A>
+    </TD>
+  </TR>
+ <TR height=50>
+    <TD noWrap align="center"><FONT size=-1><B>@2005 DartGrid</B></FONT></TD>
+  </TR>     
+     
+ </TABLE> 
+ </FORM>
+</BODY>
+</html>

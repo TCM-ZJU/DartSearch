@@ -1,0 +1,58 @@
+<script language="javascript">
+function doSubmit(index){
+ node = document.getElementById('DocIndex');
+ index = index - 1;
+ node.value = index;
+ 
+ formNode = document.getElementById('docForm');
+ formNode.submit();
+}
+</script>
+<form action='${rc.contextPath}/exclude/cnkiQuery.htm' method='POST' id='docForm'>
+<input type=hidden name='DocIndex' id='DocIndex' value='0'/>
+</form>
+
+#if(${DocList.getDocs().size()}>0)
+<table border=1 align="center">
+<th>
+<tr>
+   <td  bgcolor=#f1f7fe align=center valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      序号 
+   </td>
+   <td  bgcolor=#f1f7fe align=center valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      文献标题
+   </td>
+</tr>
+</th>
+#foreach($doc in ${DocList.getDocs()})
+#if(${velocityCount}%2==0)
+<tr>
+   <td  bgcolor=#f1f7fe align=left valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      <a href="#" onclick='doSubmit(${velocityCount})'"><image border=0  src=${rc.contextPath}/images/cnki_caj.gif /></a>
+      ${velocityCount}  
+   </td>
+   <td  bgcolor=#f1f7fe align=left valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      <a href="#" onclick='doSubmit(${velocityCount})'">${doc.getTitle()}</a>
+   </td>
+</tr>
+#else
+<tr>
+   <td  bgcolor=#ffffff align=left valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      <a href="#" onclick='doSubmit(${velocityCount})'"><image border=0  src=${rc.contextPath}/images/cnki_caj.gif /></a>
+      ${velocityCount}  
+   </td>
+   <td  bgcolor=#ffffff align=left valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+      <a href="#" onclick='doSubmit(${velocityCount})'">${doc.getTitle()}</a>
+   </td>
+</tr>
+#end
+#end
+
+#else
+<table border=0 align="center">
+<th  bgcolor=#ffffff align=left valign=center STYLE="word-wrap: break-word  ;font-size:9pt ;Color:#000000">
+暂时没有相关文献
+</th>
+</table>
+#end
+</table>

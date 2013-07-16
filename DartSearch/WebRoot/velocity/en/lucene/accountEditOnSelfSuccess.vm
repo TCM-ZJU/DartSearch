@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <body text="#000000" vLink="#551a8b" aLink="#ff0000" link="#0000cc" bgColor="#ffffff" topMargin="3" marginheight="3">
+   
+      <table cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+      	<TR height="50">
+           <TD noWrap align="center"></TD>
+        </TR>
+      
+      	<TR>
+           <TD align="center">
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+		 	     <IMG title="Dart Search Logo" height="110" alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0/>
+		      </A>   
+           </TD>
+        </TR>
+        <tr>
+        <td>
+        </br>
+        <td>
+        </tr>
+        <TR height="25">
+          #if($ErrMsg =="ERR_SESSION_TIME_OUT")
+          <TD align="center">
+          <a href="${rc.contextPath}/index.jsp">Return</a>
+          </TD>          
+          #else
+          <TD align="center">
+          <a href="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${accountId}">Return</a>
+          </TD>
+          #end
+        </TR>
+        <TR height="40">
+	       <TD align="center">
+                #if($ErrMsg == "ERR_NONE")	            
+	            <tr>
+	            	<td align="center"><H2>User account information edit successfully.</H2></td>   
+                </tr>
+                #else 
+	            <tr>
+	            	<td align="center"><H2>$ErrMsg</H2></td>   
+                </tr>                
+                #end 
+        </TD>
+        
+        <TR>
+           <TD noWrap align="center">
+		    <FONT size=-1><A href="http://www.cintcm.com/">www.cintcm.com </A> - 
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> TcmGrid</A> - <B>
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> DartGrid</A></FONT>
+           </TD>
+        </TR>
+        <TR>
+           <TD align="center">
+           <br/><A  onclick="h(this,'http://localhost:8080${rc.contextPath}')"   href="${rc.contextPath}"><FONT size=-1>Set  DartSearch as HomePage!</FONT></A>
+           </TD>
+        </TR>
+        <TR height=50>
+           <TD noWrap align="center"><FONT size=-1><B>@2005 DartGrid</B></FONT></TD>
+        </TR>     
+      </table>
+
+  
+
+  </body>
+</html>

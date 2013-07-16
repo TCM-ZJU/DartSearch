@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+
+<project name="TcmSearch" basedir="." default="">
+    <property file="build.properties"/>
+	<path id="all-libs">
+		<fileset dir="${weblib.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	<path id="dartie-libs">
+		<fileset dir="${dartie.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="dist-libs">
+		<fileset dir="${dist.dir}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	
+	
+	<path id="web-classes">
+		<pathelement location="WEB-INF/classes"/>
+	</path>
+	
+
+	<target name="clean" description="Clean output dirs (build, weblib, dist)">
+		<delete dir="${build.dir}"/>
+		<delete dir="${dist.dir}"/>
+		<delete dir="${dartie.dir}/dartie"/>
+	</target>
+	
+	
+	<target name="compile" depends="clean" description="Compile main source tree java files into class files">
+		<mkdir dir="${build.dir}"/>
+		<javac encoding="${javac.encoding}" destdir="${build.dir}" source="1.5" target="1.5" debug="true" deprecation="false" optimize="false" failonerror="true">
+				<src path="${src.dir};${dartie_src.dir}"/>
+				<classpath refid="all-libs"/>
+		</javac>
+
+		<copy todir="${build.dir}" preservelastmodified="true">
+			<fileset dir="${src.dir}">
+				<include name="*.xml"/>
+				<include name="*.properties"/>				
+			</fileset>
+		</copy>		
+		
+    	<copy todir="${build.dir}" preservelastmodified="true">
+			<fileset dir="${springcfg.dir}">
+				<include name="*.xml"/>
+			</fileset>
+		</copy>		
+	</target>
+	
+
+	<target name="build" depends="clean,compile" description="generate jar files">		
+		<mkdir dir="${dist.dir}"/>
+		<jar jarfile="${dist.dir}/${name}.jar" compress="true" basedir="${build.dir}"/>
+	</target>
+
+
+	<target name="warfile" depends="clean" description="Build the web application archive">
+
+		<mkdir dir="${dist.dir}"/>
+		
+        <copy todir="dartie/dartie">
+			<fileset dir="${war.dir}/WEB-INF/classes/dartie"/>
+		</copy>
+		
+		<java classname="dartie.xml.XmlGeneration">
+			<classpath refid="all-libs"/>
+			<classpath refid="web-classes"/>
+			<classpath refid="dartie-libs"/>
+		</java>
+		
+		<war warfile="${dist.dir}/${name}.war" basedir="${war.dir}" webxml="${war.dir}/WEB-INF/web.xml">
+			<include name="*.jsp"/>
+			<include name="*.properties"/>
+			<include name="*.xml"/>
+			<include name="*.bat"/>
+			<include name="images/**"/>
+			<include name="JS/**"/>
+			<include name="css/**"/>
+			<include name="decorators/**"/>
+			<include name="velocity/**"/>
+			<include name="dartie/**"/>
+			<include name="WEB-INF/**"/>
+			<include name="WEB-INF/classes/**"/>
+			
+			<exclude name="WEB-INF/web.xml"/>
+			<exclude name="WEB-INF/lib/servlet-api.jar"/>
+			<exclude name="src/**"/>
+			<exclude name="dartie_src/**"/>
+			<exclude name="work/**"/>
+			<exclude name="**/.*"/>
+		</war>
+	</target>
+
+    <target name="all" depends="clean,build,warfile" description="Clean,build,warfile"/>	
+
+	<target name="javadoc" description="Generate framework Javadocs.">
+		<mkdir dir="${javadocs.dir}"/>
+		<javadoc sourcepath="${src.dir}" destdir="${javadocs.dir}" windowtitle="Spring Framework"
+				additionalparam="-breakiterator" source="1.5" access="package" author="true" version="true" use="true" defaultexcludes="true">
+			<doctitle><![CDATA[<h1>Dart Query</h1>]]></doctitle>
+			<bottom><![CDATA[<i>Copyright (C) 2005-2006 The DartGrid Project.</i>]]></bottom>
+			<classpath refid="all-libs"/>
+			<packageset dir="${src.dir}">
+				<include name="edu/zju/**"/>
+			</packageset>		
+		</javadoc>
+	</target>
+
+	<target name="buildIndex">
+		<echo>building an index</echo>
+		<java maxmemory="1024M" classname="edu.zju.tcmsearch.lucene.index.IndexBuilderMain" fork="true" classpath="WEB-INF/classes">
+			<classpath refid="all-libs"/>
+			<classpath refid="web-classes"/>
+		</java>
+	</target>		
+	
+	<target name="InitDB">
+		<echo>Creating Administrator 2 Account(s) </echo>
+		<echo>username  : TCM , password: TCM</echo>		
+		<echo>ip account: 127.0.0.1</echo>		
+		<java maxmemory="1024M" classname="edu.zju.tcmsearch.secure.service.InitDataBase" fork="true" classpath="WEB-INF/classes">
+			<classpath refid="all-libs"/>
+			<classpath refid="web-classes"/>
+		</java>
+	</target>	
+</project>

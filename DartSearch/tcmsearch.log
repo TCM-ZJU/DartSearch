@@ -1,0 +1,590 @@
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+93   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+156  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+172  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+203  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+234  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+265  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+297  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+328  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+359  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+390  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+406  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+437  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+468  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+500  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+531  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+797  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+875  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+15297 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+15328 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+109  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+1469 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1469 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+156  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+187  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+218  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+234  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+265  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+296  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+312  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+343  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+375  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+406  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+437  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+453  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+484  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+718  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+812  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+14250 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+14281 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+343  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+343  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+156  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+172  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+1812 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1812 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+156  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+172  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+1813 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1813 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+36109 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+36141 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+54922 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+54922 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+110  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+188  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+219  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+250  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+297  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+344  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+391  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+438  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+469  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+500  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+547  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+594  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+610  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+657  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+703  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+735  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+766  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+797  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+1063 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1157 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+15922 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+15953 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+62   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+62   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+641  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+641  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+69047 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+69063 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+94000 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+94016 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+93   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+171  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+203  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+234  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+265  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+296  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+328  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+359  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+375  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+406  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+437  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+468  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+500  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+531  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+562  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+593  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+625  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.NULL_RELATION_SPACE is not available!!
+875  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+953  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+14250 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+14281 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCYJ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCZL is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_SYJC is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_DZZ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZJLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_AMLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_QTLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_XYLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YFLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YW is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YWCF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JB is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZH is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCZZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JTZLGC is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_CXLCYJDX is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZHZZGL is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZLGCDXGL is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JBZHGL is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JBZZGL is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_XW is not available!!
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+406  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+406  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCYJ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+31   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+438  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+438  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+125  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+125  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+4969 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+4969 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+109  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+125  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+1562 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1562 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+110  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+1063 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1063 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+78   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+78   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+859  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+859  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+172  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+203  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+234  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+266  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+281  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+313  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+344  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+375  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+406  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+438  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+453  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+500  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+516  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+547  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+578  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+609  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+641  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+656  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+906  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1000 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+22844 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+22875 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+47   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+47   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+11906 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+11906 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+46   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+78   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+93   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+9593 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+9593 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_DZZ is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+62   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+10781 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+10781 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCYJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZL is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_SYJC is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZJLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_AMLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_QTLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XYLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YFLF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YW is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_YWCF is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JB is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZH is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_LCZZ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JTZLGC is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_CXLCYJDX is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZHZZGL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_ZLGCDXGL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZHGL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_JBZZGL is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.TCM.JMZ_XW is not available!!
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+109  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+12844 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+12844 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation Space {http://dart.zju.edu.cn}myRes.TCM is not available!!
+109  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+156  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+766  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+766  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCYJ is not available!!
+94   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCZL is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_SYJC is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_DZZ is not available!!
+172  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZJLF is not available!!
+204  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_AMLF is not available!!
+235  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_QTLF is not available!!
+266  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_XYLF is not available!!
+297  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YFLF is not available!!
+329  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YW is not available!!
+360  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_YWCF is not available!!
+391  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JB is not available!!
+422  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZH is not available!!
+454  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_LCZZ is not available!!
+485  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JTZLGC is not available!!
+516  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_CXLCYJDX is not available!!
+547  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZHZZGL is not available!!
+563  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_ZLGCDXGL is not available!!
+610  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JBZHGL is not available!!
+625  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_JBZZGL is not available!!
+672  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {http://dart.zju.edu.cn}myRes.JMZ_XW is not available!!
+922  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+1016 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+14829 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+14860 [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled

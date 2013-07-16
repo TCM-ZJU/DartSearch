@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="${rc.contextPath}/JS/VirtualTable.js"> </script>
+<script type="text/javascript">
+<!--
+var OntoVT=null;
+var LinkVT=null;
+var DataVT=null;
+
+var AlreadySubmitted=false;
+
+function createVT(tableName,num)
+{
+ var node = document.getElementById(tableName);
+ if(node==null) 
+    return null;
+ var VT= new VirtualTable(node,num);
+ VT.init();
+ return VT;
+}
+
+function nextPage(VT)
+{
+ if(VT==null || VT.rowsInPage==VT.rows.length)
+   return ;
+ VT.turnNextPage();
+ VT.showCurrentPage();
+}
+
+function InitPage()
+{
+  OntoVT=createVT("OntoPropertiesTable",9);
+  LinkVT=createVT("LinkOntoTable",5);
+  DataVT=createVT("DataSourceTable",5);
+}
+
+function doSubmit(childNodeId)
+{
+  if(AlreadySubmitted==true){
+        return;
+  }      
+  else {
+      AlreadySubmitted=true;
+      var node = document.getElementById("submitArea");
+      node.innerHTML="</BR><img src='$rc.contextPath/images/I001_Run.gif' width=400 title='please wait......'/>";
+  }
+      
+  document.ontologyInfoForm.action="ontologyInfo.htm?childNodeId="+childNodeId;
+  //document.ontologyInfoForm.action="http://127.0.0.1:8888/TESTDWR/request";
+  if(OntoVT!=null)
+     OntoVT.submit(document.ontologyInfoForm,false);
+  if(LinkVT!=null)
+     LinkVT.submit(document.ontologyInfoForm,false);
+  /* 取消数据来源选择
+  if(DataVT!=null)
+     DataVT.submit(document.ontologyInfoForm,false);
+  */
+  document.ontologyInfoForm.submit();  
+}
+
+var bool=true;
+function setCheck(node)
+{
+ node.checked=bool;
+ node.defaultChecked=bool;
+}
+function selectAllOntoVT(bo) 
+{ 
+ bool=bo;
+ if(OntoVT!=null)
+   OntoVT.promotion("searchConditions[1].fieldSelect",setCheck);
+} 
+
+//document.onload=set();
+
+function set()
+{
+ setTimeout("InitPage()",1000);
+}
+//-->
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Ontology information</title>
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">General information about ontology :<FONT COLOR =#0000FF>${treeNode.ontology.name}</FONT></P>
+	<form action="ontologyInfo.htm" method="POST" name="ontologyInfoForm"> 
+	<input type="hidden" name="nodeIdentity" value="${treeNode.nodeIdentity}"/>
+	#if ($treeNode.valueNodeCount>0)
+	<P align="center">Properties  	 
+	<input type="checkbox" onclick="selectAllOntoVT(this.checked)">Select all<br> </P>
+	<table align="center" class="std_Table" id="OntoPropertiesTable">
+	  <thead>
+		<tr class="Table_item">
+			<td align="center">Index</td>
+			<td align="center">Property</td>
+			<td align="center">Select it</td> 
+			<td align="center" >Condition</td>
+			<td align="center">Value</td>
+		</tr>
+	  </thead>
+	  
+	  <tbody>
+		#foreach ($valueProperty in ${searchConditionForm.getValueProperitesFiltered()})
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td><img src="$rc.contextPath/images/RDFNode/valuesmall4.gif"/>${valueProperty.name}</td>
+			<td align="center">
+				 #springBind("searchConditionForm.searchConditions[${velocityCount}].fieldSelect") 
+ 				 <!-- 
+ 				 <input type="hidden" name="${status.expression}"/>
+				 //-->
+ 				
+	        	 <input type="checkbox" name="${status.expression}" value="true" 
+				        #if($!{status.value}=="true") checked="checked" #end />
+			</td>		
+			
+			<td>
+				 #springFormSingleSelect("searchConditionForm.searchConditions[${velocityCount}].operator" $operators "")
+			</td>
+			
+			<td>
+				 #springBind("searchConditionForm.searchConditions[${velocityCount}].fieldValue") 
+	             <input type="text" name="${status.expression}" value="$!{status.value}" />
+			</td>
+		</tr>
+		#end
+	  </tbody>
+	  #if ($treeNode.valueNodeCount>9)
+	  <TFOOT>
+        <TR class=Table_grayitem>
+          <TD colSpan=5> 
+		  <DIV onmouseover="this.style.cursor='hand'" onclick="nextPage(OntoVT);" align=right><FONT color=#0000ff>Next page</FONT> &nbsp;</DIV>
+		  </TD>
+		</TR>
+	  </TFOOT>
+	  #end	  
+	</table>
+	#end
+	
+	<P align="center">
+	<div id="submitArea" align="center">
+	<TABLE cellSpacing="0" cellPadding="1" border="0"  width="80" align="center">
+	            <TR>
+				<TD onmouseover="this.style.cursor='hand'" onclick="doSubmit('')" align="center">
+					<img src="$rc.contextPath/images/I001_submit_en.GIF" />
+				</TD>
+				<TD>&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+				<TD onmouseover="this.style.cursor='hand'" onclick="doSubmit('${treeNode.nodeIdentity}')" align="center">
+					<img src="$rc.contextPath/images/I001_add_en.GIF""/>
+				</TD>				
+				</TR>				
+	</TABLE>
+	</div>
+	</P>
+	</BR>
+	</BR>
+	
+	
+    #if ($treeNode.childNodeCount>0)
+	<P  align="center" >Related Ontology</P>
+	<table align="center" class="std_Table" id="LinkOntoTable">
+	  <thead>
+		<tr class="Table_item">
+			<td align="center">Index</td>
+			<td align="center">Ontology Name</td>
+			<td align="center">Into it</td>
+		</tr>
+	  </thead>
+      <tbody>	  
+		#foreach ($childNode in ${treeNode.childNodes})
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>		
+			<td><img src="$rc.contextPath/images/RDFNode/instancesmall2.gif"/>${childNode.ontology.name}</td>
+			<td align="center">
+				 <a href="javascript:doSubmit('${childNode.nodeIdentity}')"><img src="$rc.contextPath/images/gosearch.gif" border="0"/></a>
+		    </td>
+		</tr>
+		#end
+	  </tbody>
+      #if ($treeNode.childNodeCount>5)	  	
+	  <TFOOT>
+        <TR class=Table_grayitem>
+          <TD colSpan=3> 
+		  <DIV onmouseover="this.style.cursor='hand'" onclick="nextPage(LinkVT);" align=right><FONT color=#0000ff> Next page</FONT> &nbsp;</DIV>
+		  </TD>
+		</TR>
+	  </TFOOT>	
+	  #end	  
+	</table>
+	#end
+
+
+
+   <script>
+   document.onload=InitPage();
+   </script>	
+</body>
+</html>  

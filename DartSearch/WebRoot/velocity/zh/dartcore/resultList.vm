@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>中医药数据库网格系统--查询结果查看</title>
+
+<script type='text/javascript' src='$rc.contextPath/dwr/interface/DwrSession.js'></script>
+<script type='text/javascript' src='$rc.contextPath/dwr/engine.js'></script>
+<script type="text/javascript">
+<!--
+var lastRowSelected=null;
+var curRowNode;
+function CBackFun( not_care )
+{
+ if(lastRowSelected!=null)
+    lastRowSelected.className="Table_grayitem";
+    
+ curNode.className="Table_HighItem";
+ lastRowSelected=curNode;  
+}
+
+function selectRow(rowNumber, rowNode)
+{
+ curNode=rowNode;
+    
+ DwrSession.putString(null,"SearchResult_RowNo",rowNumber);
+ DwrSession.putString(CBackFun,"SearchResult_PageNo",$pageNo);
+}
+//-->
+</script>
+
+<script language="javascript">
+function openURL(url)
+{
+  openWin(url,300,300)
+}
+</script>
+</head>
+
+<body>
+	<br/>
+	<div class="ms-pagetitle" align="center">中医药数据库网格查询结果</div>
+	<br/>
+	<div align="center"  class="ms-vb">共查到${queryResult.resultCount}条记录 &nbsp; 
+	   #if ($queryResult.isMultiPage())
+  	     共${queryResult.pageList.maxPage}页 &nbsp; 当前第${pageNo}页 每页显示${queryResult.pageList.pageSize}条
+	   #end
+	</div><br/>
+	<div align="center" class="ms-vb"><a href="searchResultNav.htm?style=column&pageNo=1">以分栏方式显示结果</a>
+    <a href="javascript:return false;" onclick="javascript:window.open('${rc.contextPath}/exclude/sematicViewer.htm');">语义浏览结果</a>	
+    </div><br/>	
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb">
+	    #if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.minPage}">第一页</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}">上一页</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}">下一页</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.maxPage}">最后一页</a>
+		#end
+		</div><br/>
+	#end
+	
+	<table align="center" class="std_Table" width="98%">
+		<tr class="Table_item"> 
+		 	<td>序号</td>
+		#foreach ($columnInfo in ${queryResult.columnInfos})			
+			<td>$!columnInfo.ontoName</td>	
+		#end
+	   </tr>
+	   #foreach ($resultData in ${queryResult.pageList.getPage($pageNo)})	
+		#if ($velocityCount % 2 == 0) 
+		<tr class="Table_grayitem" onclick='selectRow($velocityCount,this)'>
+		#else 
+		<tr class="Table_grayitem" onclick='selectRow($velocityCount,this)'> 
+		#end  
+			<td>$velocityCount</td>
+			#foreach ($columnInfo in ${queryResult.columnInfos})
+			   #if(${columnInfo.ontoName.equals("临床研究名称")})			
+			     <td>
+                    <a href="#" onclick="openURL('${rc.contextPath}/exclude/cnkiQuery.htm?FieldValue=${GB2Big5.URLEncode(${resultData.getData($columnInfo.columnName)})}')">
+			        $!resultData.getData($columnInfo.columnName) 
+			        <image border=0  src=/TcmSearch/images/cnki_caj.gif />
+			        </a>
+			     </td>
+ 			   #else
+ 			     <td>$!resultData.getData($columnInfo.columnName)</td>	
+ 			   #end   			     
+			#end
+		</tr>
+		#end	
+	</table>	
+	<br/>
+	#if ($queryResult.isMultiPage())
+		<div align="center" class="ms-vb" class="ms-vb">
+		#if (!$queryResult.pageList.isFirstPage($pageNo))
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.minPage}">第一页</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getPrevPageNo($pageNo)}">上一页</a>
+		#end
+		#if (!$queryResult.pageList.isLastPage($pageNo))	
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.getNextPageNo($pageNo)}">下一页</a>
+			<a href="searchResultNav.htm?style=list&pageNo=${queryResult.pageList.maxPage}">最后一页</a>
+		#end
+		</div><br/><br/>
+	#end
+	
+	<br/>	
+	<table align="center" class="std_Table">
+	  <tr class="Table_grayitem">	
+          <td title="您可以看到这些结果是从哪些数据源中查到的"> 查看数据来源 </td>
+          <td> <a href='$rc.contextPath/datasource.htm?style=list&pageNo=$pageNo'/><img border='0' src='images/gosearch.gif' border="0"/></a> </td>		
+      </tr>  
+	</table>
+	</br> 
+</body>
+
+
+</html>  

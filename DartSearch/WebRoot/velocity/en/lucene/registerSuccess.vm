@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <body text="#000000" vLink="#551a8b" aLink="#ff0000" link="#0000cc" bgColor="#ffffff" topMargin="3" marginheight="3">
+   
+      <table cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+      	<TR height="50">
+           <TD noWrap align="center"></TD>
+        </TR>
+      
+      	<TR>
+           <TD align="center">
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+		 	     <IMG title="Dart Search Logo" height="110" alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0/>
+		      </A>   
+           </TD>
+        </TR>
+        <tr>
+        <td>
+        </br>
+        <td>
+        </tr>
+        <TR height="20">
+          <TD align="center">
+          <a href="${rc.contextPath}/tcmBasicSearch.luc">Index</a>
+          #if(!($ErrMsg =="ERR_NONE"))
+          &nbsp;&nbsp;
+          <a href="${rc.contextPath}/register.luc"> Register again</a>
+          #end
+          </TD>
+        </TR>
+        <TR height="50">
+	       <TD align="center">
+	            #if($ErrMsg == "ERR_DUPLICATED_ACCOUNT")
+	            <tr>
+	            	<td align="center"><H2>Failed to register：the UserName you inputed is already exist</H2></td>   
+                </tr> 
+                #elseif($ErrMsg == "ERR_NONE")	            
+	            <tr>
+	            	<td align="center"><H2>Register successfully!</H2></td>   
+                </tr>
+                #else 
+	            <tr>
+	            	<td align="center"><H2>$ErrMsg</H2></td>   
+                </tr>                
+                #end 
+        </TD>
+        
+        <TR>
+           <TD noWrap align="center">
+		    <FONT size=-1><A href="http://www.cintcm.com/">cintcm</A> - 
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> TcmGrid</A> - <B>
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> DartGrid</A></FONT>
+           </TD>
+        </TR>
+        <TR>
+           <TD align="center">
+           <br/><A  onclick="h(this,'http://localhost:8080${rc.contextPath}')"   href="${rc.contextPath}"><FONT size=-1>set DartSearch as homepage</FONT></A>
+           </TD>
+        </TR>
+        <TR height=50>
+           <TD noWrap align="center"><FONT size=-1><B>@2005 DartGrid</B></FONT></TD>
+        </TR>     
+      </table>
+
+  
+
+  </body>
+</html>

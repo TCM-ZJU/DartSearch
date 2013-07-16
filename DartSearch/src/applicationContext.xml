@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:luceneConfig.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages"/>
+	</bean>	
+	
+	<bean id="queryTemplate" class="edu.zju.tcmsearch.query.service.QueryTemplate">
+	</bean>
+	
+	<bean id="ontoService" class="edu.zju.tcmsearch.common.service.impl.OntoServiceImpl" init-method="initialize">
+		<property name="lazyLoad" value="false"/>
+		<property name="metaCategoryDAO" ref="metaCategoryDAO"/>
+		<property name="excludeOntos">
+			<list>
+				<value>DartClass</value>
+				<value>ValueNode</value>
+				<value>DBTypeNode</value>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="ontoCategoryService" class="edu.zju.tcmsearch.common.service.impl.OntoCategoryServiceImpl">
+		<property name="metaCategoryDAO" ref="metaCategoryDAO"/>
+	</bean>
+	
+	
+    <bean id="applicationContextHolder" class="edu.zju.tcmsearch.common.ApplicationContextHolder"/>
+
+	<bean id="ontologyThemes" class="edu.zju.tcmsearch.common.domain.OntologyThemesFromDB">
+		<property name="metaCategoryDAO"><ref bean="metaCategoryDAO"/></property>
+	</bean>	
+	
+	<bean id="tableNameLocalization" class="edu.zju.tcmsearch.secure.TableNameLocalization" init-method="init" destroy-method="close">
+		<property name="tableNameLocalDAO" ref="tableNameLocalDAO"/>
+		<property name="country" value="CHINESE"/>
+		<property name="ontoService" ref="ontoService"/>
+	</bean>
+
+<!-- delete by zhm temporarily
+	<bean id="dartOntologySorter" class="edu.zju.tcmsearch.query.service.impl.DartOntologySorter" init-method="init">
+		<property name="ontologySequenceDAO" ref="ontologySequenceDAO"/>
+    </bean>
+  -->	
+	<!--  <bean id="tcmLvsService" class="edu.zju.tcmsearch.tcmlvs.TcmLvsService" init-method="initialize"/> -->
+</beans>

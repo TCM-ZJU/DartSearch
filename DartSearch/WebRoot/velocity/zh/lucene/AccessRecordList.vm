@@ -1,0 +1,40 @@
+<hmtl>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>用户访问记录</title>
+</head>
+<body>
+    </br></br>
+    
+    #if(${recordList.size()}==0)
+    <p align="center">暂时没有访问记录</p>
+    #else
+    <p align="center">访 问 记 录</p>
+	<table align="center" BORDER="1">
+		<tr >
+            <td align="center">日期</td>
+            <td align="center">类型</td>
+            <td align="center">页面</td>
+            <td align="center">内容</td>
+            <td align="center">费用</td>
+        </tr>
+        #foreach ($rec in $recordList)
+        <tr >
+        <td>$rec.time</td>
+        <td>#if($rec.type==1)全文搜索#elseif($rec.type==2)本体查询#end</td>
+        <td>$rec.content</td>
+        <td>$rec.goodsIdentity</td>
+        <td>$rec.fee</td>
+        </tr>
+        #end
+     </table>
+     #end
+     <br/>
+     <div align=center>
+     #if($onself=="no")
+     <a href="${rc.contextPath}/secure/accountResults.luc">返回</a>
+     #elseif($onself=="yes")
+     <a href="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${accId}">返回</a>
+     #end
+     </div>
+</body>

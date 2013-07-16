@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<script>
+<!--
+function doSubmit(){
+  document.ontoClassifyForm.submit();
+}
+//-->
+</script>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Ontology Classify</title>
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">Ontology classifying  information</P>
+	<form action="ontoClassify.cla" method="POST" name="ontoClassifyForm"> 
+	<input type="hidden" name="level" value="${level}"/>
+	<input type="hidden" name="metaCategoryId" value="${metaCategoryId}"/>
+	<P align="center">Ontology List:${ontoClassifyForm.length} items together</P>
+	<P align="center">Current page belongs to the Category of $!{metaCategoryData.dname}</P>
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+			<td align="center">Index</td>
+			<td align="center">Ontology name</td>
+			<td align="center">Ontology URI</td>
+			<td align="center">Included it</td>
+		</tr>
+		#foreach ($ontoClassifyInfo in ${ontoClassifyForm.ontoClassifyInfos})
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td>${ontoClassifyInfo.dartOntology.name}</td>
+			<td>${ontoClassifyInfo.dartOntology.URI}</td>
+			<td align="center">
+				#springBind("ontoClassifyForm.ontoClassifyInfos[${ontoClassifyInfo.position}].ontoSelect") 
+	        	 <input type="checkbox" name="${status.expression}" value="true" 
+	        	   #if($!{status.value}=="true") checked="checked" #end >
+			</td>
+		</tr>
+		#end
+	</table>
+ 
+	<P>
+	<TABLE cellSpacing="0" cellPadding="1" border="0" class="ms-toolbar" width="80" align="center">
+				<TR onmouseover="this.style.cursor='hand'" onclick="doSubmit('')" align="center">
+					<TD class="ms-GRFontSize"><img src="$rc.contextPath/images/magnify.gif"/></TD>
+					<td class="ms-GRFontSize"> Save </td>
+				</TR>
+	</TABLE>
+	</form>
+	<br/>
+</body>
+</html>  

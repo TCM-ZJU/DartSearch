@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+				<value>classpath:luceneConfig.properties</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="AccountDAO" class="edu.zju.tcmsearch.dao.impl.secure.AccountDAO">
+		<property name="dataSource"><ref bean="acegiDataSource"/></property>
+	</bean>	
+	
+	<bean id="acegiDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${acegi.jdbc.driverClassName}</value></property>
+		<property name="url"><value>${acegi.jdbc.url}</value></property>
+		<property name="username"><value>${acegi.jdbc.username}</value></property>
+		<property name="password"><value>${acegi.jdbc.password}</value></property>		
+	</bean>	
+</beans>

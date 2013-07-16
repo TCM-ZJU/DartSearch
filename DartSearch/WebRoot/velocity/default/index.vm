@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<script type='text/javascript' src='$rc.contextPath/dwr/interface/DwrSession.js'></script>
+<script type='text/javascript' src='$rc.contextPath/dwr/engine.js'></script>
+<script>
+function setChinsesCharacter(isSimple)
+{
+ if(isSimple)
+   DwrSession.putString(null,"J_CHARACTER_TYPE","SIMPLE_CHINESE");
+ else
+   DwrSession.putString(null,"J_CHARACTER_TYPE","TRADITIONAL_CHINESE");
+}
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>中医药数据网格首页</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.style2 {
+	font-size: 30px;
+	color: #FF9900;
+	font-weight: bold;
+}
+.style4 {color: #3366FF}
+-->
+</style>
+</head>
+<body>
+   <table width="100%"  border="0">
+      <tr>
+        <td width="65%" align="center" class="ms-pagetitle"><p align="right" class="style1 style2"><span class="style4">欢迎光临中医药数据网格</span></td>
+        <td width="6%" align="center" class="ms-pagetitle"><div align="left"><span class="style1 style2"><img src="${rc.contextPath}/images/faqicon_subscribe.gif" width="27" height="25"></span></div></td>
+        <td width="19%" align="center" class="ms-pagetitle">&nbsp;</td>
+        <!--
+        <td width="10%" align="center" ><a href="${rc.contextPath}/index.htm" onclick="setChinsesCharacter(false); ">繁体中文页面</a></td>
+        -->
+      </tr>
+      <tr>
+      	<td colspan="3"><img src="${rc.contextPath}/images/faqicon_homepage.gif" width="22" height="22">中医药科学数据网格是当前世界上最大的中医药科学数据共享平台。
+      	当前已包含了由30多家中医药院校及科研院所的300多名科研人员开发的数
+十个中医药科学数据库。
+	<p>
+	中医药数据网格建立在<a href="http://ccnt.zju.edu.cn/projects/dartgrid/">DartGrid语义网格平台</a>之上。
+	DartGrid使用<a href="#grid">网格技术</a>和<a href="#semweb">语义技术</a>来跨越数据库之间的物理界限和逻辑界限，依托本体论
+，使数据能够在更高的层次上进行共享。 
+	</p>
+
+<p><img src="${rc.contextPath}/images/faqicon_find.gif" width="27" height="28"><a name="grid">网格技术简介</a></p>
+简单地讲，网格是把整个互联网整合成一台巨大的超级计算机，实现计算资源、存储资源、数据资源、信息资源、知识资源、专家资源的全面
+
+共享。当然，我们也可以构造地区性的网格、企事业内部网格、局域网网格、甚至家庭网格和个人网格。网格的根本
+
+特征并不一定是它的规模，而是资源共享，消除了资源孤岛。如同蚂蚁搬山，网格技术理念将会使原来只有极少部门使用的超大功能处理的计
+
+算机变得更普通，而且充分利用世界上的闲置电脑资源，提升计算机的处理能力，体现集体力量办大事的功效；其次作为网格部落的一部分还
+
+可以共享其他人的信息资源，利用网格这个整体的超大计算能力来解决问题。
+<p>
+<img src="${rc.contextPath}/images/faqicon_further.gif" width="11" height="21">DartGrid语义网格平台使用网格技术来共享各种资源，跨越数据的物理界限。
+</p>
+<p><img src="${rc.contextPath}/images/faqicon_general.gif" width="17" height="22">参考资源:</p>
+<UL>
+	<LI><a href="http://www.chinagrid.net">中国网格信息中转站</a>
+	<LI><a href="http://www.ggf.org">GGF全球论坛</a>
+	<LI><a href="http://www.globus.org">Globus联盟</a>
+</UL>
+
+<p><img src="${rc.contextPath}/images/faqicon_find.gif" width="27" height="28"><a name="semweb">语义技术简介</a></p>
+语义网并非独立的另一个Web，而是现在的Web的一个延伸。在其中，有结构化的信息集合以及一套推理规则，据此进行自动推理，
+因而整个互联网就成了一个结构严谨的知识库。语义网将结构赋予网页上有意义的内容。在这样的环境下，漫游于各个页面之间的
+软件代理就能容易地为用户完成一些复杂的任务了，继而在提供给人们阅读文档的同时，还提供可自动处理数据和信息等功能。将
+语义网融入现在Web结构的初步努力已经在进行中了。
+<p>
+<img src="${rc.contextPath}/images/faqicon_further.gif" width="11" height="21">DartGrid语义网格平台通过提取数据的语义信息来集成异质异构的数据库，跨越数据的逻辑界限。
+</p>
+<p><img src="${rc.contextPath}/images/faqicon_general.gif" width="17" height="22">参考资源:</p>
+<UL>
+	<LI><a href="http://www.w3c.org">World Wide Web Consortium</a>
+	<LI><a href="http://w3china.org">中国万维网联盟(W3CHINA)</a>
+	<LI><a href="http://www.ryerson.ca/~dgrimsha/courses/cps720_02/resources/Scientific%20American%20The%20Semantic%20Web.htm">
+		The Semantic Web (by Tim Berners-Lee, James Hendler and Ora Lassila)
+		</a>
+
+</UL>
+      	</td>
+      </tr>
+    </table>
+</body>
+</html>    

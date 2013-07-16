@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>User Register</title>
+<link href="css/register.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY>
+
+
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder2" width="80%" >
+<tr><td height=25 valign=middle>
+<img src="${rc.contextPath}/images/dws.gif" align=absmiddle width=48>→ 
+User Register<</a> → input user information<a name=top></a>
+</td></td>
+</table>
+
+<form name="registerForm" action="register.luc" method="post">
+<table width=80% cellpadding=3 cellspacing=1 align=center class="tableBorder1">
+<TBODY> 
+<TR align=middle> 
+<Th colSpan=2 height=24>new user register</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>TrueName</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact_name")
+<INPUT maxLength="10" size=30 name="${status.expression}" >&nbsp;&nbsp</td>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>Gender</B>：<BR>Please input gender</font></TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.sex")
+<INPUT type=radio CHECKED value=1 name="${status.expression}">Male &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value=0 name="${status.expression}">Female</font></TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Contact</B>：<BR>Please input phone number or post address</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact")
+<INPUT maxLength="30" size=30 name="${status.expression}">
+</TD>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>LoginType</B>：<BR>Please select login type</font></TD>
+<TD width=60%  class="TableBody1">
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_USERPASSWORD" name="${status.expression}" onclick=showAccount()>ID &nbsp;&nbsp;&nbsp;&nbsp; 
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_IP" name="${status.expression}" onclick=showIp()>IP Address</font></TD>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>ChargeType</B>：<BR>Please select charge type</font></TD>
+<TD width=60%  class="TableBody1"> 
+ #springBind("account.chargeType")
+<INPUT type=radio value="CHARGE_TYPE_ONMONTH" name="${status.expression}" onclick=showMonth()>On month &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value="CHARGE_TYPE_ONFLOW" name="${status.expression}" onclick=showFlow()>On Flow</font></TD>
+</TR>
+
+</tbody>
+</table>
+
+
+ <table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=account style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>UserName</B>：<BR>Must started with a letter</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.username")
+<INPUT maxLength="10" size=30 name="${status.expression}" />
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Password (6 Characters at least)</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.password")
+<INPUT type=password maxLength=16 size=30 name="${status.expression}" id="passOne"/>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Affirm Password</B>：</TD>
+<TD class="TableBody1"> 
+<INPUT type=password maxLength=16 size=30 id="passTwo"/>
+</TD>
+</TR>
+</TBODY>
+</table>
+
+ <table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1"  id=ip style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>IP Address</B>：<BR></TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.IPAddress")
+<INPUT maxLength="30" size=30 name="${status.expression}"/ >
+</TD>
+</TR>
+<TD width=40% class="TableBody1"><B>SubNet mask</B>：<BR></TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.mask")
+<INPUT maxLength="30" size=30 name="${status.expression}" value="255.255.255.255"/ >
+</TD>
+</TR>
+</TBODY>
+</table>
+
+
+ <table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=month style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>Total month</B>：</TD>
+<TD class="TableBody1"> 
+ #springBind("account.totalDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value=0>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Start Date</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.startDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${today}">
+</TD>
+</TR>
+</TBODY>
+</table>
+
+ <table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=flow style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>Total Flow</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.totalFlow")
+<INPUT maxLength="10" size=30 name="${status.expression}" value=0>
+</TD>
+</TR>
+</TBODY>
+</table>
+
+
+<table cellpadding=0 cellspacing=0 border=0 width=97% align=center>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr align=center>
+<td width=50% ><input type=submit value="Register" name=Submit onclick="return isValidPass()">&nbsp;&nbsp<input type=reset value="Clear" name=Submit2></td>
+</tr></table>
+
+</form>
+
+<script>
+function showIp(){
+
+   
+	document.getElementById("ip").style.display = "";
+   
+	document.getElementById("account").style.display = "none";
+         
+}
+
+function showAccount(){
+
+   
+	document.getElementById("account").style.display = "";
+   
+	document.getElementById("ip").style.display = "none";
+         
+}
+
+function showMonth(){
+
+    document.getElementById("month").style.display = "";
+   
+	document.getElementById("flow").style.display = "none";
+}
+
+function showFlow(){
+
+    document.getElementById("month").style.display = "none";
+   
+    document.getElementById("flow").style.display = "";
+}
+
+function isValidPass()
+{
+ var pass1 = document.registerForm.passOne.value;
+ var pass2 = document.registerForm.passTwo.value;
+ if(pass1.match(pass2)){
+    if(pass1.length<6){
+      alert("Please make sure the password is at least 6 Characters");
+      return false;
+    }
+    return true;
+ }
+ else
+ {
+   alert("The affirm password are not the same with the first one");
+   return false;
+ }     
+}
+
+</script>
+</BODY>
+</HTML>
+

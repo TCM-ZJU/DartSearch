@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resregister>
+  <dbResInfo>
+    <dbResQname>
+      <namespace>SUN3500_TCM_ADMIN</namespace>
+      <localpart>http://edu.zju.cn/dart</localpart>
+    </dbResQname>
+    <localDbResType canBeTempDb="true" dbType="oracle">
+      <jdbcUrl> jdbc:oracle:thin:@192.168.200.66:1521:sun3500</jdbcUrl>
+      <jdbcDriver>oracle.jdbc.driver.OracleDriver</jdbcDriver>
+      <jdbcUser>tcm_admin</jdbcUser>
+      <jdbcPwd>35</jdbcPwd>
+    </localDbResType>
+    <tableNameFilter>    
+      <regex>TCM_ADMIN(\.)ZANGYAO</regex>   
+    </tableNameFilter>
+  </dbResInfo>  
+</resregister>

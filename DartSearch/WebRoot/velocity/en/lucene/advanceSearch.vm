@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"></meta>
+<title>TCMGRID Index Page</title>
+</head>
+<script>
+<!--
+function doSubmit(searchInResult){
+  if (document.tcmSearchForm.queryExperssion.value!=""){
+    document.tcmSearchForm.submit();
+  }
+}
+
+
+function h(obj,url){
+   obj.style.behavior='url(#default#homepage)';
+   obj.setHomePage(url);
+}
+
+function showDiv(div_id)
+{
+ hideOther(div_id);
+ var nd = document.getElementById(div_id);
+ //alert(att(nd));
+ nd.style.display = '';
+ nd.style.backgroundColor= '#CCFFCC';
+}
+
+function hideOther(thisDiv)
+{
+ for(var i=1; i<=$ontoThemeList.size(); i++)
+ {
+  var str = "CT_"+i;
+  if(thisDiv== str)
+     continue;
+  var nd = document.getElementById(str);
+  nd.style.display = "none";
+ }
+}
+
+function selectChild(isChecked,pid,nChild)
+{
+ //$velocityCount starts from 1 NOT 0 
+ for(var i=1; i<=nChild; i++)
+ {
+  var cid = "CT_"+pid+"_"+i;
+  var nd = document.getElementById(cid);
+  nd.checked = isChecked;
+ }
+}
+
+function att(node)
+{
+  if(node==null)
+     return "object is null";
+  else if(node.attributes==null)
+     return "object attributes[] is null";
+	 
+  var str="";
+  for(var i=0;i<node.attributes.length;i++)
+   if(node.attributes[i].name.indexOf("on")==-1)
+     str+= node.attributes[i].name+":"+node.attributes[i].value+"\t";
+  return str;   
+}
+
+function chi(node)
+{
+  if(node==null)
+     return "object is null";
+  else if(node.childNodes==null)
+     return "object childNodes[] is null";
+	 
+  var str="";
+  for(var i=0;i<node.childNodes.length;i++)
+    str+="+"+node.childNodes[i].nodeName+"\t";
+  return str;	
+}
+
+//-->
+</script>
+<BODY text="#000000" vLink="#551a8b" aLink="#ff0000" link="#0000cc" bgColor="#ffffff" topMargin="3" marginheight="3" onload=document.tcmSearchForm.queryExperssion.focus()>
+</br>
+&nbsp;&nbsp;&nbsp;
+<a href="acegilogin.luc">Login</a>
+&nbsp;&nbsp;&nbsp;
+<a href="register.luc">Register</a>
+&nbsp;&nbsp;&nbsp;
+<a href="accountResults.luc">Management</a>
+
+<FORM name="tcmSearchForm" action="tcmAdvanceSearch.luc" method="POST" >	  
+<TABLE cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+  <TR height="50">
+    <TD noWrap align="center"></TD>
+  </TR>
+  <TR>
+    <TD align="center">
+		 <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+		 	<IMG title="Dart Search Logo" height="110" alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0/>
+		 </A>   
+    </TD>
+  </TR>
+  <TR height="50">
+  	<TD align="center">
+  			<A class=q href="${rc.contextPath}/tcmBasicSearch.luc">BasicSearch</A>&nbsp;&nbsp;&nbsp;&nbsp;
+  		    <A class=q href="${rc.contextPath}/index.htm" target="_blank"> OntologySearch</A>
+	 </TD>
+  </TR>
+  <tr height="50">
+	<TD align="center">
+	 <table>
+	  <tr>
+	  	<td align="left">
+		  value:
+		</td>
+		<td align="left">
+	  		 #springBind("advanceSearchForm.queryExperssion")
+			<INPUT maxLength="100"  size="35" name="${status.expression}"/>
+			&nbsp;
+			<INPUT type="button" value="DartSearch"  onclick="doSubmit()">
+		</td>
+	  </tr>	
+     </table>
+      
+      
+      
+      
+      <table>
+	   <tr> 
+	   	    <td align="left">
+		    Category:
+		    </td>
+		    
+		    <td align="left">
+		    <div onBlur="hideOther('')">
+            <table border = 1 >
+            <tr>
+		    #springBind("advanceSearchForm.themeName")
+			#foreach($ontoTheme in $ontoThemeList)
+				#set($fatherID = $velocityCount)			
+				<td width=20 valign="top" align="center">	
+				<input type="checkbox" value="${ontoTheme.name}" name="${status.expression}"  onMouseOver="showDiv('CT_$velocityCount')" onClick="selectChild(this.checked,$fatherID,${ontoTheme.child.size()})">
+				<div id='CT_${velocityCount}' style="position:absolute; left= -14px; top=100px; z-index:3; layer-background-color: #CC0000; border: 1px none #000000;  display:none" onMouseOver="showDiv('CT_$velocityCount')" >
+				<table width=100>
+				#foreach($childTheme in ${ontoTheme.child})
+				 <tr>
+				 <td>
+				 <input type="checkbox" value="${childTheme.name}" name="${status.expression}" id='CT_${fatherID}_${velocityCount}'>
+				 </td>
+				 <td>
+				 ${childTheme.name}
+				 </td>
+				 </tr>
+ 				#end
+ 				</table>
+ 				</div>
+				<a onMouseOver="showDiv('CT_$velocityCount')">${ontoTheme.name}</a>
+				 				
+ 				</td>
+			#end
+			</tr>
+			</table>
+			</div>
+			</td>
+	    </tr>
+	  </table>
+	  
+	  
+	 </TD>  	
+  </tr>
+ <!--
+ <TR>
+    <TD align="center"><INPUT type="button" value="DartSearch"  onclick="doSubmit()"></TD>
+  </TR>  
+  -->
+  
+ <TR height=30>
+    <TD noWrap align="center"></TD>
+  </TR>
+ <TR>
+    <TD noWrap align="center">
+		<FONT size=-1><A href="http://www.cintcm.com/">Cintcm</A> - 
+		<A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> TCMGrid</A> - <B>
+		<A href="http://ccnt.zju.edu.cn/projects/dartgrid/"> DartGrid</A></FONT>
+   </TD>
+  </TR>
+ <TR>
+    <TD align="center">
+        <br/><A  onclick="h(this,'http://localhost:8080${rc.contextPath}')"   href="${rc.contextPath}"><FONT size=-1>set DartSearch as homepage!</FONT></A>
+    </TD>
+  </TR>
+ <TR height=50>
+    <TD noWrap align="center"><FONT size=-1><B>@2005 DartGrid</B></FONT></TD>
+  </TR>     
+     
+ </TABLE> 
+ </FORM>
+</BODY>
+</html>

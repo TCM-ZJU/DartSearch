@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>用户注册</title>
+<link href="css/register.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+<script type="text/javascript" src="${rc.contextPath}/JS/Check.js"> </script>
+<BODY>
+
+
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder2" width="80%" >
+<tr><td height=25 valign=middle>
+<img src="${rc.contextPath}/images/dws.gif" align=absmiddle width=48>→ 
+用户注册</a> → 填写资料<a name=top></a>
+</td></td>
+</table>
+
+<form name="registerForm" action="register.luc" method="post">
+<table width=80% cellpadding=3 cellspacing=1 align=center class="tableBorder1">
+<TR align=middle> 
+<Th colSpan=2 height=24>新用户注册</TD>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>注册方式</B>：<BR>请选择</font></TD>
+<TD width=60%  class="TableBody1">
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_USERPASSWORD" CHECKED name="${status.expression}" onclick=showAccount() id="ACCOUNT_TYPE_USER">帐号 &nbsp;&nbsp;&nbsp;&nbsp; 
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_IP" name="${status.expression}" onclick=showIp()>IP地址</font></TD>
+</TR>
+
+
+
+<table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=account style="">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>用户名</B>：<BR>用户名请以字母开头</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.username")
+<INPUT maxLength="10" size=30 name="${status.expression}" id=username />
+
+&nbsp;&nbsp;
+#if (${ACCOUNT_ID_CHECKER} == "ACCOUNT_ID_EXIST")
+
+  <script>
+  alert("用户名已经存在,请选择其它用户名注册!")
+  </script>
+  <input type="button" onclick="checkUser()" value="检测用户名"/>
+#elseif (${ACCOUNT_ID_CHECKER} == "ACCOUNT_ID_NEW")
+  用户名可以注册
+  <script>
+  document.getElementById("username").value="$ACCOUNT_ID";
+  document.getElementById("account").style.display = "";
+  document.getElementById("ip").style.display = "none";  
+  </script>  
+#else
+  <input type="button" onclick="checkUser()" value="检测用户名"/>
+#end
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>密码(至少6位)</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.password")
+<INPUT type=password maxLength=16 size=30 name="${status.expression}" id="passOne"/>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>密码(至少6位)</B>：</TD>
+<TD class="TableBody1"> 
+<INPUT type=password maxLength=16 size=30 id="passTwo"/>
+</TD>
+</TR>
+</TBODY>
+</table>
+
+<table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1"  id=ip style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>IP地址</B>：<BR>请输入你的IP地址</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.IPAddress")
+<INPUT maxLength="30" size=30 name="${status.expression}" id=ipaddr value=""/ >
+</TD>
+</TR>
+<TD width=40% class="TableBody1"><B>子网掩码</B>：<BR>请输入你的子网掩码</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.mask")
+<INPUT maxLength="30" size=30 name="${status.expression}" value="255.255.255.255"/ >
+</TD>
+</TR>
+</TBODY>
+</table>
+
+<table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" style="">
+<TR> 
+<TD width=40%  class="TableBody1"><B>计费方式</B>：<BR>请选择</font></TD>
+<TD width=60%  class="TableBody1"> 
+ #springBind("account.chargeType")
+<INPUT type=radio value="CHARGE_TYPE_ONMONTH" CHECKED name="${status.expression}" onclick=showMonth()>包月 &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value="CHARGE_TYPE_ONFLOW" name="${status.expression}" onclick=showFlow()>流量</font></TD>
+</TR>
+</table>
+
+<table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=month style="">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>总的月数</B>：</TD>
+<TD class="TableBody1"> 
+ #springBind("account.totalDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="0" id=totalMonth>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>开始时间</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.startDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${today}">
+</TD>
+</TR>
+</TBODY>
+</table>
+
+ <table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1" id=flow style="DISPLAY: none">
+<TBODY>
+<TR> 
+<TD width=40% class="TableBody1"><B>总的流量</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.totalFlow")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="0" id=totalFlow>
+</TD>
+</TR>
+</TBODY>
+</table>
+
+<table width="80%" cellpadding=3 cellspacing=1 align=center class="tableBorder1">
+<TR> 
+<TD width=40% class="TableBody1"><B>真实姓名</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact_name")
+<INPUT maxLength="10" size=30 name="${status.expression}" ID=realname value="" >&nbsp;&nbsp</td>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>性别</B>：<BR>请选择您的性别</font></TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.sex")
+<INPUT type=radio CHECKED value=1 name="${status.expression}">男 &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value=0 name="${status.expression}">女</font></TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>联系方式</B>：<BR>邮箱地址或者电话号码</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact")
+<INPUT maxLength="30" size=30 name="${status.expression}" id=contact>
+</TD>
+</TR>
+<table>
+<table cellpadding=0 cellspacing=0 border=0 width=97% align=center>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr align=center>
+<td width=50% ><input type=submit value="注 册" name=Submit onclick="return isValid()">&nbsp;&nbsp<input type=reset value="清 除" name=Submit2></td>
+</tr></table>
+
+</form>
+
+<form id=CheckUserForm action="accoutExist.luc" method="post">
+</form>
+
+<script>
+function showIp(){
+
+   
+	document.getElementById("ip").style.display = "";
+   
+	document.getElementById("account").style.display = "none";
+         
+}
+
+function showAccount(){
+
+   
+	document.getElementById("account").style.display = "";
+   
+	document.getElementById("ip").style.display = "none";
+         
+}
+
+function showMonth(){
+
+    document.getElementById("month").style.display = "";
+   
+	document.getElementById("flow").style.display = "none";
+}
+
+function showFlow(){
+
+    document.getElementById("month").style.display = "none";
+   
+    document.getElementById("flow").style.display = "";
+}
+
+function isValid()
+{
+
+
+
+	 
+	 
+     //用户名密码检测
+	 if(document.getElementById("ip").style.display == "none")
+	 {
+	    var msg;
+	    var pass1 = document.getElementById("passOne").value;
+	    var pass2 = document.getElementById("passTwo").value;
+	    
+	    if(validateUser()==false)
+	       return false;	 
+	       
+	    if(pass1==pass2)
+	    {
+	      if(pass1.length<6){
+	         alert("密码长度至少6位!");
+	         return false;
+	      }
+	    }
+	    else
+	    {
+	      alert("两次输入的密码不匹配!");
+	      return false;
+	    } 
+	 }//ip检测
+	 else
+	 {
+ 	    if(false==validateIP())
+ 	       return false;
+	 }
+	 
+
+	 
+	 
+
+
+	 if(document.getElementById("flow").style.display == "none")
+	 {
+	   var num1= document.getElementById("totalMonth").value;
+	   if(false==validateNumber(num1))
+	   {
+	      alert("总月数必须大于0");
+	      return false;
+	   }
+	 }
+	 else
+	 {
+	   var num2= document.getElementById("totalFlow").value;
+	   if(false==validateNumber(num2))
+	   {
+	      alert("总流量必须大于0");
+	      return false;	 
+	   }
+	 }
+
+
+	 //检测真实姓名
+	 if(false==validateRealName())
+	    return false;
+	    
+	 var email = document.getElementById("contact").value.toLowerCase();
+	 var pattern = /^[a-z]([0-9]|[a-z])*@([a-z]([0-9]|[a-z])*\.)+[a-z]([0-9]|[a-z])*$/
+	 
+	 var pattern2 = /^[0-9]+$/
+	 if(!email.match(pattern) && !email.match(pattern2))
+	 {
+	   alert("电子邮件/电话号码 格式错误");
+	   return false;
+	 }
+	 return true;
+}
+
+function checkUser(){
+   if(!validateUser())
+        return false;
+   var user = document.getElementById("username").value;
+   var form = document.getElementById("CheckUserForm");
+   form.action = "accoutExist.luc?AccountType=ACCOUNT_ID_TYPE_USER&AccountID="+user;
+   form.submit();
+}
+
+function validateUser(){
+   var user = document.getElementById("username").value.toLowerCase();
+   var pattern =/^[a-z]([0-9]|[a-z]){2,31}$/
+   if(!user.match(pattern))
+   {
+     alert("用户名必须由字母开头，长度是3到32字符!")
+     return false;
+   }
+   else
+   {
+     return true;
+   }
+ }  
+ 
+function validateIP(){
+   var ip = document.getElementById("ipaddr").value;
+   var pattern1 = /^[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}$/
+   var pattern2 = /^[0-1]{1,8}.[0-1]{1,8}.[0-1]{1,8}.[0-1]{1,8}$/
+   
+   if(!ip.match(pattern1) && !ip.match(pattern2))
+   {
+     alert("IP地址格式错误!");
+     return false;
+   }
+   return true;
+}
+
+function validateRealName(){
+  var rn = document.getElementById("realname").value;
+  if(null==rn || ""==rn)
+  {
+    alert("请输入正确的姓名!");
+    return false;
+  }
+  return true;
+}
+
+function validateNumber(str){
+  var pattern = /^[1-9][0-9]*$/
+  if(!str.match(pattern))
+     return false;
+  return true;
+}
+
+ </script>
+</BODY>
+</HTML>
+

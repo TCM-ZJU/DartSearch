@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<script type='text/javascript' src='$rc.contextPath/dwr/interface/DwrSession.js'></script>
+<script type='text/javascript' src='$rc.contextPath/dwr/engine.js'></script>
+<script>
+function setChinsesCharacter(isSimple)
+{
+ if(isSimple)
+   DwrSession.putString(null,"J_CHARACTER_TYPE","SIMPLE_CHINESE");
+ else
+   DwrSession.putString(null,"J_CHARACTER_TYPE","TRADITIONAL_CHINESE");
+}
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>TcmGrid Index</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.style2 {
+	font-size: 30px;
+	color: #FF9900;
+	font-weight: bold;
+}
+.style4 {color: #3366FF}
+-->
+</style>
+</head>
+<body>
+   <table width="100%"  border="0">
+      <tr>
+        <td width="65%" align="center" class="ms-pagetitle"><p align="right" class="style1 style2"><span class="style4">Welcome to TCMGrid</span></td>
+        <td width="6%" align="center" class="ms-pagetitle"><div align="left"><span class="style1 style2">
+        <!--
+        <img src="${rc.contextPath}/images/faqicon_subscribe.gif" width="27" height="25">
+        -->
+        </span></div></td>
+        <td width="19%" align="center" class="ms-pagetitle">&nbsp;</td>
+        <!--
+        <td width="10%" align="center" ><a href="${rc.contextPath}/index.htm" onclick="setChinsesCharacter(false); ">繁体中文页面</a></td>
+        -->
+      </tr>
+      <tr>
+      	<td colspan="3"><p><img src="${rc.contextPath}/images/faqicon_find.gif" width="27" height="28"><a name="TCM Grid"><b>What is DartGrid:</b></a></p>
+      DartGrid is one of the largest grid sharing data about Traditional Chinese Medicament(TCM for short).It contains dozens of TCM scientific databases created and supported by more than 300 experts and technicians from more than 30 TCM colleges and research centers in China.
+	<p>
+	<a href="http://ccnt.zju.edu.cn/projects/dartgrid/">DartGrid</a>  is a integrated platform using technology of <a href="#semweb">semantic web</a> and <a href="#grid">grid</a>.
+	</p>
+
+<p><img src="${rc.contextPath}/images/faqicon_find.gif" width="27" height="28"><a name="grid"><b>What is Grid:</b></a></p>
+Grid computing is increasingly being viewed as the next phase of distributed computing. Built on pervasive Internet standards, grid computing enables organizations to share computing and information resources across department and organizational boundaries in a secure, highly efficient manner. 
+Organizations around the world are utilizing grid computing today in such diverse areas as collaborative scientific research, drug discovery, financial risk analysis, and product design. Grid computing enables research-oriented organizations to solve problems that were infeasible to solve due to computing and data-integration constraints. Grids also reduce costs through automation and improved IT resource utilization. Finally, grid computing can increase an organization¡¯s agility enabling more efficient business processes and greater responsiveness to change. Over time grid computing will enable a more flexible, efficient and utility-like global computing infrastructure. 
+The key to realizing the benefits of grid computing is standardization, so that the diverse resources that make up a modern computing environment can be discovered, accessed, allocated, monitored, and in general managed as a single virtual system¡ªeven when provided by different vendors and/or operated by different organizations.
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Further reading:</b></p>
+<UL>
+	<LI><a href="http://www.chinagrid.net">ChinaGrid</a>
+	<LI><a href="http://www.ggf.org">Global Grid Forum</a>
+	<LI><a href="http://www.globus.org">Globus</a>
+</UL>
+
+<p><img src="${rc.contextPath}/images/faqicon_find.gif" width="27" height="28"><a name="semweb"><b>What is Semantic Web?</b></a></p>
+The Semantic Web provides a common framework that allows data to be shared and reused across application, enterprise, and community boundaries. It is a collaborative effort led by W3C with participation from a large number of researchers and industrial partners. It is based on the Resource Description Framework (RDF), which integrates a variety of applications using XML for syntax and URIs for naming. 
+"The Semantic Web is an extension of the current web in which information is given well-defined meaning, better enabling computers and people to work in cooperation." -- Tim Berners-Lee, James Hendler, Ora Lassila, The Semantic Web, Scientific American, May 2001
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<b>Further reading:</b></p>
+<UL>
+	<LI><a href="http://www.w3c.org">World Wide Web Consortium</a>
+	<LI><a href="http://w3china.org">W3CHINA</a>
+	<LI><a href="http://www.ryerson.ca/~dgrimsha/courses/cps720_02/resources/Scientific%20American%20The%20Semantic%20Web.htm">
+		The Semantic Web (by Tim Berners-Lee, James Hendler and Ora Lassila)
+		</a>
+
+</UL>
+      	</td>
+      </tr>
+    </table>
+</body>
+</html>    

@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd">
+<suite thread-count="5" verbose="1" name="Failed Tests suite" parallel="false" annotations="1.5">
+  <test verbose="2" name="edu.zju.tcmsearch.query.domain.DartQueryTest" junit="false" parallel="false" annotations="1.5">
+    <classes>
+      <class name="edu.zju.tcmsearch.query.domain.DartQueryTest"/>
+    </classes>
+  </test>
+</suite>

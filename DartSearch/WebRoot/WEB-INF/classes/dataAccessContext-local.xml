@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for JPetStore's data access layer.
+	- Accessed by business layer objects defined in "applicationContext.xml"
+	- (see web.xml's "contextConfigLocation").
+	-
+	- This version of the data access layer works on a combined database,
+	- using a local DataSource with DataSourceTransactionManager. It does not
+	- need any JTA support in the container: It will run as-is in plain Tomcat.
+	-->
+<beans>
+
+	<!-- ========================= RESOURCE DEFINITIONS ========================= -->
+
+	<!-- Local DataSource that refers to a combined database -->
+	<!-- The placeholders are resolved from jdbc.properties through -->
+	<!-- the PropertyPlaceholderConfigurer in applicationContext.xml 
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${jdbc.driverClassName}</value></property>
+		<property name="url"><value>${jdbc.url}</value></property>
+		<property name="username"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+	</bean>
+	-->
+	<bean id="metaDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${meta.jdbc.driverClassName}</value></property>
+		<property name="url"><value>${meta.jdbc.url}</value></property>
+		<property name="username"><value>${meta.jdbc.username}</value></property>
+		<property name="password"><value>${meta.jdbc.password}</value></property>
+	</bean>
+	
+	<bean id="metaCategoryDAO" class="edu.zju.tcmsearch.dao.impl.meta.MetaCategoryDAOImpl">
+		<property name="dataSource"><ref bean="metaDataSource"/></property>			
+	</bean>
+	
+	<!--
+	<bean id="dictDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${dict.jdbc.driverClassName}</value></property>
+		<property name="url"><value>${dict.jdbc.url}</value></property>
+		<property name="username"><value>${dict.jdbc.username}</value></property>
+		<property name="password"><value>${dict.jdbc.password}</value></property>
+	</bean>	
+	-->
+	
+	<bean id="tableNameLocalDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${acegi.jdbc.driverClassName}</value></property>
+		<property name="url"><value>${acegi.jdbc.url}</value></property>
+		<property name="username"><value>${acegi.jdbc.username}</value></property>
+		<property name="password"><value>${acegi.jdbc.password}</value></property>			
+	</bean>
+	
+	<bean id="tableNameLocalDAO" class="edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO">
+		<property name="dataSource"><ref bean="tableNameLocalDataSource"/></property>	
+	</bean>
+	
+	   <!--  delete by zhm temporarily
+	<bean id="ontologySequenceDAO" class="edu.zju.tcmsearch.dao.impl.OntologySequenceDAO">
+		<property name="dataSource"><ref bean="tableNameLocalDataSource"/></property>	
+	</bean>
+	 -->
+</beans>

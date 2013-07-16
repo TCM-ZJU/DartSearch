@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="dataSourceMap"
+		class="edu.zju.tcmsearch.lucene.index.data.DataSourceMap"
+		destroy-method="destroy"/>
+	
+	<bean id="tableInfoMap" class="edu.zju.tcmsearch.lucene.index.data.TableInfoMap">
+		<property name="dbInfoRetriever"><ref local="dbInfoRetriever"/></property>
+	</bean>
+	
+	<bean id="maxInt" class="org.springframework.beans.factory.config.FieldRetrievingFactoryBean">
+		<property name="targetClass"><value>java.lang.Integer</value></property>
+		<property name="targetField"><value>MAX_VALUE</value></property>
+		<property name="staticField"><value>MAX_VALUE</value></property>
+	</bean>
+	
+	<bean id="luceneConfig" class="edu.zju.tcmsearch.lucene.config.LuceneConfig">
+		<property name="indexDir"><ref local="indexDirectory"/></property>
+		<property name="minMergeDocs"><value>100</value></property>
+		<property name="mergeFactor"><value>100</value></property>
+		<property name="maxMergeDocs"><ref bean="maxInt"/></property>
+		<property name="maxFieldLength"><value>30000</value></property>
+		<property name="limitShowFieldLength"><value>4000</value></property>		
+		<property name="hightLightCss"><value>luceneHighLight</value></property>			
+	</bean>
+	
+	<bean id="indexDirectory" class="edu.zju.tcmsearch.lucene.config.impl.IndexDirectory">
+		<property name="indexDirBase"><value>${lucene.indexDir}</value></property>
+		<property name="statusFile"><value>${lucene.statusFile}</value></property>
+	</bean>
+	
+	<bean id="lobHandler" class="org.springframework.jdbc.support.lob.OracleLobHandler">
+	</bean>
+	
+	<!--  deleted by zhm temporarily
+	<bean id="luceneIndexAnalyzer"
+		class="org.apache.lucene.analysis.cn.ChineseAnalyzer"></bean>
+	
+	<bean id="luceneSearchAnalyzer"
+		class="org.apache.lucene.analysis.cn.ChineseAnalyzer"></bean>
+	
+	<bean id="highlightAnalyzer" class="org.apache.lucene.analysis.cn.ChineseAnalyzer"></bean>
+	
+	<bean id="simpleAnalyzer"	class="org.apache.lucene.analysis.cn.ChineseAnalyzer"></bean>	
+	
+	-->
+		<bean id="luceneIndexAnalyzer"
+		class="org.mira.lucene.analysis.IK_CAnalyzer"></bean>
+	
+	<bean id="luceneSearchAnalyzer"
+		class="org.mira.lucene.analysis.IK_CAnalyzer"></bean>
+	
+	<bean id="highlightAnalyzer" 
+		class="org.mira.lucene.analysis.IK_CAnalyzer"></bean>
+	
+	<bean id="simpleAnalyzer"		
+		class="org.mira.lucene.analysis.IK_CAnalyzer"></bean>		
+	
+	
+	
+	<bean id="dbContentRetriever"
+		class="edu.zju.tcmsearch.lucene.index.impl.DbContentRetrieverImpl">
+		<property name="dbInfoRetriever"><ref local="dbInfoRetriever"/></property>
+		<property name="dataSourceMap"><ref local="dataSourceMap"/></property>
+		<property name="lobHandler"><ref local="lobHandler"/></property>
+		<property name="tableInfoMap"><ref local="tableInfoMap"/></property>		
+		<property name="indexBuildUtil"><ref local="indexBuildUtil"/></property>		
+	</bean>	
+
+	
+	<bean id="indexBuildUtil" class="edu.zju.tcmsearch.lucene.index.IndexBuildUtil">
+		<property name="lobHandler"><ref local="lobHandler"/></property>
+	</bean>
+		
+	<bean id="indexBuilder"
+		class="edu.zju.tcmsearch.lucene.index.impl.IndexBuilderSaveRAMImpl">
+		<property name="luceneConfig"><ref local="luceneConfig"/></property>
+		<property name="analyzer"><ref local="luceneIndexAnalyzer"/></property>
+		<property name="indexBuildCallBack"><ref local="indexBuildCallBack"/></property>
+		<property name="dbInfoRetriever"><ref local="dbInfoRetriever"/></property>
+		<property name="dbContentRetriever"><ref local="dbContentRetriever"/></property>		
+	</bean>
+	
+	<bean id="indexBuildCallBack" class="edu.zju.tcmsearch.lucene.index.impl.ScreenIndexBuildCallBack">
+		<property name="infoRate"><value>${lucene.index.showrate}</value></property>
+	</bean>
+	
+	<bean id="indexSource" class="edu.zju.tcmsearch.lucene.index.impl.IndexSourceImpl">
+		<property name="dbInfoRetriever"><ref local="dbInfoRetriever"/></property>
+		<property name="dbContentRetriever"><ref local="dbContentRetriever"/></property>
+	</bean>
+	
+	<bean id="multiFieldQueryParser" class="edu.zju.tcmsearch.lucene.search.impl.MultiFieldQueryParserImpl">
+		<constructor-arg index="0"><value>empty</value></constructor-arg>
+		<constructor-arg index="1"><ref local="luceneSearchAnalyzer"/></constructor-arg>
+		<property name="requiredAnalyzer"><ref local="simpleAnalyzer"/></property>
+	</bean>
+	
+	<bean id="searcher" class="edu.zju.tcmsearch.lucene.search.impl.SearcherImpl">
+		<property name="luceneConfig"><ref local="luceneConfig"/></property>
+		<property name="multiFieldQueryParser"><ref local="multiFieldQueryParser"/></property>
+	</bean>
+	
+
+	<!--
+	<bean id="tcmDictDAO" class="edu.zju.tcmsearch.lucene.splitter.dao.TcmDictDAO">
+		<property name="dataSource"><ref bean="dictDataSource"/></property>
+		<property name="tableName"><value>TCMDICT</value></property>
+	</bean>
+	
+	<bean id="lycjDictDAO" class="edu.zju.tcmsearch.lucene.splitter.dao.TcmDictDAO">
+		<property name="dataSource"><ref bean="dictDataSource"/></property>
+		<property name="tableName"><value>LCYJDICT</value></property>
+	</bean>	
+	
+	<bean id="ontoDictDAO" class="edu.zju.tcmsearch.lucene.splitter.dao.OntoDictDAO">
+		<property name="dbInfoRetriever"><ref local="dbInfoRetriever"/></property>
+	</bean>
+	
+	<bean id="dictService" class="edu.zju.tcmsearch.lucene.splitter.impl.DictServiceImpl">
+		<property name="dictTree"><ref bean="dictTree"/></property>
+		<property name="dictDir"><value>${lucene.dictDir}</value></property>		
+	</bean>
+	
+	<bean id="dictTree" class="edu.zju.tcmsearch.lucene.splitter.impl.DictTreeImpl">
+		<property name="rebuild"><value>false</value></property>
+		<property name="maxWordLength"><value>10</value></property>		
+		<property name="fileName"><value>${lucene.dictFile}</value></property>
+		<property name="dictDAOList">
+			<list>
+				<ref local="tcmDictDAO"/>
+				<ref local="lycjDictDAO"/>
+				<ref local="ontoDictDAO"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="splitter" class="edu.zju.tcmsearch.lucene.splitter.impl.SplitterImpl">
+		<property name="dictTree"><ref local="dictTree"/></property>
+	</bean>
+	
+	<bean id="chineseAnalyzer" class="edu.zju.tcmsearch.lucene.analysis.ChineseAnalyzer">
+		<property name="splitter"><ref local="splitter"/></property>
+		<property name="filterTagList">
+			<list>
+				<value>span</value>
+			</list>
+		</property>
+	</bean>
+	-->
+	<bean id="dbInfoRetriever"
+		class="edu.zju.tcmsearch.lucene.index.impl.DbInfoRetrieverImpl">
+	</bean>	
+</beans>

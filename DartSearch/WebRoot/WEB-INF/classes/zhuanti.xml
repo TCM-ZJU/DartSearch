@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tableregister>
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn/tcm/database</dbNamespace>
+    <dbLocalpart>TcmClinic</dbLocalpart>
+    <tableSchema>TCM_CLINIC</tableSchema>
+    <tableName>JMZ_LCYJ</tableName>
+    <ontologies>
+	<ontology>
+	  <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#绁炵粡涓撻</ontologyURI>
+          <instanceSpace>INSP_ZHUANT_01</instanceSpace>
+	  <constraint>
+	    <condition>###YJFL### = '绁炵粡涓撻'</condition>
+	  </constraint>
+	</ontology>
+
+	<ontology>
+	  <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鍛煎惛涓撻</ontologyURI>
+          <instanceSpace>INSP_ZHUANT_02</instanceSpace>
+	  <constraint>
+	    <condition>###YJFL### = '鍛煎惛涓撻'</condition>
+	  </constraint>
+	</ontology>
+
+	<ontology>
+	  <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#绐佸彂鍏崼涓撻</ontologyURI>
+          <instanceSpace>INSP_ZHUANT_03</instanceSpace>
+	  <constraint>
+	    <condition>###YJFL### = '鎬ラ棬璇婁笓棰�' or ###YJFL### = '浼犳煋鐥呬笓棰�'</condition>
+	  </constraint>
+	</ontology>
+
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓村簥鐥呬緥鐮旂┒</ontologyURI>
+        <instanceSpace>INSP_LCYJ_01</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐥呬緥閲囬泦鏃堕棿</ontologyURI>
+            <tableColumn name="BLCJSJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐥呭洜</ontologyURI>
+            <tableColumn name="J_BY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#浼犳煋閫斿緞</ontologyURI>
+            <tableColumn name="J_CRTJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#浼犳煋婧�</ontologyURI>
+            <tableColumn name="J_CRY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瑙傚療缁勬�讳緥鏁�</ontologyURI>
+            <tableColumn name="GCZZLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#缁撴灉</ontologyURI>
+            <tableColumn name="JG"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓村簥鐮旂┒鍗曚綅</ontologyURI>
+            <tableColumn name="LCYJDW"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓村簥鐮旂┒鍚嶇О</ontologyURI>
+            <tableColumn name="LCYJMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐢锋�ц瀵熶緥鏁�</ontologyURI>
+            <tableColumn name="MGCLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#骞撮緞缁�</ontologyURI>
+            <tableColumn name="NLZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#濂虫�ц瀵熶緥鏁�</ontologyURI>
+            <tableColumn name="FGCLS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐩稿叧鍥犵礌</ontologyURI>
+            <tableColumn name="J_XGYS"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐮旂┒鏂规硶</ontologyURI>
+            <tableColumn name="YJFF"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐮旂┒鍒嗙被</ontologyURI>
+            <tableColumn name="YJFL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐮旂┒鍒嗙粍</ontologyURI>
+            <tableColumn name="YJFZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓村簥鐥呬緥鐮旂┒ID</ontologyURI>
+            <tableColumn name="LCYJ_ID"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+  
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn/tcm/database</dbNamespace>
+    <dbLocalpart>TcmAdmin</dbLocalpart>
+    <tableSchema>TCM_ADMIN</tableSchema>
+    <tableName>JBDQ</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鑲濈値涓撻</ontologyURI>
+        <instanceSpace>INSP_ZHUANT_04</instanceSpace>
+        <constraint>
+	    <condition>###MN### like 'C06.552.380%'</condition>
+	</constraint>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐤剧梾淇℃伅ID</ontologyURI>
+            <tableColumn name="ID"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鍒悕</ontologyURI>
+            <tableColumn name="BM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鍦板尯</ontologyURI>
+            <tableColumn name="DQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鍙戠梾鏈虹悊</ontologyURI>
+            <tableColumn name="FBJL"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鍙戠梾浜虹兢</ontologyURI>
+            <tableColumn name="RQ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#姹夎鎷奸煶</ontologyURI>
+            <tableColumn name="PY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐤剧梾鑻辨枃鍚嶇О</ontologyURI>
+            <tableColumn name="YWJBMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐤剧梾涓枃鍚嶇О</ontologyURI>
+            <tableColumn name="ZWJBMC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瀛ｈ妭</ontologyURI>
+            <tableColumn name="JJ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#寮哄害涓庝紶鎾��</ontologyURI>
+            <tableColumn name="QD"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瑗垮尰鐥呭洜</ontologyURI>
+            <tableColumn name="XYBY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瑗垮尰鐤剧梾鍒嗙被浠ｇ爜</ontologyURI>
+            <tableColumn name="XYJBFLDM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#瑗垮尰璇婃柇渚濇嵁</ontologyURI>
+            <tableColumn name="XYZDBZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐥囧��</ontologyURI>
+            <tableColumn name="ZZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓嵂娌荤枟</ontologyURI>
+            <tableColumn name="ZY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰鐥呭洜</ontologyURI>
+            <tableColumn name="ZYBY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰鐤剧梾鍒嗙被浠ｇ爜</ontologyURI>
+            <tableColumn name="ZYJBFLDM"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰绫荤棁閴村埆</ontologyURI>
+            <tableColumn name="ZYLZJB"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰閲婂悕</ontologyURI>
+            <tableColumn name="ZYBMDY"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰璇婃柇渚濇嵁</ontologyURI>
+            <tableColumn name="ZYZDBZ"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓尰娌荤枟</ontologyURI>
+            <tableColumn name="ZYZL"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+
+    </ontologies>
+  </table>
+
+  <table>
+    <dbNamespace>http://dart.zju.edu.cn/tcm/database</dbNamespace>
+    <dbLocalpart>WenXian</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>ZTC_RKC</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鑲濈値涓撻</ontologyURI>
+        <instanceSpace>INSP_ZHUANT_04</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鐤剧梾涓枃鍚嶇О</ontologyURI>
+            <tableColumn name="RKC"/>
+          </ontoProp>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓婚璇�</ontologyURI>
+            <tableColumn name="ZTC"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+
+   <table>
+    <dbNamespace>http://dart.zju.edu.cn/tcm/database</dbNamespace>
+    <dbLocalpart>WenXian</dbLocalpart>
+    <tableSchema>WX</tableSchema>
+    <tableName>ZTC_TREE</tableName>
+    <ontologies>
+      <ontology>
+        <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#鑲濈値涓撻</ontologyURI>
+        <instanceSpace>INSP_ZHUANT_04</instanceSpace>
+        <ontoProps>
+          <ontoProp>
+            <ontologyURI>http://dart.zju.edu.cn/dartcore/dart#涓婚璇�</ontologyURI>
+            <tableColumn name="MHCHI"/>
+          </ontoProp>
+        </ontoProps>
+      </ontology>
+    </ontologies>
+  </table>
+</tableregister>

@@ -1,0 +1,77 @@
+<hmtl>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Category Infomation</title>
+<script type="text/javascript">
+<!--
+function deleteCategory(id)
+{
+document.categoryForm.cmd.value="delCategory";
+document.categoryForm.childId.value=id;
+document.categoryForm.submit();
+}
+function renameCategory(id,nodeId)
+{
+var node = document.getElementById(nodeId);
+document.categoryForm.cmd.value="renCategory";
+document.categoryForm.childId.value=id;
+document.categoryForm.newName.value=node.value;
+document.categoryForm.submit();
+}
+
+function addCategory()
+{
+var node = document.getElementById("newCategory");
+document.categoryForm.cmd.value="newCategory";
+document.categoryForm.newName.value=node.value;
+document.categoryForm.submit();
+}
+
+//-->
+</script>
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">Category Infomation</P>
+	<form action="ontoCategoryEdit.cla" method="POST" name="categoryForm"> 
+	<input type="hidden" name="level" value="0"/>
+	<input type="hidden" name="metaCategoryId" value="0"/>
+	<input type="hidden" name="cmd" value=""/>
+	<input type="hidden" name="childId" value=""/>
+	<input type="hidden" name="newName" value=""/>
+	<P align="center">Current category is a top level category  </P>
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+			<td align="center">Index</td>
+			<td align="center" width=100>SubCategory Name</td>
+			<td align="center">Delete subCategory</td>
+			<td align="center">Edit subCategory</td>
+		</tr>
+		#foreach( $child in $categoryList)
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td><input value='${child.dname}' id='cateID_$child.id'/></td>
+			<td align="center"><a  href="" onclick='deleteCategory($child.id);return false;'>delete</a></td>
+			<td align="center"><a  href="" onclick='renameCategory($child.id,"cateID_$child.id");return false;'>edit</a></td>
+		</tr>
+		#end		
+		<tr class="Table_grayitem">
+		<td>
+		#set($lastI = ${categoryList.size()} +1)
+		$lastI
+		</td>
+		<td>
+		<input id="newCategory" value="new category name "/>
+		</td>
+		<td align="center" colspan=2><a  href="" onclick='addCategory();return false;'>Add new category</a></td>
+	</table>
+	</form>
+	</br>
+	<p align="center"><a href="$rc.contextPath/secure/accountResults.luc"> Return</a> </p>
+	</br>
+	</br>
+	</br>
+	</br>	
+</body>
+</html>

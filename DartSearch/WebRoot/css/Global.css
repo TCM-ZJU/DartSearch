@@ -1,0 +1,1391 @@
+BODY {
+	BACKGROUND: white; COLOR: black; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; 
+	MARGIN: 0px; FONT: 69% "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
+}
+.ms-main {
+	
+}
+.ms-toolbar {
+	FONT-SIZE: 0.68em; COLOR: #003399; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+TABLE.ms-toolbar {
+	BORDER-RIGHT: #95b7f3 1px solid; BORDER-TOP: #95b7f3 1px solid; BACKGROUND-IMAGE: url(images/toolgrad.gif); BORDER-LEFT: #95b7f3 1px solid; BORDER-BOTTOM: #95b7f3 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #9ebff6
+}
+.ms-rtetoolbarmenu {
+	COLOR: black; BACKGROUND-COLOR: #b2cdf8
+}
+.ms-rtetoolbarunsel {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.ms-rtetoolbarsel {
+	BORDER-RIGHT: #000084 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000084 1px solid; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(images/rtebnsel.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #000084 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #000084 1px solid; BACKGROUND-REPEAT: repeat-x
+}
+.ms-rtetoolbardis {
+	FILTER: alpha(opacity=25)
+}
+A.ms-rtetoolbardis {
+	CURSOR: default
+}
+.ms-rtetoolbarhov {
+	BORDER-RIGHT: #000084 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #000084 1px solid; PADDING-LEFT: 2px; BACKGROUND-IMAGE: url(images/rtebnhov.gif); PADDING-BOTTOM: 2px; BORDER-LEFT: #000084 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #000084 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #fddd98
+}
+.ms-gridT1 {
+	FONT-SIZE: 0.6em; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: center
+}
+.ms-viewselect A:link {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-GRFontSize {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Verdana, sans-serif
+}
+SELECT {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif
+}
+HR {
+	COLOR: #003399; HEIGHT: 2px
+}
+.ms-label {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; COLOR: #808080; FONT-FAMILY: verdana;
+}
+.ms-formlabel {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-formdescription A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-formtable .ms-formbody {
+	LINE-HEIGHT: 1.3em
+}
+.ms-radiotext {
+	FONT-SIZE: 8pt; CURSOR: default; FONT-FAMILY: verdana; HEIGHT: 19px; TEXT-ALIGN: left
+}
+.ms-gridtext {
+	FONT-SIZE: 8pt; CURSOR: default; FONT-FAMILY: verdana; HEIGHT: 19px; TEXT-ALIGN: right
+}
+.ms-formbody {
+	FONT-SIZE: 0.7em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana
+}
+.ms-formbody FONT {
+	LINE-HEIGHT: normal
+}
+.ms-formdescription {
+	FONT-SIZE: 8pt; COLOR: #808080; FONT-FAMILY: verdana
+}
+.ms-searchbox {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #ffffff
+}
+.ms-searchform {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #ffdf8c
+}
+TABLE.ms-form TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; COLOR: #003399; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+TABLE.ms-form TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: top; WIDTH: 100%
+}
+.ms-formrecurrence {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-long {
+	FONT-SIZE: 8pt; WIDTH: 386px; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-longer {
+	FONT-SIZE: 8pt; WIDTH: 411px; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-italic {
+	FONT-STYLE: italic
+}
+.ms-bold {
+	FONT-WEIGHT: bold
+}
+.ms-bannerframe {
+	BACKGROUND-IMAGE: url(images/topgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #002d96
+}
+.ms-GRHeaderBackground {
+	BACKGROUND-IMAGE: url(images/topgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #002d96
+}
+.ms-storMeFree {
+	BACKGROUND-IMAGE: url(images/topgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #002d96
+}
+.ms-banner A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, serif; TEXT-DECORATION: none
+}
+.ms-banner A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, serif; TEXT-DECORATION: none
+}
+.ms-banner {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: verdana
+}
+.ms-GRHeaderText {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: verdana
+}
+.ms-nav TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-nav .ms-SPZoneLabel {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-input {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-nav TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, sans-serif; TEXT-ALIGN: left
+}
+.ms-navheader A {
+	FONT-WEIGHT: bold
+}
+.ms-navheader A:link {
+	FONT-WEIGHT: bold
+}
+.ms-navheader A:visited {
+	FONT-WEIGHT: bold
+}
+.ms-navframe {
+	BORDER-RIGHT: medium none; BACKGROUND: #e1ecfc; BORDER-LEFT: 0px
+}
+.ms-GRStatusBar {
+	BORDER-RIGHT: medium none; BACKGROUND: #e1ecfc; BORDER-LEFT: 0px
+}
+.ms-storMeUsed {
+	BACKGROUND: #91b5f4
+}
+.ms-storMeFilterBar {
+	BACKGROUND: #91b5f4
+}
+.ms-navline {
+	BORDER-BOTTOM: #adadad 1px solid
+}
+.ms-navwatermark {
+	COLOR: #cbd8f8
+}
+.ms-selectednav {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; BACKGROUND: #fee197; PADDING-BOTTOM: 2px; BORDER-LEFT: #2254b1 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #2254b1 1px solid
+}
+.ms-GRSortFilter {
+	BORDER-RIGHT: #2254b1 1px solid; BORDER-TOP: #2254b1 1px solid; BACKGROUND: #fee197; PADDING-BOTTOM: 2px; BORDER-LEFT: #2254b1 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #2254b1 1px solid
+}
+.ms-unselectednav {
+	BORDER-RIGHT: #e1ecfc 1px solid; BORDER-TOP: #e1ecfc 1px solid; PADDING-BOTTOM: 2px; BORDER-LEFT: #e1ecfc 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #e1ecfc 1px solid
+}
+.ms-verticaldots {
+	BORDER-RIGHT: #d4dce6 1px solid; BORDER-LEFT: medium none
+}
+.ms-nav A {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.ms-nav A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: Verdana, sans-serif; TEXT-DECORATION: none
+}
+.ms-nav A:hover {
+	COLOR: #798073; TEXT-DECORATION: underline
+}
+.ms-nav A:visited {
+	COLOR: #003399
+}
+.ms-titlearea {
+	FONT-SIZE: 9pt; FONT-FAMILY: verdana
+}
+TD.ms-titleareaframe {
+	COLOR: black
+}
+DIV.ms-titleareaframe {
+	BORDER-TOP: #ffd275 3px solid
+}
+.ms-titlearealine {
+	BACKGROUND-COLOR: #ffd275
+}
+.ms-storMeEstimated {
+	BACKGROUND-COLOR: #ffd275
+}
+.ms-bodyareaframe {
+	VERTICAL-ALIGN: top; HEIGHT: 100%
+}
+.ms-pagetitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; COLOR: black; FONT-FAMILY: verdana
+}
+.ms-pagetitle A {
+	COLOR: black; TEXT-DECORATION: none
+}
+.ms-pagetitle A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-pagecaption {
+	FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: arial, verdana, sans-serif
+}
+.ms-selected {
+	COLOR: white; BACKGROUND-COLOR: #2254b1
+}
+.ms-selected SPAN {
+	COLOR: white
+}
+.ms-selectedtitle {
+	BORDER-RIGHT: #2254b1 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #2254b1 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; BORDER-LEFT: #2254b1 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #2254b1 1px solid; BACKGROUND-COLOR: #fafafa
+}
+.ms-unselectedtitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 1px; PADDING-TOP: 1px
+}
+.ms-menuimagecell {
+	CURSOR: hand; BACKGROUND-COLOR: #d7e7fd
+}
+.ms-filedialog TD {
+	HEIGHT: 16px
+}
+.ms-descriptiontext {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: verdana
+}
+.ms-dspadapterlist {
+	PADDING-LEFT: 1cm; FONT-SIZE: 8pt; COLOR: gray; FONT-FAMILY: verdana
+}
+.ms-alerttext {
+	FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: verdana
+}
+.ms-separator {
+	FONT-SIZE: 10pt; COLOR: #444444
+}
+.ms-authoringcontrols {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2
+}
+.ms-sectionheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #003399; FONT-FAMILY: arial
+}
+.ms-sectionheader A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-sectionheader A:hover {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-sectionheader A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-sectionline {
+	BACKGROUND-COLOR: #2254b1
+}
+.ms-partline {
+	BACKGROUND-COLOR: #b9d1f4
+}
+.ms-propertysheet {
+	FONT-SIZE: 0.7em; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-propertysheet TH {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: gray; FONT-FAMILY: verdana
+}
+.ms-propertysheet A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-propertysheet A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-itemheader A {
+	FONT-WEIGHT: bold; FONT-SIZE: 11pt; COLOR: #003399; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.ms-discussiontitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.7em; COLOR: black; FONT-FAMILY: verdana
+}
+.ms-vh {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px
+}
+.ms-vh-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; WIDTH: 12px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-icon-empty {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; WIDTH: 0px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-left {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-left-icon {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; WIDTH: 22px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-left-icon-empty {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; WIDTH: 0px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-vh-right {
+	PADDING-RIGHT: 5px; FONT-WEIGHT: normal; FONT-SIZE: 0.68em; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.ms-vh-right-icon {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; WIDTH: 22px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.ms-vh-right-icon-empty {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; WIDTH: 0px; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: right; TEXT-DECORATION: none
+}
+.ms-vh A {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+.ms-vh A:visited {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+.ms-vh2 A {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+.ms-vh-left A {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+.ms-vh-right A {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+.ms-vh A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vh2 A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vh-left A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vh-right A:hover {
+	TEXT-DECORATION: underline
+}
+.ms-vhImage {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; WIDTH: 18pt; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-gb {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.68em; COLOR: #000000; FONT-FAMILY: verdana; HEIGHT: 18px; BACKGROUND-COLOR: #eeeeee
+}
+.ms-gb2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.68em; COLOR: #777777; FONT-FAMILY: verdana; HEIGHT: 18px
+}
+.ms-vb {
+	FONT-SIZE: 1em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana;
+}
+.ms-vb2 {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana
+}
+.ms-GRFont {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana
+}
+.ms-vb-user {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana
+}
+.ms-vb A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb2 A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-GRStatusText A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb-user A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-vb A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb2 A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb-user A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb2 A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-GRStatusText A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb-user A:visited {
+	COLOR: #000066; TEXT-DECORATION: none
+}
+.ms-vb A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb2 A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb-user A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-vb2 {
+	BORDER-TOP: #e4e4e4 1px solid
+}
+.ms-vb-title {
+	BORDER-TOP: #e4e4e4 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 1px; PADDING-TOP: 1px
+}
+.ms-vb-icon {
+	BORDER-TOP: #e4e4e4 1px solid
+}
+.ms-vb-user {
+	BORDER-TOP: #e4e4e4 1px solid
+}
+.ms-vb-icon {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; PADDING-BOTTOM: 0px; VERTICAL-ALIGN: top; WIDTH: 16px; PADDING-TOP: 2px
+}
+.ms-vb-user {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-TOP: 2px
+}
+.ms-vb2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 3px
+}
+.ms-homepagetitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: black; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+A.ms-addnew {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; COLOR: #003399; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+TD.ms-addnew {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 7px
+}
+.ms-error {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: #ff0000; FONT-FAMILY: Verdana, sans-serif
+}
+.ms-cal {
+	TABLE-LAYOUT: fixed; CURSOR: default; FONT-FAMILY: Verdana; BORDER-COLLAPSE: collapse
+}
+.ms-calWeek {
+	CURSOR: default; FONT-FAMILY: Verdana; BORDER-COLLAPSE: collapse
+}
+.ms-vcal {
+	TABLE-LAYOUT: fixed; CURSOR: default; FONT-FAMILY: Verdana; BORDER-COLLAPSE: separate
+}
+.ms-Dcal {
+	BORDER-RIGHT: black 1px solid; TABLE-LAYOUT: fixed; BORDER-LEFT: black 1px solid; CURSOR: default; FONT-FAMILY: Verdana; BORDER-COLLAPSE: collapse
+}
+.ms-caltop {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; WIDTH: 14%; HEIGHT: 30px
+}
+.ms-calhead {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 2px; BORDER-TOP: medium none; PADDING-LEFT: 2px; FONT-SIZE: 16pt; PADDING-BOTTOM: 2px; BORDER-LEFT: medium none; COLOR: white; PADDING-TOP: 2px; BORDER-BOTTOM: medium none; FONT-FAMILY: Arial; BACKGROUND-COLOR: #2254b1; TEXT-ALIGN: center
+}
+.ms-calhead A {
+	TEXT-DECORATION: none
+}
+.ms-calhead A:hover {
+	COLOR: red
+}
+.ms-caldow {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; BORDER-LEFT: black 1px solid; HEIGHT: 20px; TEXT-ALIGN: center
+}
+.ms-calmid {
+	BORDER-RIGHT: black 1px solid; BORDER-LEFT: black 1px solid; HEIGHT: 20px
+}
+.ms-CalSpacer {
+	BORDER-RIGHT: black 1px solid; BORDER-LEFT: black 1px solid; HEIGHT: 4px
+}
+.ms-CalVSpacer {
+	WIDTH: 0px; BACKGROUND-COLOR: red
+}
+.ms-CalAllDay {
+	FONT-SIZE: 10pt; VERTICAL-ALIGN: top; WIDTH: 10%; HEIGHT: 12px; TEXT-ALIGN: center
+}
+.ms-firstCalHour {
+	PADDING-RIGHT: 8%; PADDING-LEFT: 2px; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; WIDTH: 10%; HEIGHT: 12px; TEXT-ALIGN: right
+}
+.ms-calHour {
+	PADDING-RIGHT: 8%; BORDER-TOP: blue 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; WIDTH: 10%; HEIGHT: 12px; TEXT-ALIGN: right
+}
+.ms-calHalfHour {
+	BORDER-TOP: lightblue 1px solid; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; HEIGHT: 12px
+}
+.ms-calQuarterHour {
+	BORDER-TOP: 0px; FONT-SIZE: 10pt; VERTICAL-ALIGN: top; HEIGHT: 12px
+}
+.ms-calbot {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: medium none; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; HEIGHT: 2px
+}
+.ms-appt A {
+	COLOR: #2d425f
+}
+.ms-appt A:hover {
+	COLOR: red
+}
+.ms-appt {
+	BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-LEFT: black 2px solid; COLOR: black; BORDER-BOTTOM: black 2px solid; HEIGHT: 18px; TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #d2deee; TEXT-ALIGN: center
+}
+.ms-GRCellSelect {
+	BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-LEFT: black 2px solid; COLOR: black; BORDER-BOTTOM: black 2px solid; HEIGHT: 18px; TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #d2deee; TEXT-ALIGN: center
+}
+.ms-Dappt {
+	BORDER-RIGHT: black 2px solid; BORDER-TOP: black 2px solid; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-LEFT: black 2px solid; COLOR: black; BORDER-BOTTOM: black 2px solid; HEIGHT: 18px; BACKGROUND-COLOR: #d2deee; TEXT-ALIGN: center
+}
+.ms-Vappt {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; COLOR: black; HEIGHT: 12px; TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #d2deee; TEXT-ALIGN: center
+}
+.ms-Vappt A {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; COLOR: #2d425f; FONT-FAMILY: Verdana, sans-serif; TEXT-OVERFLOW: ellipsis; TEXT-DECORATION: none
+}
+.ms-Vappt A:link {
+	
+}
+.ms-Vappt A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.ms-apptsingle {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-LEFT: black 1px solid; COLOR: black; HEIGHT: 18px; TEXT-OVERFLOW: ellipsis; TEXT-ALIGN: left
+}
+.ms-Dapptsingle {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; BORDER-LEFT: black 1px solid; COLOR: black; HEIGHT: 18px; TEXT-ALIGN: left
+}
+.ms-Vapptsingle {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; OVERFLOW: hidden; COLOR: black; HEIGHT: 20px; TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #d2deee; TEXT-ALIGN: center
+}
+.ms-Vapptsingle A {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; OVERFLOW: hidden; COLOR: #2d425f; FONT-FAMILY: Verdana, sans-serif; TEXT-OVERFLOW: ellipsis; TEXT-DECORATION: none
+}
+.ms-Vapptsingle A:link {
+	
+}
+.ms-Vapptsingle A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.ms-caldowdown {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; VERTICAL-ALIGN: middle; TEXT-ALIGN: center
+}
+.ms-caldown {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: top; TEXT-ALIGN: left
+}
+.ms-datepickeriframe {
+	DISPLAY: none; BACKGROUND: white; POSITION: absolute
+}
+.ms-datepicker {
+	BORDER-RIGHT: activeborder 2px outset; BORDER-TOP: activeborder 2px outset; BORDER-LEFT: activeborder 2px outset; CURSOR: default; BORDER-BOTTOM: activeborder 2px outset; FONT-FAMILY: Verdana
+}
+.ms-dpdow {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; BORDER-LEFT: medium none; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+.ms-dpday {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: hand; BORDER-BOTTOM: medium none; TEXT-ALIGN: center
+}
+.ms-dpselectedday {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: hand; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #e6e6e6; TEXT-ALIGN: center
+}
+.ms-dpnonmonth {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: hand; COLOR: gray; BORDER-BOTTOM: medium none; TEXT-ALIGN: center
+}
+.ms-dphead {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: medium none; COLOR: white; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #2254b1; TEXT-ALIGN: center
+}
+.ms-dpnextprev {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: hand; COLOR: white; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #2254b1; TEXT-ALIGN: center
+}
+.ms-dpfoot {
+	BORDER-RIGHT: medium none; BORDER-TOP: 1px solid; FONT-SIZE: 8pt; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; FONT-STYLE: italic; HEIGHT: 24px; TEXT-ALIGN: center
+}
+IMG.ms-button {
+	CURSOR: hand
+}
+.ms-announcementtitle {
+	FONT-WEIGHT: bold
+}
+.ms-homepagetitle:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-discussionseparator {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+.ms-summarytitlebarframe {
+	BACKGROUND-COLOR: #2254b1
+}
+.ms-summarytitlebar A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: Verdana, serif; TEXT-DECORATION: none
+}
+.ms-summarytitlebar A:visited {
+	FONT-WEIGHT: normal; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: Verdana, serif; TEXT-DECORATION: none
+}
+.ms-summarytitlebar {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.68em; COLOR: white; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+.ms-summarytitlebartitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: white; FONT-FAMILY: arial; TEXT-DECORATION: none
+}
+.ms-summarytitlebartitle:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+IMG.thumbnail {
+	BORDER-RIGHT: #9bf 3px solid; BORDER-TOP: #9bf 3px solid; BORDER-LEFT: #9bf 3px solid; BORDER-BOTTOM: #9bf 3px solid
+}
+TR.ms-imglibselectedrow {
+	BACKGROUND-COLOR: #f1f1f1
+}
+TR.ms-highlight {
+	BACKGROUND-COLOR: #f1f1f1
+}
+.ms-imglibthumbnail {
+	BORDER-RIGHT: #9bf 0px solid; BORDER-TOP: #9bf 0px solid; BORDER-LEFT: #9bf 0px solid; BORDER-BOTTOM: #9bf 0px solid; BACKGROUND-COLOR: #ddd
+}
+SPAN.thumbnail {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 16px; WIDTH: 5px; PADDING-TOP: 16px; POSITION: relative
+}
+SPAN.userdata {
+	DISPLAY: none; BEHAVIOR: url(#default#userData)
+}
+.ms-imglibmenuarea {
+	BACKGROUND-COLOR: silver
+}
+A.ms-imglibPreviewTitle {
+	OVERFLOW: hidden; WIDTH: 130px; TEXT-OVERFLOW: ellipsis
+}
+TABLE.ms-imglibPreviewTable {
+	DISPLAY: none
+}
+.UserShadedRegion {
+	FONT-FAMILY: verdana, sans-serif; BACKGROUND-COLOR: #fef5d1
+}
+.UserCaption {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #dee7f7
+}
+.UserConfiguration {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2
+}
+.UserDottedLine {
+	BACKGROUND-IMAGE: url(/websurvey/Images/dot.gif); MARGIN-BOTTOM: 2px; OVERFLOW: hidden; HEIGHT: 1px; BACKGROUND-COLOR: #3366cc
+}
+.UserButton {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Arial, Sans-Serif
+}
+.UserInput {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Arial, Sans-Serif
+}
+.UserSelect {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Arial, Sans-Serif
+}
+.UserNotification {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; COLOR: #808080; PADDING-TOP: 4px; FONT-FAMILY: verdana, sans-serif
+}
+.UserToolBarTextArea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; FONT-FAMILY: Verdana, sans-serif
+}
+.UserToolbarTextArea A:link {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+.UserToolbarTextArea A:visited {
+	COLOR: #3366cc; TEXT-DECORATION: none
+}
+.UserToolbarTextArea A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.UserToolbarDisabledLink {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 4px; COLOR: #808080; PADDING-TOP: 4px; FONT-FAMILY: verdana
+}
+.UserToolbarImage {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: 8pt; BORDER-LEFT: medium none; CURSOR: hand; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: #e6e6e6; TEXT-ALIGN: center
+}
+.UserToolBarImageArea {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; FONT-FAMILY: Verdana, sans-serif
+}
+.UserToolbarSelectedImage {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: bold; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; BORDER-LEFT: medium none; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+.UserGenericHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #000000; FONT-FAMILY: arial, sans-serif
+}
+.UserGeneric {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 7px; PADDING-TOP: 8px
+}
+.UserGenericBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 17px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+.UserGenericText {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana, arial, sans-serif
+}
+.UserBackground {
+	BACKGROUND-COLOR: #ffffff
+}
+.UserSectionTitle {
+	MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 2px; WIDTH: 100%; COLOR: #000000; BORDER-BOTTOM: #3366cc 1px solid
+}
+.UserSectionHead {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 3px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 0px
+}
+.UserSectionBody {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+.UserControlGroup {
+	PADDING-BOTTOM: 10px; PADDING-TOP: 2px
+}
+.UserSectionFooter {
+	BORDER-TOP: #3366cc 1px solid; MARGIN-TOP: 5px; WIDTH: 100%; COLOR: #000000; PADDING-TOP: 2px
+}
+.UserFooter {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 7px; WIDTH: 100%; PADDING-TOP: 10px
+}
+.UserCommandArea {
+	PADDING-TOP: 7px
+}
+.UserToolbar {
+	BORDER-RIGHT: #95b7f3 1px solid; BACKGROUND-POSITION: left bottom; BORDER-TOP: #95b7f3 1px solid; BACKGROUND-IMAGE: url(/websurvey/Images/toolgrad.gif); BORDER-LEFT: #95b7f3 1px solid; BORDER-BOTTOM: #95b7f3 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: transparent
+}
+.UserCellSelected {
+	BORDER-RIGHT: #2254b1 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #2254b1 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #2254b1 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #2254b1 1px solid; FONT-FAMILY: Verdana, Arial, Sans-Serif; BACKGROUND-COLOR: #fee197
+}
+.UserCell {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: #000000; PADDING-TOP: 2px; FONT-FAMILY: Verdana, Arial, Sans-Serif
+}
+.UserGenericBulletItem {
+	PADDING-BOTTOM: 2px
+}
+.ms-ToolPaneFrame {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-COLOR: #e1ecfc
+}
+.ms-ToolPaneBody {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ms-ToolPaneHeader {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BACKGROUND-COLOR: #2254b1; BORDER-BOTTOM-STYLE: none
+}
+.ms-ToolPaneBorder {
+	BORDER-RIGHT: #c1ccde 1px solid; BORDER-TOP: medium none; BORDER-LEFT: #c1ccde 1px solid; BORDER-BOTTOM: medium none
+}
+.ms-ToolPaneClose {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 0px; BACKGROUND-COLOR: #2254b1
+}
+.ms-ToolPaneTitle {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; COLOR: white; PADDING-TOP: 3px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #2254b1
+}
+.ms-ToolPaneFooter {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 5px; COLOR: white; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #2254b1
+}
+.ms-ToolPaneError {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 8pt; PADDING-BOTTOM: 10px; COLOR: #ce3431; PADDING-TOP: 10px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-ToolPaneInfo {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: white; PADDING-TOP: 5px; FONT-FAMILY: verdana, arial, helvetica, sans-serif; BACKGROUND-COLOR: #4a658c
+}
+.ms-ToolPartSpacing {
+	PADDING-TOP: 8px
+}
+.ms-ToolStripSelected {
+	BORDER-RIGHT: #2254b1 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #2254b1 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #2254b1 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #2254b1 1px solid; FONT-FAMILY: Verdana, Arial, Sans-Serif; BACKGROUND-COLOR: #fee197
+}
+.ms-ToolStrip {
+	BORDER-RIGHT: #91b5f4 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #91b5f4 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; BORDER-LEFT: #c1ccde 1px solid; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #91b5f4 1px solid; FONT-FAMILY: Verdana, Arial, Sans-Serif; BACKGROUND-COLOR: #c8dbf8
+}
+.ms-TPBorder {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none
+}
+.ms-TPHeader {
+	BACKGROUND-COLOR: #cbdbf8
+}
+.ms-TPTitle {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; COLOR: midnightblue; PADDING-TOP: 2px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-TPBody {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-TPBody A:link {
+	CURSOR: hand; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-TPBody A:visited {
+	CURSOR: hand; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-TPBody A:hover {
+	CURSOR: hand; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-TPCommands {
+	
+}
+.ms-TPInput {
+	FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-PropGridBuilderButton {
+	BORDER-RIGHT: #3366cc 1px solid; BORDER-TOP: #3366cc 1px solid; DISPLAY: none; FONT-SIZE: 8pt; BORDER-LEFT: #3366cc 1px solid; WIDTH: 16px; BORDER-BOTTOM: #3366cc 1px solid; BACKGROUND-COLOR: #c1ccde
+}
+.ms-BuilderBackground {
+	BACKGROUND: #d3d3d3
+}
+.ms-SPZone {
+	BORDER-RIGHT: darkgray 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: darkgray 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: darkgray 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: darkgray 1px solid
+}
+.ms-SPZoneSelected {
+	BORDER-RIGHT: blue 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: blue 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: blue 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: blue 1px solid
+}
+.ms-SPZoneIBar {
+	BORDER-RIGHT: blue 3px solid; BORDER-TOP: blue 3px solid; BORDER-LEFT: blue 3px solid; BORDER-BOTTOM: blue 3px solid
+}
+.ms-SPZoneLabel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: 0px; COLOR: darkgray; PADDING-TOP: 0px; FONT-FAMILY: verdana
+}
+.ms-SPZoneCaption {
+	FONT-SIZE: 9pt; COLOR: darkgray; FONT-FAMILY: verdana
+}
+.ms-WPDesign {
+	BACKGROUND-COLOR: #c1ccde
+}
+.ms-WPMenu {
+	BACKGROUND-COLOR: #c1ccde
+}
+.ms-WPTitle {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 6px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; PADDING-BOTTOM: 2px; COLOR: #003399; PADDING-TOP: 2px; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-WPTitle A:link {
+	CURSOR: hand; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPTitle A:visited {
+	CURSOR: hand; COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPTitle A:hover {
+	CURSOR: hand; COLOR: red; TEXT-DECORATION: underline
+}
+.ms-WPSelected {
+	BORDER-RIGHT: #f4c660 3px dashed; BORDER-TOP: #f4c660 3px dashed; BORDER-LEFT: #f4c660 3px dashed; BORDER-BOTTOM: #f4c660 3px dashed
+}
+.ms-WPBody {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-WPBody TABLE {
+	FONT-SIZE: 1em
+}
+.ms-TPBody TABLE {
+	FONT-SIZE: 1em
+}
+.ms-WPBody A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPBody A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-WPBody A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.ms-WPBody TH {
+	FONT-WEIGHT: bold
+}
+.ms-TPBody TH {
+	FONT-WEIGHT: bold
+}
+.ms-WPBody TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana, arial, helvetica, sans-serif
+}
+.ms-WPBody H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%
+}
+.ms-TPBody H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 200%
+}
+.ms-WPBody H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 150%
+}
+.ms-TPBody H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 150%
+}
+.ms-WPBody H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%
+}
+.ms-TPBody H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 120%
+}
+.ms-WPBody H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.ms-TPBody H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%
+}
+.ms-WPBody H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 80%
+}
+.ms-TPBody H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 80%
+}
+.ms-WPBody H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 65%
+}
+.ms-TPBody H6 {
+	FONT-WEIGHT: bold; FONT-SIZE: 65%
+}
+.ms-WPBorder {
+	BORDER-RIGHT: #afc9ef 1px solid; BORDER-TOP: #afc9ef 0px solid; BORDER-LEFT: #afc9ef 1px solid; BORDER-BOTTOM: #afc9ef 1px solid
+}
+.ms-HoverCellInActive {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; MARGIN: 1px; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BACKGROUND-COLOR: transparent
+}
+.ms-HoverCellActive {
+	BORDER-RIGHT: #f4c660 1px solid; BORDER-TOP: #f4c660 1px solid; BORDER-LEFT: #f4c660 1px solid; BORDER-BOTTOM: #f4c660 1px solid; BACKGROUND-COLOR: #e1ecfc
+}
+.ms-HoverCellActiveDark {
+	BORDER-RIGHT: #cbdbf8 1px solid; BORDER-TOP: #cbdbf8 1px solid; BORDER-LEFT: #cbdbf8 1px solid; BORDER-BOTTOM: #cbdbf8 1px solid; BACKGROUND-COLOR: steelblue
+}
+.ms-SPLink {
+	FONT-SIZE: 8pt; COLOR: #003399; FONT-FAMILY: verdana
+}
+.ms-SPLink A:link {
+	COLOR: midnightblue; TEXT-DECORATION: none
+}
+.ms-SPLink A:visited {
+	COLOR: midnightblue; TEXT-DECORATION: none
+}
+.ms-SPButton {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana
+}
+.ms-PartSpacingVertical {
+	MARGIN-TOP: 12px; FONT-SIZE: 1pt
+}
+.ms-PartSpacingHorizontal {
+	FONT-SIZE: 1pt; WIDTH: 8px
+}
+.ms-WPHeader {
+	BACKGROUND-IMAGE: url(/websurvey/Images/partgrad.gif); BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #b9d1f4
+}
+.ms-rtApplyBackground {
+	BORDER-RIGHT: buttonshadow 1px solid; BORDER-BOTTOM: buttonshadow 1px solid; BACKGROUND-COLOR: #d7e7fd
+}
+.ms-tbButtonMouseOverDown {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; BORDER-LEFT: buttonshadow 1px solid; WIDTH: 23px; BORDER-BOTTOM: buttonhighlight 1px solid; TOP: 1px; HEIGHT: 22px; BACKGROUND-COLOR: #d7e7fd
+}
+.ms-rtRemoveBackground {
+	BORDER-RIGHT: #d7e7fd 1px solid; BORDER-TOP: #d7e7fd 1px solid; BORDER-LEFT: #d7e7fd 1px solid; BORDER-BOTTOM: #d7e7fd 1px solid; BACKGROUND-COLOR: transparent
+}
+.ms-subsmanageheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; FONT-FAMILY: verdana; BACKGROUND-COLOR: #f2f2f2; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+.ms-subsmanagecell {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; COLOR: black; FONT-FAMILY: verdana; HEIGHT: 18px
+}
+.ms-ConnError {
+	COLOR: red
+}
+.ms-underline {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; BORDER-BOTTOM: #c2c2c2 1px solid
+}
+.ms-underlineback {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 3px; BORDER-BOTTOM: #c2c2c2 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.ms-back {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; VERTICAL-ALIGN: top; PADDING-TOP: 2px; BACKGROUND-COLOR: #f8f8f8
+}
+.ms-smallheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #000000; FONT-FAMILY: verdana
+}
+.ms-smallsectionline {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 3px; BORDER-BOTTOM: #c2c2c2 1px solid
+}
+.ms-tabselected {
+	BORDER-RIGHT: #ffd275 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ffd275 2px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; BORDER-LEFT: #ffd275 2px solid; COLOR: #003399; PADDING-TOP: 3px; BORDER-BOTTOM: #ffd275 2px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #ffd275
+}
+.ms-tabinactive {
+	BORDER-RIGHT: #e1ecfc 2px solid; PADDING-RIGHT: 10px; BORDER-TOP: #e1ecfc 2px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 3px; BORDER-LEFT: #e1ecfc 2px solid; COLOR: #003399; PADDING-TOP: 3px; BORDER-BOTTOM: #e1ecfc 2px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #e1ecfc
+}
+.ms-tabinactive A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-tabinactive A:hover {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-tabinactive A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-surveyHBar {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #3366cc
+}
+.ms-surveyHBarB {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #cccccc
+}
+.ms-surveyVBar {
+	FONT-SIZE: 2px; BACKGROUND-COLOR: #3366cc
+}
+.ms-surveyVBarB {
+	FONT-SIZE: 2px; VERTICAL-ALIGN: bottom; BACKGROUND-COLOR: #cccccc
+}
+.ms-surveyVBarBI {
+	FONT-SIZE: 2px; VERTICAL-ALIGN: top; BACKGROUND-COLOR: #3366cc
+}
+.ms-surveyVBarS {
+	FONT-SIZE: 2px
+}
+.ms-surveyVBarT {
+	FONT-SIZE: 7pt; COLOR: #808080; FONT-FAMILY: verdana
+}
+.ms-surveyVBarTC {
+	FONT-SIZE: 7pt; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: center
+}
+.ms-surveyHR {
+	COLOR: #cccccc; HEIGHT: 1px
+}
+.ms-surveyTotal {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-SIZE: 8pt; COLOR: #808080; FONT-FAMILY: verdana
+}
+.ms-uploadborder {
+	BORDER-RIGHT: #d4dce6 1px solid; BORDER-TOP: #d4dce6 1px solid; BORDER-LEFT: #d4dce6 1px solid; BORDER-BOTTOM: #d4dce6 1px solid;
+}
+.ms-uploadcontrol {
+	BACKGROUND-COLOR: #f2f2f2
+}
+.ms-spaceBetContentAndButton {
+	HEIGHT: 10px
+}
+.ms-ButtonHeightWidth {
+	WIDTH: 100px
+}
+.ms-ButtonHeightWidth2 {
+	WIDTH: 125px; HEIGHT: 24px
+}
+.ms-SpaceBetButtons {
+	WIDTH: 6px
+}
+.ms-summarycustombody {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 6px; MARGIN-RIGHT: 6px
+}
+.ms-summarystandardbody {
+	MARGIN-TOP: 5px; MARGIN-LEFT: 2px; MARGIN-RIGHT: 6px
+}
+.ms-stylebox {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; FONT-FAMILY: verdana; TEXT-ALIGN: left
+}
+.ms-stylelabel {
+	FONT-SIZE: 8pt; COLOR: #808080; FONT-FAMILY: verdana
+}
+.ms-styleheader {
+	FONT-SIZE: 0.68em; FONT-FAMILY: verdana; BACKGROUND-COLOR: #eeeeee
+}
+.ms-styleheader A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-stylebody A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-styleheader A:visited {
+	TEXT-DECORATION: none
+}
+.ms-stylebody A:visited {
+	TEXT-DECORATION: none
+}
+.ms-stylebody {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.ms-styleheader A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-stylebody A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+.ms-alternating {
+	BACKGROUND-COLOR: #ecf4fe
+}
+.ms-MWSSelectedInstance {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MWSInstantiated A:hover {
+	COLOR: #6aafff; TEXT-DECORATION: underline
+}
+.ms-MWSUninstantiated A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MWSUninstantiated A:visited {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.ms-MWSUninstantiated A:hover {
+	COLOR: #003399; TEXT-DECORATION: underline
+}
+
+.loginTable { BORDER-RIGHT: #bbb 1px solid; PADDING-RIGHT: 32px; BORDER-TOP: #bbb 1px solid; PADDING-LEFT: 32px; BACKGROUND: #fff; PADDING-BOTTOM: 32px; MARGIN-LEFT: 30px; BORDER-LEFT: #bbb 1px solid; WIDTH: 100%; PADDING-TOP: 20px; BORDER-BOTTOM: #bbb 1px solid }
+.Heading { PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 110%; PADDING-BOTTOM: 15px; MARGIN: 0px; COLOR: #003399; PADDING-TOP: 0px; FONT-FAMILY: verdana }
+.LABEL { DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 12px; MARGIN: 6px 0px 2px; TEXT-TRANSFORM: uppercase; COLOR: #999 }
+.LoginTextbox { PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; WIDTH: 200px; PADDING-TOP: 2px; FONT-FAMILY: verdana, arial, sans-serif }
+.Button { BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 12px; BORDER-TOP: #999 1px solid; DISPLAY: block; PADDING-LEFT: 12px; FONT-WEIGHT: bold; BACKGROUND: #003399; FLOAT: left; PADDING-BOTTOM: 3px; BORDER-LEFT: #999 1px solid; COLOR: #fff; PADDING-TOP: 3px; BORDER-BOTTOM: #999 1px solid }
+.ErrorMessage { FONT-WEIGHT: bold; FONT-SIZE: 67%; COLOR: #003399 }
+
+.button1 { font:bold 12px ; border-style:outset;  border-width:2px; margin-right:.5em; }
+.uploadfile { BORDER-RIGHT: #d4dce6 1px solid; BORDER-TOP: #d4dce6 1px solid; BORDER-LEFT: #d4dce6 1px solid; BORDER-BOTTOM: #d4dce6 1px solid;font:bold 12px ; border-style:outset;  border-width:2px; margin-right:.5em; }
+.listbox  {BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; DISPLAY: block; BORDER-LEFT: #999 1px solid; BORDER-BOTTOM: #999 1px solid;font: 12px ;}
+
+.inputA 
+{
+	FONT-SIZE: 0.68em; COLOR: #003399; FONT-FAMILY: verdana; TEXT-DECORATION: none;
+	BORDER-RIGHT: #000000 1px solid; 
+	BORDER-TOP: #000000 1px solid; 
+	BORDER-LEFT: #000000 1px solid; 
+	BORDER-BOTTOM: #000000 1px solid; 
+}
+
+.href_button {
+	COLOR: #003399; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}
+
+.std_Table
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+	border :solid 1px #95b7f3;
+	font-size:66.7%;
+	TEXT-DECORATION:none;
+}
+
+.std_Table_Header_Row
+{
+	BORDER-RIGHT: #95b7f3 1px solid; BORDER-TOP: #95b7f3 1px solid; BACKGROUND-IMAGE: url(/websurvey/Images/toolgrad.gif); BORDER-LEFT: #95b7f3 1px solid; BORDER-BOTTOM: #95b7f3 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #9ebff6;
+	FONT-FAMILY: verdana; TEXT-DECORATION: none;
+	
+}
+
+.std_Blue_Row
+{
+	BACKGROUND-COLOR: #91bffc;
+}
+
+.std_Brown_Row
+{
+	BACKGROUND-COLOR: #FFFF99;
+}
+
+.std_Gray_Row
+{
+	BACKGROUND-COLOR: #f1f1f1;
+}
+
+.std_Dark_Row
+{
+	background-color: #dddddd;
+}
+
+.std_Pink_Row
+{
+	background-color: #FFCC99
+}
+
+.std_Green_Row
+{
+	background-color: #66CC00;
+}
+
+.std_Gainsboro_Row
+{
+	BACKGROUND-COLOR: #DCDCDC;
+}
+
+.std_WhiteSmoke_Row
+{
+	BACKGROUND-COLOR: #F5F5F5;
+}
+
+.std_Blue_Column
+{
+	BACKGROUND-COLOR: #9ebff6;
+}
+
+.std_LightDark_Row
+{
+	BACKGROUND-COLOR: #eaeaea;
+}
+
+.std_LightBlue_Row
+{
+	BACKGROUND-COLOR: #B0C4DE;
+}
+
+.invoice_header {
+	font-size: 30px; FONT-FAMILY: Verdana, Arial, Helvetica;
+}
+
+.invoice_small_header {
+	font-size: 20px; FONT-FAMILY: Verdana, Arial, Helvetica;
+}
+
+.Table_item
+{
+	BACKGROUND-COLOR: #9ebff6;
+	font-size:150%;
+	font-weight:bold;
+}
+.Table_HighItem
+{
+	BACKGROUND-COLOR: #00FF99;
+	font-size:150%;
+	font-weight:bold;
+}
+.Table_grayitem
+{
+	PADDING-BOTTOM: 0px;
+	BORDER-bottom: #cccccc 1px solid; 
+	BORDER-right: #cccccc 1px solid;
+	BORDER-left: #cccccc 1px solid;
+	BORDER-top: #cccccc 1px solid;
+	BACKGROUND-REPEAT: repeat-x; 
+	BACKGROUND-COLOR: #f1f1f1;
+	font-size:150%;
+}
+
+.Table_deepgrayitem
+{
+	PADDING-BOTTOM: 0px;
+	BORDER-bottom: #cccccc 1px solid; 
+	BORDER-right: #cccccc 1px solid;
+	BORDER-left: #cccccc 1px solid;
+	BORDER-top: #cccccc 1px solid;
+	BACKGROUND-REPEAT: repeat-x; 
+	BACKGROUND-COLOR: #DFDFDF;
+	font-size:150%;
+}
+
+.Table_whiteitem
+{
+	PADDING-BOTTOM: 0px;
+	BORDER-bottom: #cccccc 1px solid; 
+	BORDER-right: #cccccc 1px solid;
+	BORDER-left: #cccccc 1px solid;
+	BORDER-top: #cccccc 1px solid;
+	BACKGROUND-REPEAT: repeat-x; 
+	BACKGROUND-COLOR: #FFFFFF;
+	font-size:150%;
+}
+
+.datagrid_header{
+	FONT-WEIGHT:bold; FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; COLOR: #808080; FONT-FAMILY: verdana; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+
+.datagrid_row {
+	FONT-SIZE: 0.68em; VERTICAL-ALIGN: top; FONT-FAMILY: verdana;
+}
+
+.datagrid_item {
+	FONT-FAMILY: verdana;
+	BORDER-bottom: #e1e1e1 1px solid;
+}
+
+.datagrid_item_task {
+	FONT-FAMILY: verdana;
+	color:Blue;
+	BORDER-bottom: #e1e1e1 1px solid;
+}
+
+.datagrid_item_note {
+	FONT-FAMILY: verdana;
+	color:#FF00FF;
+	BORDER-bottom: #e1e1e1 1px solid;
+}
+
+.datagrid_gray_item {
+	FONT-FAMILY: verdana;
+	BORDER-bottom: #9ebff6 1px solid;
+	background-color:e1ecfc;
+}
+
+.datagrid_header A {
+	COLOR: #808080; TEXT-DECORATION: none;	
+}
+
+.datagrid_header A:hover {
+	TEXT-DECORATION: underline
+}
+
+.datagrid_row A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.datagrid_row A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+
+.tabMenuActive
+{
+	FONT-SIZE: 0.68em;
+	text-align:center;
+	BORDER-BOTTOM: silver 1px solid;
+	BORDER-TOP: silver 1px solid;
+	BORDER-LEFT: silver 1px solid;
+	BORDER-RIGHT: silver 1px solid;
+	background-color: #f1f1f1;
+}
+
+.tabMenuNoActive
+{
+	FONT-SIZE: 0.68em;
+	text-align:center;
+	BORDER-BOTTOM: silver 1px solid;
+	BORDER-TOP: silver 1px solid;
+	BORDER-LEFT: silver 1px solid;
+	BORDER-RIGHT: silver 1px solid;
+	background-color: #e1ecfc;
+}
+
+.border
+{
+	BORDER-BOTTOM: #95b7f3 1px solid;
+	BORDER-TOP: #95b7f3 1px solid;
+	BORDER-LEFT: #95b7f3 1px solid;
+	BORDER-RIGHT: #95b7f3 1px solid;
+}
+
+.tabMenuNoActive A {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+.tabMenuNoActive A:hover {
+	COLOR: #ff3300; TEXT-DECORATION: underline
+}
+
+
+.tabMenuBorderBottom
+{
+	BORDER-BOTTOM: silver 1px solid;
+}
+
+.mainTablePartLine
+{
+	BORDER-LEFT: #b9d1f4 1px solid;
+	BORDER-RIGHT: #b9d1f4 1px solid;
+}
+
+.menubar {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-REPEAT: repeat-x; BACKGROUND-COLOR: #9ebff6
+}
+
+@media Print    
+{
+.noPrint { DISPLAY: none; }
+}
+
+.ms-labelcontent {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; FONT-FAMILY: verdana;
+}
+
+/*
+ * FCKeditor - The text editor for internet
+ * Copyright (C) 2003-2005 Frederico Caldeira Knabben
+ * 
+ * Licensed under the terms of the GNU Lesser General Public License:
+ * 		http://www.opensource.org/licenses/lgpl-license.php
+ * 
+ * For further information visit:
+ * 		http://www.fckeditor.net/
+ * 
+ * File Name: fck_editorarea.css
+ * 	This is the default CSS file used by the editor area. It defines the
+ * 	initial font of the editor and background color.
+ * 
+ * 	A user can configure the editor to use another CSS file. Just change
+ * 	the value of the FCKConfig.EditorAreaCSS key in the configuration
+ * 	file.
+ * 
+ * File Authors:
+ * 		Frederico Caldeira Knabben (fredck@fckeditor.net)
+ */
+.Bold
+{
+	font-weight: bold;
+}
+
+.Title
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #cc3300;
+}
+
+.Code
+{
+	border: #8b4513 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	color: #000066;
+	font-family: 'Courier New' , Monospace;
+	background-color: #ff9933;
+}
+
+.navbar
+{
+   BACKGROUND-COLOR: #E8F2FE;
+}
+
+.luceneHighLight{
+   COLOR: #FF0000; FONT-FAMILY: verdana; TEXT-DECORATION: none
+}

@@ -1,0 +1,85 @@
+<script>
+function nextPage(){
+ window.location.href = "${rc.contextPath}/secure/chineseTableName.luc?pageID=${tableNameForm.nextPageId}";
+}
+
+function priorPage(){
+ window.location.href = "${rc.contextPath}/secure/chineseTableName.luc?pageID=${tableNameForm.priorPageId}";
+}
+
+function redirect(){
+ window.location.href = "${rc.contextPath}/secure/accountResults.luc";
+}
+</script>
+
+
+<!--
+<Form id="tableNameForm" name="tableNameForm" action="chineseTableName.luc" method="post">
+<table>
+#foreach($key in $tableNameForm.key)
+<tr>
+<td>$key</td>
+#springBind("tableNameForm.value[${velocityCount}]") 
+<td><input type="text" size=24 name="${status.expression}" value="${tableNameForm.map.get($key)}"/></td>
+</tr>
+#end
+</table>
+<input type="submit" value='提交'/>
+<input type="button" onclick="priorPage()" value='上一页'/>
+<input type="button" onclick="nextPage()" value='下一页'/>
+</Form>
+//-->
+
+
+
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>数据库中文名称</title>
+<link href="${rc.contextPath}/css/Global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">数据库中文名称</P>
+	<table align="center" border=0>
+	<tr><td> 第${tableNameForm.pageId}页 &nbsp;&nbsp; 共${tableNameForm.pageCount}页</td></tr>
+    <Form id="tableNameForm" name="tableNameForm" action="chineseTableName.luc" method="post">
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+		    <td align="center">序号</td>
+			<td align="center">数据表</td>
+			<td align="center">中文名称</td>
+		</tr>
+		#foreach($key in $tableNameForm.key)
+        <tr class="Table_grayitem">	
+        <td>${velocityCount}</td>
+        <td>$key</td>
+        #springBind("tableNameForm.value[${velocityCount}]") 
+        <td><input type="text" size=24 name="${status.expression}" value="${tableNameForm.map.get($key)}"/></td>
+        </tr>
+		#end
+	</table>
+ 
+	<P>
+	<TABLE cellSpacing="0" cellPadding="1" border="0"   width="80" align="center">
+				<TR align="center">
+                    <td><input type="submit" value='提 交'/>&nbsp;</td>
+                    <td><input type="button" onclick="redirect()" value='返回'/></td>                    
+                    <td><input type="button" onclick="priorPage()" value='上一页'/>&nbsp;</td>
+                    <td><input type="button" onclick="nextPage()" value='下一页'/></td>	
+                </TR>
+	</TABLE>
+	</Form>
+	<br/>
+</body>
+</html> 
+
+#if($isSubmit=="true") 
+<script>
+  alert("修改成功");
+</script>
+#end

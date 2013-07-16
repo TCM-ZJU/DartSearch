@@ -1,0 +1,48 @@
+meta.jdbc.driverClassName=oracle.jdbc.xa.client.OracleXADataSource
+meta.jdbc.url=jdbc:oracle:thin:@10.214.33.111:1521:tcm
+meta.jdbc.username=tcm
+meta.jdbc.password=tcm
+
+#meta.jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+#meta.jdbc.url=jdbc:oracle:thin:@10.214.43.183:1521:tcm
+#meta.jdbc.username=tcm
+#meta.jdbc.password=tcm
+
+dict.jdbc.driverClassName=oracle.jdbc.xa.client.OracleXADataSource
+dict.jdbc.url=jdbc:oracle:thin:@10.214.33.111:1521:tcm
+dict.jdbc.username=tcm
+dict.jdbc.password=tcm
+
+jdbc.driverClassName=oracle.jdbc.xa.client.OracleXADataSource
+jdbc.url=jdbc:oracle:thin:@10.214.33.111:1521:tcm
+jdbc.username=tcm
+jdbc.password=tcm
+
+
+
+#<localDbResType canBeTempDb="true" dbType="Oracle">
+#      <jdbcUrl>jdbc:oracle:thin:@10.214.33.111:1521:tcm</jdbcUrl>
+#      <jdbcDriver>oracle.jdbc.OracleDriver</jdbcDriver>
+#      <jdbcUser>tcm</jdbcUser>
+#      <jdbcPwd>tcm</jdbcPwd>
+
+
+
+
+
+
+
+admin.jdbc.driverClassName=oracle.jdbc.xa.client.OracleXADataSource
+admin.jdbc.url=jdbc:oracle:thin:@10.214.33.111:1521:tcm
+admin.jdbc.username=tcm
+admin.jdbc.password=tcm
+
+#acegi.jdbc.driverClassName=oracle.jdbc.driver.OracleDriver
+#acegi.jdbc.url=jdbc:oracle:thin:@10.214.43.183:1521:tcm
+#acegi.jdbc.username=acegi
+#acegi.jdbc.password=acegi
+
+acegi.jdbc.driverClassName=oracle.jdbc.xa.client.OracleXADataSource
+acegi.jdbc.url=jdbc:oracle:thin:@10.214.33.111:1521:tcm
+acegi.jdbc.username=tcm
+acegi.jdbc.password=tcm

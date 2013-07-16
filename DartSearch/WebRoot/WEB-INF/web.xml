@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+ <display-name>TCM fullText searchEngine and database grid</display-name>
+
+	<description>TCM fullText searchEngine and database grid</description>	
+	
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>tcmsearch.root</param-value>
+	</context-param>
+	
+	<context-param>
+		<param-name>log4jConfigLocation</param-name>
+		<param-value>/WEB-INF/log4j.properties</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+		    classpath:dataAccessContext-local.xml  
+		    classpath:applicationContext.xml  
+		    classpath:acegiSecurityContext.xml
+			classpath:luceneApplicationContext.xml 
+		</param-value>
+	</context-param>
+
+	<filter>
+    	<filter-name>CharacterEncodingFilter</filter-name>
+	<!-- 	
+		<display-name>Character Encoding Filter</display-name>
+		<description>no description</description>
+	-->
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+		  <param-name>encoding</param-name>
+		  <param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+		  <param-name>forceEncoding</param-name>
+		  <param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter>
+        <filter-name>Acegi Filter Chain Proxy</filter-name>
+        <filter-class>net.sf.acegisecurity.util.FilterToBeanProxy</filter-class>
+        <init-param>
+            <param-name>targetClass</param-name>
+            <param-value>net.sf.acegisecurity.util.FilterChainProxy</param-value>
+        </init-param>
+   </filter>
+	
+    <filter>
+        <filter-name>sitemesh</filter-name>
+        <filter-class>com.opensymphony.module.sitemesh.filter.PageFilter</filter-class>
+    </filter>
+	
+		
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+ 
+	
+    <filter-mapping>
+      <filter-name>Acegi Filter Chain Proxy</filter-name>
+      <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+
+	<listener>
+		<listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>edu.zju.tcmsearch.secure.service.HttpSessionListenerProxy</listener-class>
+	</listener>	
+	
+  <servlet>
+		<servlet-name>tcmgrid2</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	    <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+
+  <servlet>
+		<servlet-name>ontoclassify</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	    <load-on-startup>2</load-on-startup>
+  </servlet>	
+
+		
+   <servlet>
+		<servlet-name>tcmlucene</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	    <load-on-startup>3</load-on-startup>
+  </servlet>
+
+<!-- 
+ <servlet>
+		<servlet-name>intemDetail</servlet-name>
+		<servlet-class>edu.zju.tcmsearch.web.servlet.SearchItemDetail</servlet-class>
+  	    <load-on-startup>3</load-on-startup>
+  </servlet>
+  
+    <servlet-mapping>
+       <servlet-name>intemDetail</servlet-name>
+       <url-pattern>/intemDetail.info</url-pattern>
+  </servlet-mapping>
+
+ -->
+  	
+ <!--
+   Ajax Lib 
+ //-->	
+  <servlet>
+       <servlet-name>dwr-invoker</servlet-name>
+      <!--
+      	<display-name>DWR Servlet</display-name>
+       --> 
+       <servlet-class>uk.ltd.getahead.dwr.DWRServlet</servlet-class>
+       <init-param>
+          <param-name>debug</param-name>
+          <param-value>false</param-value>
+       </init-param>
+  </servlet>
+
+  <servlet-mapping>
+       <servlet-name>dwr-invoker</servlet-name>
+       <url-pattern>/dwr/*</url-pattern>
+  </servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>tcmgrid2</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>ontoclassify</servlet-name>
+		<url-pattern>*.cla</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet-mapping>
+		<servlet-name>tcmlucene</servlet-name>
+		<url-pattern>*.luc</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+      <session-timeout>10</session-timeout>    <!-- 1 minutes -->
+    </session-config>
+		
+  	<welcome-file-list>
+		<welcome-file>/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+    <error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>	
+    <error-page>
+		<error-code>403</error-code>
+		<location>/403.jsp</location>
+	</error-page>	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+</web-app>

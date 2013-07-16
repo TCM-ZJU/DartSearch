@@ -1,0 +1,288 @@
+0    [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+15   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+390  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+390  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+0    [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+532  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+532  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+15   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+437  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+437  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+16   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+484  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+484  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+62   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+78   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+578  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+578  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+156  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+156  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+172  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+187  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+562  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+562  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+172  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+187  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+562  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+562  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+157  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+157  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+610  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+610  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+47   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+63   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+94   [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+578  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+578  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+156  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+156  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+515  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+515  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+15   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+31   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+109  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+140  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+140  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+515  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+515  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+0    [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZCY_2005 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZHONGGYY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYYD is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.HXCF0 is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.YWBLFY is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.XDFJ is not available!!
+16   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYFJ is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYCFBZ is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYBZ is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZYXYPZ is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.OTC is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJJBYW is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.ZGYD is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GJYPBZ_HXY is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.GB_ZWMY is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LZYYPWZN is not available!!
+32   [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Relation {SUN3500_TCM_ADMIN}http://edu.zju.cn/dart.TCM_ADMIN.LINCYYXZ is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+125  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+141  [main] ERROR cn.edu.zju.dart.core.semanticregistry.impl.StaticDartSemanticRegistry  - The Db Resource {SUN3500_WX}http://edu.zju.cn/dart is not available!!
+188  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+188  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled
+563  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - SQL operation not compiled before execution - invoking compile
+563  [main] DEBUG edu.zju.tcmsearch.dao.impl.secure.TableNameLocalDAO$SMappingSqlQuery  - RdbmsOperation with SQL [Select TableID,ChineseID from TableNameLocalization ] compiled

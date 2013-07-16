@@ -1,0 +1,1368 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY dart 'http://dart.zju.edu.cn/dartcore/dart#'>
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY v2 'http://dart.zju.edu.cn/dartcore/v2#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:dart="&dart;"
+	 xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:v2="&v2;"
+	 xmlns:rdfs="&rdfs;">
+<rdf:Property rdf:about="&dart;ID"
+	 rdfs:label="dart:ID">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;一级分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:一级分类">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;不良反应"
+	 rdfs:label="dart:不良反应">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;不良反应."
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应.">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应ID"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应ID">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应别名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应别名">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应及治疗"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应及治疗">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应情况"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应情况">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应机制"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应机制">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应预防"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:不良反应预防">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;专题名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:专题名">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;个人著者"
+	 rdfs:label="dart:个人著者">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中文异名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中文异名">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中文题名"
+	 rdfs:label="dart:中文题名">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;中草药"
+	 rdfs:label="dart:中草药">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;中草药与不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中草药与不良反应">
+	<rdfs:range rdf:resource="&dart;不良反应"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中草药与化学成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中草药与化学成分">
+	<rdfs:range rdf:resource="&dart;化学成分"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中药制药工艺"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中药制药工艺">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中药化学成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中药化学成分">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中药化学鉴定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中药化学鉴定">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中药有效成分结构式的测定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中药有效成分结构式的测定">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中西药分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:中西药分类">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;临床"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:临床">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;临床应用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:临床应用">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;临床应用与配方"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:临床应用与配方">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;临床运用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:临床运用">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;主治"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:主治">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;主治与适应症"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:主治与适应症">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;主题词"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:主题词">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;二级分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:二级分类">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;体内过程"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:体内过程">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;作用与注意"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:作用与注意">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;作用分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:作用分类">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;保护期"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:保护期">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;停药反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:停药反应">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;儿童用药"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:儿童用药">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;其他"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:其他">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;内分泌与代谢"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:内分泌与代谢">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;出处"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:出处">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分子式"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:分子式">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分子量"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:分子量">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分类号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:分类号">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;刊名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:刊名">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;别名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:别名">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;制备方法"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:制备方法">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;剂型"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:剂型">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;功效"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:功效">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;功效分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:功效分类">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;加减"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:加减">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动植物形态"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:动植物形态">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;包装"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:包装">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;化学号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学号">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;化学名称"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学名称">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;化学成分"
+	 rdfs:label="dart:化学成分">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;化学成分ID"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学成分ID">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;化学成分与不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学成分与不良反应">
+	<rdfs:range rdf:resource="&dart;不良反应"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;化学成分与药物"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学成分与药物">
+	<rdfs:range rdf:resource="&dart;药物"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;化学成分参考文献"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:化学成分参考文献">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;危险状态"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:危险状态">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;卷"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:卷">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;参考文献"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:参考文献">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;各家论述"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:各家论述">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;名称"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:名称">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;含量测定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:含量测定">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;呼吸系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:呼吸系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;品名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:品名">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;商品名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:商品名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;处方来源"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:处方来源">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;处方用名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:处方用名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;备注"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:备注">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;孕妇及哺乳期妇女用药"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:孕妇及哺乳期妇女用药">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验动物的品种"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:实验动物的品种">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对实验诊断的干扰"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:对实验诊断的干扰">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对生长的干扰"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:对生长的干扰">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;应用鉴定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:应用鉴定">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;归经"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:归经">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;微生物耐药性"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:微生物耐药性">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;心血管系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:心血管系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;性味"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:性味">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;性味归经来源"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:性味归经来源">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;成分分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:成分分类">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;批件号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:批件号">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;批准文号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:批准文号">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;批准日期"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:批准日期">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;拉丁文名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:拉丁文名">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;拉丁植物动物矿物名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:拉丁植物动物矿物名">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;接种对象"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:接种对象">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;提取物"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:提取物">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;放射化学纯度"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:放射化学纯度">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;放射性核活度"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:放射性核活度">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;放射性活度"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:放射性活度">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;放射性浓度"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:放射性浓度">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;效价测定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:效价测定">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;文摘"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:文摘">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;文献类型"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:文献类型">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;新药证书号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:新药证书号">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;方剂"
+	 rdfs:label="dart:方剂">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;方剂ID"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂ID">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂与不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂与不良反应">
+	<rdfs:range rdf:resource="&dart;不良反应"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂主治"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂主治">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂别名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂别名">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂功效"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂功效">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂化学成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂化学成分">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂名称"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂名称">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方剂用药禁忌"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方剂用药禁忌">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;方解"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:方解">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;有效期"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:有效期">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;期"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:期">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;期刊文献"
+	 rdfs:label="dart:期刊文献">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;来源"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:来源">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;构效关系"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:构效关系">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;标准号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:标准号">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;检查"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:检查">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;毒性"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:毒性">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;毒性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:毒性实验">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;毒理学"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:毒理学">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;汉语拼音"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:汉语拼音">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;治疗与解救"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:治疗与解救">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;泌尿系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:泌尿系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;注意事项"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:注意事项">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;浸出物"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:浸出物">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;消化系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:消化系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;炮制方法"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:炮制方法">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;特殊器官"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:特殊器官">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;理化作用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:理化作用">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;理化性质"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:理化性质">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;瑶文名称"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:瑶文名称">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生产企业"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生产企业">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生产单位"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生产单位">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生产单位省份"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生产单位省份">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生产厂家"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生产厂家">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生态环境"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生态环境">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生殖系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生殖系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生物分布"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生物分布">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生物制品制备"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生物制品制备">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生药材鉴定"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:生药材鉴定">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;用法用量"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:用法用量">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;用药分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:用药分类">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;用药禁忌"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:用药禁忌">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;用途分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:用途分类">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;申请单位"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:申请单位">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;申请日期"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:申请日期">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;申请编号"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:申请编号">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;病例数"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:病例数">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;皮肤和相关组织"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:皮肤和相关组织">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;研究单位"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:研究单位">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;研究单位省份"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:研究单位省份">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;神经系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:神经系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;科属分类"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:科属分类">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;第一著者单位"
+	 rdfs:label="dart:第一著者单位">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;第一著者地址"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:第一著者地址">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;老年患者用药"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:老年患者用药">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;考证"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:考证">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;肌肉骨骼系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:肌肉骨骼系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;英文名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:英文名">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;英文异名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:英文异名">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;英文摘要"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:英文摘要">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;英文题名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:英文题名">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药代动力学"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药代动力学">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药典收录"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药典收录">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药化作用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药化作用">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药名">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药品类型"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药品类型">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药材基源"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药材基源">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;药物"
+	 rdfs:label="dart:药物">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;药物ID"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物ID">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物不良反应">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物与不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物与不良反应">
+	<rdfs:range rdf:resource="&dart;不良反应"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物与化学成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物与化学成分">
+	<rdfs:range rdf:resource="&dart;化学成分"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物主要成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物主要成分">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物别名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物别名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物制剂"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物制剂">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物制备方法"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物制备方法">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物剂型"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物剂型">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物功效"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物功效">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物化学成分"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物化学成分">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物应用鉴别"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物应用鉴别">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物异名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物异名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物归经"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物归经">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物性味"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物性味">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物性状"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物性状">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物毒理学"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物毒理学">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物汉语拼音"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物汉语拼音">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物炮制方法"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物炮制方法">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物相互作用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物相互作用">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物组成"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物组成">
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物过量"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药物过量">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药理作用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药理作用">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药理参考文献"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药理参考文献">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药理学"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药理学">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药用植物栽培"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药用植物栽培">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药用部位"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:药用部位">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;藏方药名"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:藏方药名">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;血液系统"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:血液系统">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;规格"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:规格">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;质量标准"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:质量标准">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;贮藏"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:贮藏">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;资源分布"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:资源分布">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;过敏反应"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:过敏反应">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;过量"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:过量">
+	<rdfs:domain rdf:resource="&dart;不良反应"/>
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;适应症"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:适应症">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;选方"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:选方">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;配伍及机制"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:配伍及机制">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;配伍应用"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:配伍应用">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;配方"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:配方">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;采收和储藏"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:采收和储藏">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;采集加工"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:采集加工">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;鉴别"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:鉴别">
+	<rdfs:domain rdf:resource="&dart;药物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;销售地区"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:销售地区">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;附注"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:附注">
+	<rdfs:domain rdf:resource="&dart;中草药"/>
+	<rdfs:domain rdf:resource="&dart;方剂"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;页码"
+	 a:maxCardinality="1"
+	 rdfs:label="dart:页码">
+	<rdfs:domain rdf:resource="&dart;期刊文献"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;DBName"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:DBName">
+	<rdfs:domain rdf:resource="&v2;DBTypeNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;DBTypeNode"
+	 rdfs:label="v2:DBTypeNode">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;ValueNode"
+	 rdfs:label="v2:ValueNode">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;biggerOrEqual"
+	 rdfs:label="v2:biggerOrEqual">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;biggerThan"
+	 rdfs:label="v2:biggerThan">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;dbtype"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:dbtype">
+	<rdfs:range rdf:resource="&v2;DBTypeNode"/>
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;equalTo"
+	 rdfs:label="v2:equalTo">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;isKeyNode"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="v2:isKeyNode">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;isSelected"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="v2:isSelected">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;lessOrEqual"
+	 rdfs:label="v2:lessOrEqual">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;lessThan"
+	 rdfs:label="v2:lessThan">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;like"
+	 rdfs:label="v2:like">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;value"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:value">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;valueType"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:valueType">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+</rdf:RDF>

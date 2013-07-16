@@ -1,0 +1,1429 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY dart 'http://dart.zju.edu.cn/dartcore/dart#'>
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY v2 'http://dart.zju.edu.cn/dartcore/v2#'>
+	 <!ENTITY rdfs 'http://www.w3.org/TR/1999/PR-rdf-schema-19990303#'>
+]>
+<rdf:RDF xmlns:dart="&dart;"
+	 xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:v2="&v2;"
+	 xmlns:rdfs="&rdfs;">
+<rdfs:Class rdf:about="&dart;DartClass"
+	 rdfs:label="DartClass">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;ID"
+	 a:maxCardinality="1"
+	 rdfs:label="ID">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;K系数"
+	 a:maxCardinality="1"
+	 rdfs:label="K系数">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_1"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_1">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_10005"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_10005">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_19"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_19">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_30"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_30">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_43"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_43">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;dart_expriment_Slot_8"
+	 a:maxCardinality="1"
+	 rdfs:label="dart_expriment_Slot_8">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;不良反应"
+	 a:maxCardinality="1"
+	 rdfs:label="不良反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中文题名"
+	 a:maxCardinality="1"
+	 rdfs:label="中文题名">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;中毒量效关系"
+	 a:maxCardinality="1"
+	 rdfs:label="中毒量效关系">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;临床药理实验"
+	 rdfs:label="临床药理实验">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;临床药理实验ID"
+	 a:maxCardinality="1"
+	 rdfs:label="临床药理实验ID">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;主要观测指标"
+	 a:maxCardinality="1"
+	 rdfs:label="主要观测指标">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;人群组"
+	 a:maxCardinality="1"
+	 rdfs:label="人群组">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;仪器"
+	 a:maxCardinality="1"
+	 rdfs:label="仪器">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;体内研究"
+	 a:maxCardinality="1"
+	 rdfs:label="体内研究">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;体外研究"
+	 a:maxCardinality="1"
+	 rdfs:label="体外研究">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;体重"
+	 a:maxCardinality="1"
+	 rdfs:label="体重">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;作用机体器官"
+	 a:maxCardinality="1"
+	 rdfs:label="作用机体器官">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;作者"
+	 a:maxCardinality="1"
+	 rdfs:label="作者">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;作者单位"
+	 a:maxCardinality="1"
+	 rdfs:label="作者单位">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;供试品"
+	 a:maxCardinality="1"
+	 rdfs:label="供试品">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;供试品_剂量"
+	 a:maxCardinality="1"
+	 rdfs:label="供试品_剂量">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;供试品_名称"
+	 a:maxCardinality="1"
+	 rdfs:label="供试品_名称">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;供试品_浓度"
+	 a:maxCardinality="1"
+	 rdfs:label="供试品_浓度">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;依赖性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="依赖性实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;停药反应"
+	 a:maxCardinality="1"
+	 rdfs:label="停药反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;健康状况"
+	 a:maxCardinality="1"
+	 rdfs:label="健康状况">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;其他毒性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="其他毒性实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分离方法"
+	 a:maxCardinality="1"
+	 rdfs:label="分离方法">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分离步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="分离步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;分离物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="分离物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物制备"
+	 a:maxCardinality="1"
+	 rdfs:label="动物制备">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物实验方法"
+	 a:maxCardinality="1"
+	 rdfs:label="动物实验方法">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物对照组"
+	 a:maxCardinality="1"
+	 rdfs:label="动物对照组">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物种属"
+	 a:maxCardinality="1"
+	 rdfs:label="动物种属">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物营养"
+	 a:maxCardinality="1"
+	 rdfs:label="动物营养">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;动物选择"
+	 a:maxCardinality="1"
+	 rdfs:label="动物选择">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;化学实验"
+	 rdfs:label="化学实验">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;化学实验ID"
+	 a:maxCardinality="1"
+	 rdfs:label="化学实验ID">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;化学成分分离"
+	 rdfs:label="化学成分分离">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;化学成分合成"
+	 rdfs:label="化学成分合成">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;化学成分含量测定"
+	 rdfs:label="化学成分含量测定">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;化学成分提取"
+	 rdfs:label="化学成分提取">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;化学成分纯化"
+	 rdfs:label="化学成分纯化">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;化学成分鉴定"
+	 rdfs:label="化学成分鉴定">
+	<rdfs:subClassOf rdf:resource="&dart;实验步骤"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;化学特性试验"
+	 a:maxCardinality="1"
+	 rdfs:label="化学特性试验">
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;半数中毒剂量"
+	 a:maxCardinality="1"
+	 rdfs:label="半数中毒剂量">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;半数中毒浓度"
+	 a:maxCardinality="1"
+	 rdfs:label="半数中毒浓度">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;半数有效量"
+	 a:maxCardinality="1"
+	 rdfs:label="半数有效量">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;半数致死剂量"
+	 a:maxCardinality="1"
+	 rdfs:label="半数致死剂量">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;半数致死浓度"
+	 a:maxCardinality="1"
+	 rdfs:label="半数致死浓度">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;单词给药的毒性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="单词给药的毒性实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;原ID"
+	 a:maxCardinality="1"
+	 rdfs:label="原ID">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;反复给药的毒性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="反复给药的毒性实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;受体动力学"
+	 a:maxCardinality="1"
+	 rdfs:label="受体动力学">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;变态反应"
+	 a:maxCardinality="1"
+	 rdfs:label="变态反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;合成方法"
+	 a:maxCardinality="1"
+	 rdfs:label="合成方法">
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;合成步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="合成步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;合成物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="合成物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;后遗反应"
+	 a:maxCardinality="1"
+	 rdfs:label="后遗反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;器官功能改变"
+	 a:maxCardinality="1"
+	 rdfs:label="器官功能改变">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;回收率"
+	 a:maxCardinality="1"
+	 rdfs:label="回收率">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;地址"
+	 a:maxCardinality="1"
+	 rdfs:label="地址">
+	<rdfs:domain rdf:resource="&dart;实验室"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;备注"
+	 a:maxCardinality="1"
+	 rdfs:label="备注">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;复制动物模型法"
+	 a:maxCardinality="1"
+	 rdfs:label="复制动物模型法">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;安全剂量"
+	 a:maxCardinality="1"
+	 rdfs:label="安全剂量">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;安全范围"
+	 a:maxCardinality="1"
+	 rdfs:label="安全范围">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;安慰剂"
+	 a:maxCardinality="1"
+	 rdfs:label="安慰剂">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;定义"
+	 a:maxCardinality="1"
+	 rdfs:label="定义">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;实验"
+	 rdfs:label="实验">
+	<rdfs:subClassOf rdf:resource="&dart;DartClass"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&dart;实验动物"
+	 rdfs:label="实验动物">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;实验动物ID"
+	 a:maxCardinality="1"
+	 rdfs:label="实验动物ID">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验动物分级"
+	 a:maxCardinality="1"
+	 rdfs:label="实验动物分级">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验动物的选择"
+	 rdfs:label="实验动物的选择">
+	<rdfs:range rdf:resource="&dart;实验动物"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验动物编号"
+	 a:maxCardinality="1"
+	 rdfs:label="实验动物编号">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验动物随机分组"
+	 a:maxCardinality="1"
+	 rdfs:label="实验动物随机分组">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验单位"
+	 a:maxCardinality="1"
+	 rdfs:label="实验单位">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验名称"
+	 a:maxCardinality="1"
+	 rdfs:label="实验名称">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验季节"
+	 a:maxCardinality="1"
+	 rdfs:label="实验季节">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;实验室"
+	 rdfs:label="实验室">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;实验室ID"
+	 a:maxCardinality="1"
+	 rdfs:label="实验室ID">
+	<rdfs:domain rdf:resource="&dart;实验室"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验室名称"
+	 a:maxCardinality="1"
+	 rdfs:label="实验室名称">
+	<rdfs:domain rdf:resource="&dart;实验室"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验室条件"
+	 rdfs:label="实验室条件">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&dart;实验室"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验室级别"
+	 a:maxCardinality="1"
+	 rdfs:label="实验室级别">
+	<rdfs:domain rdf:resource="&dart;实验室"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验对象"
+	 a:maxCardinality="1"
+	 rdfs:label="实验对象">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验对象来源_产地"
+	 a:maxCardinality="1"
+	 rdfs:label="实验对象来源_产地">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验对象来源_单位"
+	 a:maxCardinality="1"
+	 rdfs:label="实验对象来源_单位">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验对象来源_科属"
+	 a:maxCardinality="1"
+	 rdfs:label="实验对象来源_科属">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验对象来源_部位"
+	 a:maxCardinality="1"
+	 rdfs:label="实验对象来源_部位">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验日期"
+	 a:maxCardinality="1"
+	 rdfs:label="实验日期">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验材料"
+	 a:maxCardinality="1"
+	 rdfs:label="实验材料">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验检测方法"
+	 rdfs:label="实验检测方法">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&dart;通用检测方法"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;实验步骤"
+	 rdfs:label="实验步骤">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;实验步骤全局ID"
+	 a:maxCardinality="1"
+	 rdfs:label="实验步骤全局ID">
+	<rdfs:domain rdf:resource="&dart;实验步骤"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验类型"
+	 a:maxCardinality="1"
+	 rdfs:label="实验类型">
+	<rdfs:domain rdf:resource="&dart;实验步骤"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验结果"
+	 a:maxCardinality="1"
+	 rdfs:label="实验结果">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验设计"
+	 a:maxCardinality="1"
+	 rdfs:label="实验设计">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;实验详细步骤"
+	 rdfs:label="实验详细步骤">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&dart;实验步骤"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对因治疗"
+	 a:maxCardinality="1"
+	 rdfs:label="对因治疗">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对照品"
+	 a:maxCardinality="1"
+	 rdfs:label="对照品">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对照药物"
+	 a:maxCardinality="1"
+	 rdfs:label="对照药物">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对照药物分组"
+	 a:maxCardinality="1"
+	 rdfs:label="对照药物分组">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;对症治疗"
+	 a:maxCardinality="1"
+	 rdfs:label="对症治疗">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;年份"
+	 a:maxCardinality="1"
+	 rdfs:label="年份">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;年龄"
+	 a:maxCardinality="1"
+	 rdfs:label="年龄">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;应用条件"
+	 a:maxCardinality="1"
+	 rdfs:label="应用条件">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;心理因素"
+	 a:maxCardinality="1"
+	 rdfs:label="心理因素">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;快速耐受性"
+	 a:maxCardinality="1"
+	 rdfs:label="快速耐受性">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;性别"
+	 a:maxCardinality="1"
+	 rdfs:label="性别">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;手术技巧"
+	 a:maxCardinality="1"
+	 rdfs:label="手术技巧">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;指标检测"
+	 a:maxCardinality="1"
+	 rdfs:label="指标检测">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;提取方法"
+	 a:maxCardinality="1"
+	 rdfs:label="提取方法">
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;提取步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="提取步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;提取物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="提取物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;收率"
+	 a:maxCardinality="1"
+	 rdfs:label="收率">
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;效力维持时间"
+	 a:maxCardinality="1"
+	 rdfs:label="效力维持时间">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;效应产生"
+	 a:maxCardinality="1"
+	 rdfs:label="效应产生">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;效应器"
+	 a:maxCardinality="1"
+	 rdfs:label="效应器">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;整体实验"
+	 a:maxCardinality="1"
+	 rdfs:label="整体实验">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;旋光度"
+	 a:maxCardinality="1"
+	 rdfs:label="旋光度">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;无效病例"
+	 a:maxCardinality="1"
+	 rdfs:label="无效病例">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;时效关系"
+	 a:maxCardinality="1"
+	 rdfs:label="时效关系">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;时量关系"
+	 a:maxCardinality="1"
+	 rdfs:label="时量关系">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;昼夜过程"
+	 a:maxCardinality="1"
+	 rdfs:label="昼夜过程">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;最大作用时间"
+	 a:maxCardinality="1"
+	 rdfs:label="最大作用时间">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;最大强度与最大效能比"
+	 a:maxCardinality="1"
+	 rdfs:label="最大强度与最大效能比">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;最大效能量"
+	 a:maxCardinality="1"
+	 rdfs:label="最大效能量">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;最小有效量"
+	 a:maxCardinality="1"
+	 rdfs:label="最小有效量">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;最小致死量"
+	 a:maxCardinality="1"
+	 rdfs:label="最小致死量">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;有效药物分组"
+	 a:maxCardinality="1"
+	 rdfs:label="有效药物分组">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;杂志"
+	 a:maxCardinality="1"
+	 rdfs:label="杂志">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;标准曲线"
+	 a:maxCardinality="1"
+	 rdfs:label="标准曲线">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;标本采集"
+	 a:maxCardinality="1"
+	 rdfs:label="标本采集">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;检测品名称"
+	 a:maxCardinality="1"
+	 rdfs:label="检测品名称">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;检测品含量"
+	 a:maxCardinality="1"
+	 rdfs:label="检测品含量">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;检测方法"
+	 a:maxCardinality="1"
+	 rdfs:label="检测方法">
+	<rdfs:domain rdf:resource="&dart;实验步骤"/>
+	<rdfs:range rdf:resource="&dart;通用检测方法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;步骤序列号"
+	 a:maxCardinality="1"
+	 rdfs:label="步骤序列号">
+	<rdfs:domain rdf:resource="&dart;实验步骤"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;毒性反应"
+	 a:maxCardinality="1"
+	 rdfs:label="毒性反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;毒性试验类型"
+	 a:maxCardinality="1"
+	 rdfs:label="毒性试验类型">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;毒理实验"
+	 rdfs:label="毒理实验">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;毒理实验ID"
+	 a:maxCardinality="1"
+	 rdfs:label="毒理实验ID">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;沉降平衡"
+	 a:maxCardinality="1"
+	 rdfs:label="沉降平衡">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;沉降时间"
+	 a:maxCardinality="1"
+	 rdfs:label="沉降时间">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;沉降系数"
+	 a:maxCardinality="1"
+	 rdfs:label="沉降系数">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;沉降速度"
+	 a:maxCardinality="1"
+	 rdfs:label="沉降速度">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;治疗效果"
+	 a:maxCardinality="1"
+	 rdfs:label="治疗效果">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;治疗疾病"
+	 a:maxCardinality="1"
+	 rdfs:label="治疗疾病">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;活性"
+	 a:maxCardinality="1"
+	 rdfs:label="活性">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;测定方法"
+	 a:maxCardinality="1"
+	 rdfs:label="测定方法">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;测定步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="测定步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;溶点"
+	 a:maxCardinality="1"
+	 rdfs:label="溶点">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;物理常数测定"
+	 a:maxCardinality="1"
+	 rdfs:label="物理常数测定">
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;物理性质"
+	 a:maxCardinality="1"
+	 rdfs:label="物理性质">
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;特异质反应"
+	 a:maxCardinality="1"
+	 rdfs:label="特异质反应">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生效时间"
+	 a:maxCardinality="1"
+	 rdfs:label="生效时间">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生殖毒性实验"
+	 a:maxCardinality="1"
+	 rdfs:label="生殖毒性实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生物利用度"
+	 a:maxCardinality="1"
+	 rdfs:label="生物利用度">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生物等效性"
+	 a:maxCardinality="1"
+	 rdfs:label="生物等效性">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生理性拮抗或协同"
+	 a:maxCardinality="1"
+	 rdfs:label="生理性拮抗或协同">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;生理状况"
+	 a:maxCardinality="1"
+	 rdfs:label="生理状况">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;相关因素"
+	 a:maxCardinality="1"
+	 rdfs:label="相关因素">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;相对标准偏差"
+	 a:maxCardinality="1"
+	 rdfs:label="相对标准偏差">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;研究方法"
+	 a:maxCardinality="1"
+	 rdfs:label="研究方法">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;研究材料"
+	 a:maxCardinality="1"
+	 rdfs:label="研究材料">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;离体实验"
+	 a:maxCardinality="1"
+	 rdfs:label="离体实验">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;种系"
+	 a:maxCardinality="1"
+	 rdfs:label="种系">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;稳定性试验"
+	 a:maxCardinality="1"
+	 rdfs:label="稳定性试验">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;空白组"
+	 a:maxCardinality="1"
+	 rdfs:label="空白组">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;精密度测定"
+	 a:maxCardinality="1"
+	 rdfs:label="精密度测定">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯化倍数"
+	 a:maxCardinality="1"
+	 rdfs:label="纯化倍数">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯化方法"
+	 a:maxCardinality="1"
+	 rdfs:label="纯化方法">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯化步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="纯化步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯化物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="纯化物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯化物组合"
+	 a:maxCardinality="1"
+	 rdfs:label="纯化物组合">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;纯度"
+	 a:maxCardinality="1"
+	 rdfs:label="纯度">
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;线性关系"
+	 a:maxCardinality="1"
+	 rdfs:label="线性关系">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;结构测定"
+	 a:maxCardinality="1"
+	 rdfs:label="结构测定">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;结论"
+	 a:maxCardinality="1"
+	 rdfs:label="结论">
+	<rdfs:domain rdf:resource="&dart;化学实验"/>
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;给药方式"
+	 a:maxCardinality="1"
+	 rdfs:label="给药方式">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;给药方法"
+	 a:maxCardinality="1"
+	 rdfs:label="给药方法">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;给药时间"
+	 a:maxCardinality="1"
+	 rdfs:label="给药时间">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;给药途径"
+	 a:maxCardinality="1"
+	 rdfs:label="给药途径">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;耐受性"
+	 a:maxCardinality="1"
+	 rdfs:label="耐受性">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;耐药性"
+	 a:maxCardinality="1"
+	 rdfs:label="耐药性">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;联合用药"
+	 a:maxCardinality="1"
+	 rdfs:label="联合用药">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;致突变实验"
+	 a:maxCardinality="1"
+	 rdfs:label="致突变实验">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药代动力学"
+	 a:maxCardinality="1"
+	 rdfs:label="药代动力学">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药源性疾病"
+	 a:maxCardinality="1"
+	 rdfs:label="药源性疾病">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物与剂量效应"
+	 a:maxCardinality="1"
+	 rdfs:label="药物与剂量效应">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物与受体"
+	 a:maxCardinality="1"
+	 rdfs:label="药物与受体">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物交互作用"
+	 a:maxCardinality="1"
+	 rdfs:label="药物交互作用">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物作用"
+	 a:maxCardinality="1"
+	 rdfs:label="药物作用">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物作用机理"
+	 a:maxCardinality="1"
+	 rdfs:label="药物作用机理">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物依赖性"
+	 a:maxCardinality="1"
+	 rdfs:label="药物依赖性">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物分布"
+	 a:maxCardinality="1"
+	 rdfs:label="药物分布">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物剂型"
+	 a:maxCardinality="1"
+	 rdfs:label="药物剂型">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物剂量"
+	 a:maxCardinality="1"
+	 rdfs:label="药物剂量">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="药物名称">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物吸收"
+	 a:maxCardinality="1"
+	 rdfs:label="药物吸收">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物安全性指标"
+	 a:maxCardinality="1"
+	 rdfs:label="药物安全性指标">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物排泄"
+	 a:maxCardinality="1"
+	 rdfs:label="药物排泄">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物毒性反应分类"
+	 a:maxCardinality="1"
+	 rdfs:label="药物毒性反应分类">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物生物转化"
+	 a:maxCardinality="1"
+	 rdfs:label="药物生物转化">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物相互作用"
+	 a:maxCardinality="1"
+	 rdfs:label="药物相互作用">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物类型"
+	 a:maxCardinality="1"
+	 rdfs:label="药物类型">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物调试"
+	 a:maxCardinality="1"
+	 rdfs:label="药物调试">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药物递质与介质"
+	 a:maxCardinality="1"
+	 rdfs:label="药物递质与介质">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;药理作用分类"
+	 a:maxCardinality="1"
+	 rdfs:label="药理作用分类">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;药理实验"
+	 rdfs:label="药理实验">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;药理实验ID"
+	 a:maxCardinality="1"
+	 rdfs:label="药理实验ID">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;血浓度监测"
+	 a:maxCardinality="1"
+	 rdfs:label="血浓度监测">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;血药浓度"
+	 a:maxCardinality="1"
+	 rdfs:label="血药浓度">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;观察指标"
+	 a:maxCardinality="1"
+	 rdfs:label="观察指标">
+	<rdfs:domain rdf:resource="&dart;药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;试剂"
+	 a:maxCardinality="1"
+	 rdfs:label="试剂">
+	<rdfs:domain rdf:resource="&dart;化学成分分离"/>
+	<rdfs:domain rdf:resource="&dart;化学成分合成"/>
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:domain rdf:resource="&dart;化学成分提取"/>
+	<rdfs:domain rdf:resource="&dart;化学成分纯化"/>
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;试验动物抓取固定法"
+	 a:maxCardinality="1"
+	 rdfs:label="试验动物抓取固定法">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;试验者"
+	 a:maxCardinality="1"
+	 rdfs:label="试验者">
+	<rdfs:domain rdf:resource="&dart;毒理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;远期治疗"
+	 a:maxCardinality="1"
+	 rdfs:label="远期治疗">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;适用范围"
+	 a:maxCardinality="1"
+	 rdfs:label="适用范围">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&dart;通用检测方法"
+	 rdfs:label="通用检测方法">
+	<rdfs:subClassOf rdf:resource="&dart;实验"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&dart;通用检测方法ID"
+	 a:maxCardinality="1"
+	 rdfs:label="通用检测方法ID">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;通用检测方法名"
+	 a:maxCardinality="1"
+	 rdfs:label="通用检测方法名">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;通用检测方法异名"
+	 a:maxCardinality="1"
+	 rdfs:label="通用检测方法异名">
+	<rdfs:domain rdf:resource="&dart;通用检测方法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;配伍禁忌"
+	 a:maxCardinality="1"
+	 rdfs:label="配伍禁忌">
+	<rdfs:domain rdf:resource="&dart;临床药理实验"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;重现性试验"
+	 a:maxCardinality="1"
+	 rdfs:label="重现性试验">
+	<rdfs:domain rdf:resource="&dart;化学成分含量测定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;鉴定方法"
+	 a:maxCardinality="1"
+	 rdfs:label="鉴定方法">
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;鉴定步骤"
+	 a:maxCardinality="1"
+	 rdfs:label="鉴定步骤">
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;鉴定物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="鉴定物名称">
+	<rdfs:domain rdf:resource="&dart;化学成分鉴定"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;面积"
+	 a:maxCardinality="1"
+	 rdfs:label="面积">
+	<rdfs:domain rdf:resource="&dart;实验室"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&dart;麻醉深度"
+	 a:maxCardinality="1"
+	 rdfs:label="麻醉深度">
+	<rdfs:domain rdf:resource="&dart;实验动物"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+</rdf:RDF>

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>用户信息确认</title>
+
+<link href="${rc.contextPath}/css/register.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<br>
+<br>
+<br>
+<br>
+	
+
+<BODY topmargin="30" marginheight="30">
+<form name="affirmForm" action ="userInfoDetail.luc" method="post">
+<table width="60%" cellpadding=4 cellspacing=1 align=center class="tableBorder1">
+<TBODY> 
+
+<TR align=middle> 
+<Th colSpan=2 height=24>用户详细信息</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>真实姓名</B>：</TD>
+<TD width=60%  class="TableBody1"> 
+<INPUT maxLength="10" size=30 name=name value="$!{userInfo.contact_name}"disabled>&nbsp;&nbsp
+
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>性别</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{userInfo.sex}"disabled>
+
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>联系方式</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{userInfo.contact}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>注册方式</B>：</font></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{MessageMapper.get($account.loginType)}" disabled>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>计费方式</B>：</font></TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{MessageMapper.get($account.chargeType)}" disabled>
+</TR>
+
+
+
+<TR> 
+<TD width=40% class="TableBody1"><B>用户名</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.username}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>密码(至少6位)</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.password}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>IP地址</B>: </TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.IPAddress}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>子网掩码</B>: </TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.mask}" disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>总的月数</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.totalDate}"  disabled>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>开始时间</B>：</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.startDate}" disabled>
+</TD>
+</TR>
+
+
+ 
+<TR> 
+<TD width=40% class="TableBody1"><B>总的流量</B>:</TD>
+<TD width=60%  class="TableBody1"> <INPUT maxLength="10" size=30 name=name value="$!{account.totalFlow}" disabled>
+</TD>
+</TR>
+
+<TR>
+<TD width=40% class="TableBody1">
+<B>配置权限：</B>
+</TD>
+<TD width=60% class="TableBody1">
+<input type="checkbox" value="ROLE_USER" name="J_GRANT_AUTHORITES" #if(${account.hasAuthority("ROLE_USER")}) checked #end/>一般用户 
+<input type="checkbox" value="ROLE_TECH_ADMIN" name="J_GRANT_AUTHORITES" #if(${account.hasAuthority("ROLE_TECH_ADMIN")}) checked #end/>技术管理员
+<input type="checkbox" value="ROLE_CUSTOMER_ADMIN" name="J_GRANT_AUTHORITES" #if(${account.hasAuthority("ROLE_CUSTOMER_ADMIN")}) checked #end/>客服管理员
+</TD>
+</TR>
+
+<TR>
+<TD class="TableBody1" >&nbsp></TD>
+<TD class="TableBody1" align="left">
+<input value="激活帐户" type="submit"/>
+</TD>
+</TR>
+
+</tbody>
+</table>
+<input type="hidden" name="CMD_WORD" value="submit"/>
+</form>
+</BODY>
+</HTML>
+
+

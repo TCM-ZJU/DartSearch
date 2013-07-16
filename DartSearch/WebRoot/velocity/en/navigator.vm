@@ -1,0 +1,24 @@
+<!-- add views here -->
+
+<TABLE class="ms-navframe" style="PADDING-TOP: 8px" height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<tr>
+		<td style='PADDING-LEFT: 3px; PADDING-BOTTOM: 2px'  align="center">Related Ontology Navigation</td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+	</tr>
+	#foreach ($ontology in $ontologies)
+	<tr class='ms-unselectednav' width='100%' colSpan='2'>		
+		<td>
+			&nbsp;&nbsp;
+			<img src='$rc.contextPath/images/note.gif'/>
+			&nbsp;
+			<a href="ontologyInfo.htm?root=true&ontoIdentity=${ontology.identity}">
+				${ontology.name}
+			</a>
+		</td>
+	</tr>
+	#end
+</table>
+	
+	

@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <title>Login</title>
+    <script>
+    function clearErrMsg()
+    {
+     var node = document.getElementById('errmsg_col');
+     node.innerHTML="<BR>";
+    }
+    </script>
+  </head>
+
+  <body text="#000000" vLink="#551a8b" aLink="#ff0000" link="#0000cc" bgColor="#ffffff" topMargin="3" marginheight="3">
+   
+    <form name="LoginForm" action="j_acegi_security_check" method="POST">
+      <table cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+      	<TR height="50">
+           <TD noWrap align="center"></TD>
+        </TR>
+      
+      	<TR>
+           <TD align="center">
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+		 	     <IMG title="Dart Search Logo" height="110" alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm.jpg" width=286 border=0/>
+		      </A>   
+           </TD>
+        </TR>
+        <TR height="50">
+	       <TD align="center">
+	          <table>
+                <tr>
+                <td colspan=2 id="errmsg_col">
+                    #if (${login_error})    	
+                    <font color="red">
+                        登陆失败: ${errorMessage} <BR>
+                    </font>
+                   #end
+                </td>   
+                </tr>
+                	          
+	            <tr>
+                   <td align="left">用户名:</td>
+                   <td align="left">
+        	          <input type='text' maxLength="100"  size="20" name='j_username' 
+                   #if (${login_error}) 
+                     value='${lastUserName}' 
+                   #end
+                  >
+                </tr>
+           
+                <tr>
+                    <td align="left">密码:</td><td align="left">
+                    <input type='password'  maxLength="100"  size="22" name='j_password' ></td></tr>
+                <tr>
+                   <td></td>
+                   <td><input name="submit" value="登陆" type="submit" onclick="document.LoginForm.j_loginType.value ='LOGIN_TYPE_USERPASSWORD'">
+                       <input value="IP登陆" type="submit" onclick="document.LoginForm.j_loginType.value ='LOGIN_TYPE_IP'"></td>
+                </tr>
+
+              </table>
+        </td>
+       </table> 
+       <input name="j_loginType" value="none" type="hidden"/>
+     </form>
+   
+    
+    </br>
+    <table cellSpacing=0 cellPadding=0 width="60%" border=0 align="center">
+        <TR>
+           <TD noWrap align="center">
+		    <FONT size=-1><A href="http://www.cintcm.com/">中医药在线</A> - 
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">中医药数据网格</A> - <B>
+		      <A href="http://ccnt.zju.edu.cn/projects/dartgrid/">DartGrid</A></FONT>
+           </TD>
+        </TR>
+        <TR>
+           <TD align="center">
+           <br/><A  onclick="h(this,'http://localhost:8080${rc.contextPath}')"   href="${rc.contextPath}"><FONT size=-1>将 DartSearch 设为首页!</FONT></A>
+           </TD>
+        </TR>
+        <TR height=50>
+           <TD noWrap align="center"><FONT size=-1><B>@2005 DartGrid</B></FONT></TD>
+        </TR>     
+      </table>    
+  </body>
+
+</html>

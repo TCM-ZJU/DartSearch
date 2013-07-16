@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>User Account Infomation</title>
+<link href="css/register.css" rel="stylesheet" type="text/css">
+
+</HEAD>
+
+<BODY>
+
+
+<table cellspacing=1 cellpadding=3 align=center class="tableBorder2" width="80%" >
+<tr><td height=25 valign=middle>
+<img src="${rc.contextPath}/images/dws.gif" align=absmiddle width=48>→ 
+User Account Infomation</a>
+</td></td>
+</table>
+
+#if(${accEdit.invisable})
+<div align="center">Sorry,you are not entitled  to access this page.</div>
+#else
+<!--------------------------- large else part --------------------------- //-->
+<form name="AccountEditorForm" action="secure/accountEditor.luc" method="post">
+
+<table width=80% cellpadding=3 cellspacing=1 align=center class="tableBorder1" border="1">
+<TBODY> 
+<TR align=middle> 
+<Th colSpan=2 height=24>User Information</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>TrueName</B>:</font></TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact_name")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.userInfo.contact_name}" #if($accEdit.userInfo) DISABLED #end>&nbsp;&nbsp</td>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>gender</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.sex")
+<INPUT type=radio #if(${accountPre.userInfo.sex}=="1")CHECKED #end value=1 name="${status.expression}"  #if($accEdit.userInfo) DISABLED #end>Male &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio #if(${accountPre.userInfo.sex}=="0")CHECKED #end value=0 name="${status.expression}"  #if($accEdit.userInfo) DISABLED #end>Female</font></TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>User contact</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.userInfo.contact")
+<INPUT maxLength="30" size=30 name="${status.expression}" value="${accountPre.userInfo.contact}"  #if($accEdit.userInfo) DISABLED #end>
+</TD>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>Login type</B>:</TD>
+<TD width=60%  class="TableBody1">
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_USERPASSWORD" name="${status.expression}" #if(${accountPre.loginType}=="LOGIN_TYPE_USERPASSWORD") CHECKED #end  #if($accEdit.loginType) DISABLED #end>AccountID &nbsp;&nbsp;&nbsp;&nbsp; 
+#springBind("account.loginType")
+<INPUT type=radio value="LOGIN_TYPE_IP" name="${status.expression}" #if(${accountPre.loginType}=="LOGIN_TYPE_IP") CHECKED #end  #if($accEdit.loginType) DISABLED #end>IP</font></TD>
+</TR>
+
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>charge type</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+ #springBind("account.chargeType")
+<INPUT type=radio value="CHARGE_TYPE_ONMONTH" name="${status.expression}" #if(${accountPre.chargeType}=="CHARGE_TYPE_ONMONTH") CHECKED #end  #if($accEdit.chargeType) DISABLED #end>On Month &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value="CHARGE_TYPE_ONFLOW" name="${status.expression}" #if(${accountPre.chargeType}=="CHARGE_TYPE_ONFLOW") CHECKED #end #if($accEdit.chargeType) DISABLED #end>On Flow</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>UserName</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.username")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.username}" #if($accEdit.username) DISABLED #end/>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Password:</TD>
+<TD class="TableBody1"> 
+#springBind("account.password")
+<INPUT type=text maxLength=16 size=30 name="${status.expression}" value="${accountPre.password}" #if($accEdit.password) DISABLED #end/>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>IP address</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.IPAddress")
+<INPUT maxLength="30" size=30 name="${status.expression}" value="${accountPre.IPAddress}" #if($accEdit.IPAddress) DISABLED #end/>
+</TD>
+</TR>
+
+<TD width=40% class="TableBody1"><B>Subnet mask</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+#springBind("account.mask")
+<INPUT maxLength="30" size=30 name="${status.expression}" value="${accountPre.mask}" #if($accEdit.mask) DISABLED #end/>
+</TD>
+</TR>
+
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Total month</B>：</TD>
+<TD class="TableBody1"> 
+ #springBind("account.totalDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.totalDate}" #if($accEdit.totalDate) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Start date</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.startDate")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.startDate}" #if($accEdit.startDate) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Total flow</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.totalFlow")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.totalFlow}" #if($accEdit.totalFlow) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Used flow</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.usedFlow")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.usedFlow}" #if($accEdit.usedFlow) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>Max concurrence user</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.maxConcurrence")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.maxConcurrence}" #if($accEdit.maxConcurrence) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40% class="TableBody1"><B>User group ID</B>：</TD>
+<TD class="TableBody1"> 
+#springBind("account.groupId")
+<INPUT maxLength="10" size=30 name="${status.expression}" value="${accountPre.groupId}" #if($accEdit.groupId) DISABLED #end>
+</TD>
+</TR>
+
+<TR> 
+<TD width=40%  class="TableBody1"><B>Status</B>:</TD>
+<TD width=60%  class="TableBody1"> 
+ #springBind("account.status")
+<INPUT type=radio value="ACCOUNT_STATUS_NORAML" name="${status.expression}" #if(${accountPre.status}=="ACCOUNT_STATUS_NORAML") CHECKED #end #if($accEdit.status) DISABLED #end>Normal &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value="ACCOUNT_STATUS_STOPPED" name="${status.expression}" #if(${accountPre.status}=="ACCOUNT_STATUS_STOPPED") CHECKED #end #if($accEdit.status) DISABLED #end> stopped &nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type=radio value="ACCOUNT_STATUS_INACTIVATED" name="${status.expression}" #if(${accountPre.status}=="ACCOUNT_STATUS_INACTIVATED") CHECKED #end #if($accEdit.status) DISABLED #end> Inactived</TD>
+</TR>
+
+
+<TR>
+<TD width=40% class="TableBody1">
+<B>UserRight：</B>
+</TD>
+<TD width=60% class="TableBody1">
+<input type="checkbox" value="ROLE_USER" name="J_GRANT_AUTHORITES" #if(${accountPre.hasAuthority("ROLE_USER")}) checked #end #if($accEdit.grantedAuthority) DISABLED #end/>Normal User 
+<input type="checkbox" value="ROLE_TECH_ADMIN" name="J_GRANT_AUTHORITES" #if(${accountPre.hasAuthority("ROLE_TECH_ADMIN")}) checked #end  #if($accEdit.grantedAuthority) DISABLED #end/>Administrator for technique
+<input type="checkbox" value="ROLE_CUSTOMER_ADMIN" name="J_GRANT_AUTHORITES" #if(${accountPre.hasAuthority("ROLE_CUSTOMER_ADMIN")}) checked #end  #if($accEdit.grantedAuthority) DISABLED #end/>Administrator for Customer
+</TD>
+</TR>
+
+
+</TBODY>
+</table>
+
+<table cellpadding=0 cellspacing=0 border=0 width=97% align=center>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr></tr>
+<tr align=center>
+<td width=50% ><input type=button value="Edit" onclick="doSubmit(true)">&nbsp;&nbsp<input type=button value="Return" onclick="doSubmit(false)"></td>
+</tr>
+</table>
+
+</form>
+#end
+<!--------------------------- large else part (end here) --------------------------- //-->
+<script>
+function doSubmit(update)
+{
+ if(update)
+ {
+   document.AccountEditorForm.action = "${rc.contextPath}/secure/accountEditor.luc?AccountId=${accountPre.id}";
+   document.AccountEditorForm.submit();
+ }else{
+   document.AccountEditorForm.action = "${rc.contextPath}/secure/accountResults.luc";
+   document.AccountEditorForm.submit();
+ }   
+}
+</script>
+</BODY>
+</HTML>
+

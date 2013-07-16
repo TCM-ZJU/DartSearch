@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+</meta>
+<title>TcmGrid Search Result</title>
+</head>
+<script>
+<!--
+function doSubmit(searchInResult){
+  //alert(document.tcmResultSearchForm.searchContent.value);
+  if (document.tcmResultSearchForm.searchContent.value!=""){
+    document.tcmResultSearchForm.action="tcmResultSearch.luc?searchInResult="+searchInResult;
+    document.tcmResultSearchForm.submit();
+  }
+}
+
+function doSubmit2(searchInResult){
+  //alert(document.tcmResultSearchForm2.searchContent.value);
+  if (document.tcmResultSearchForm2.searchContent.value!=""){
+    document.tcmResultSearchForm2.action="tcmResultSearch.luc?searchInResult="+searchInResult;
+    document.tcmResultSearchForm2.submit();
+  }
+}
+//-->
+</script>
+<BODY>
+
+<table align="center" width="100%" valign="top">
+ <tr>
+  	<td>  
+		<FORM name="tcmResultSearchForm" action="tcmResultSearch.luc" method="POST" >	
+			<table align="left" width="90%">
+				<tr>
+					<td align="left" width="10%">				 			   
+						<A href="http://ccnt.zju.edu.cn/projects/dartgrid/">
+							<IMG height=55 alt="Welcome to Dart Search" src="${rc.contextPath}/images/logo_tcm_sm.jpg" width=150 vspace=12 border=0>
+						</A>   				
+					</td>
+					<td align="left">		
+						&nbsp;&nbsp;&nbsp;&nbsp;<B>FullTextSearch</B>&nbsp;&nbsp;&nbsp;&nbsp;
+  		    			<A class=q href="${rc.contextPath}/index.htm" target="_blank">OntologySearch</A>
+  		    			<br/>		 			   
+						<INPUT maxLength="100"  size="25" name="searchContent">			 			   
+						<INPUT type="button" value="DartSearch" onclick="doSubmit('false')">
+				      	<INPUT type="button" value="Search in result" onclick="doSubmit('true')">	    				
+					</td>		
+				</tr>				
+			</table>
+		</FORM> 
+   </td>
+  </tr>		
+  <tr  bgColor="#e5ecf9" width="100%" height="30">
+  	 <td align="left">
+  		<b>DartSearch Result</b> &nbsp;&nbsp;&nbsp;	 
+	 	${searchResults.resultCount} records returned,&nbsp;&nbsp;Time cost:${stopWatch.totalTimeSeconds} seconds,
+		Page Counter:${searchResults.curPageId} of ${searchResults.pageCount}
+		&nbsp;&nbsp;&nbsp;<a href="$rc.ContextPath/tcmBasicSearch.luc">Index </a> 
+		&nbsp;&nbsp;&nbsp;<a href="$rc.ContextPath/acegilogout.luc">LogOff</a>
+ 	</td>
+  </tr>
+ 
+
+  <tr>
+  	<td>
+  	  <table align="center"  class="std_Table" width="100%">
+  	    <tr>
+  	      <td width="80%">
+			<table align="center"  class="std_Table" width="100%">
+				#foreach ($searchResult in ${searchResults.getPage(${searchResults.curPageId})})	
+				<tr class="Table_grayitem">
+					<td>&nbsp;</td>
+				</tr>	
+				<tr class="Table_linkTitle">
+					<td>${velocityCount}、 
+					  #if (${searchResult.primaryKey}!="0")
+					    <a href="${rc.contextPath}/secure/tableContentDetail.luc?tableIdentity=${searchResult.tableIdentity}&primaryKey=${searchResult.primaryKey}" target="_blank">${searchResult.title}</a> 
+					  #else
+					     ${searchResult.title}
+					  #end
+	    			 </td>
+				</tr>								
+				<tr class="Table_whiteitem">
+					<td>&nbsp; ${searchResult.highlightShowContent}<!--<br>${searchResult.showContent}--> </td>
+				</tr>
+			
+				<tr class="Table_whiteitem">
+					<td>
+						<table>
+						    <!--
+							<tr>
+								<td class="resultTitle">
+								   #foreach ($ontologyInfo in ${searchResult.ontologyInfos})
+								   	Data source${velocityCount}:
+								   <a href="ontologyInfo.htm?nodeIdentity=${ontologyInfo.ontoIdentity}" target="_blank">${ontologyInfo.ontoName}</a> &nbsp;&nbsp; 						
+								   #if (${ontologyInfo.childOntologies.size()}>0) 
+								   	  Related data:
+								   #end
+			  						  #foreach ($childOnto in ${ontologyInfo.childOntologies})
+									   <a href="ontologyInfo.htm?nodeIdentity=${childOnto.identity}" target="_blank">${childOnto.name}</a>&nbsp;&nbsp;
+									   <a href="secondQuery.htm?tableIdentity=${searchResult.tableIdentity}&primaryKey=${searchResult.primaryKey}&parentNodeIdentity=${ontologyInfo.ontoIdentity}&nodeIdentity=${ontologyInfo.ontoIdentity}|${childOnto.identity}" target="_blank">${childOnto.name}</a>&nbsp;&nbsp;
+									  #end
+								   #end							   
+								</td>
+								<td class="resultTitle">
+								  Data Source:${searchResult.tableIdentity}&nbsp;&nbsp;	
+								  Matching Index: ${searchResult.scoreStr} 
+								</td>
+							</tr>
+							//-->
+
+							<tr>
+								<td class="resultTitle">
+								 <table>
+								 <tr><td>
+								   Data source:
+								   #foreach ($ontologyInfo in ${searchResult.ontologyInfos})
+								   <a href="tcmSecondLinkSearch.luc?ontoName=${ontologyInfo.ontoName}">${ontologyInfo.ontoName}</a> &nbsp;&nbsp; 						
+								   #end
+								 </td></tr>
+								 <tr><td>  
+								   #set($linkOntoSet = ${helper.getLinkOntologySet($searchResult)})
+								   #if (${linkOntoSet.size()}>0) 
+								   	  Related Ontology:
+			  						  #foreach ($childOnto in ${linkOntoSet})
+									   <a href="tcmSecondLinkSearch.luc?ontoName=${childOnto.name}">${childOnto.name}</a>&nbsp;&nbsp;
+									  #end
+								   #end	
+								 </td></tr>
+								 </table>  						   
+								</td>
+								
+								<td class="resultTitle" algin="right">
+								  DataTable:${searchResult.tableIdentity}&nbsp;&nbsp;	
+								  <!-- Matching index: ${searchResult.scoreStr} //-->
+								</td>
+							</tr>							
+							
+						</table>
+			        </td>
+				</tr>	
+			    <tr class="Table_whiteitem">
+					<td>&nbsp;</td>
+				</tr>	
+				#end
+			</table>
+		 </td>
+		 <td width="1"  class="Table_grayitem">&nbsp;</td>
+		 <td width="20%" valign="top">
+		 	<table>
+		 		<tr>
+		 			<td align="center">Related Category</td>
+		 			<!-- <td align="center">Matching index</td> -->
+		 		</tr>
+		 		#foreach ($hitOnto in ${searchResults.hitOntoList})
+		 		  <tr>
+		 		  	<td><a href="ontologyInfo.htm?nodeIdentity=${hitOnto.ontoIdentity}& ontoIdentity=${hitOnto.ontoIdentity}">${hitOnto.ontoName}</a></td> 
+		 		  	<!-- <td>${hitOnto.scoreStr}</td> -->
+		 		  </tr>
+		 		#end
+	 		</table>
+		 	
+		 </td>
+		</tr>
+	  </table>
+   </td>
+  </tr>
+  <tr>
+  	<td>
+  		&nbsp;
+	  </td>
+  </tr>
+ <tr>
+  	<td>	
+  		#if (${searchResults.pageCount}>1)
+		<table align="center">
+			<tr>
+   			  	<td>			
+				PageNO:&nbsp;
+				</td>
+				<td align="right">
+				<IMG src="${rc.contextPath}/images/nav_first.gif" border=0><br>&nbsp;
+				#if (!${searchResults.isFirstPage()})	
+   				  <a href="tcmResultNav.luc?pageId=${searchResults.prevPageId}">上一页</a>&nbsp;
+   				#end
+   				</td>   			  	 			  		
+   			  		#foreach ($curPageId in ${searchResults.pageIdList})
+	   			  		<td>  
+	   			  			<IMG src="${rc.contextPath}/images/nav_page.gif" border=0><br>
+							#if (${searchResults.isCurPage($curPageId)})
+								$curPageId
+							#else
+							  <a href="tcmResultNav.luc?pageId=$curPageId">$curPageId</a>&nbsp;
+							#end
+						</td>
+				   #end	  			 
+	  			 <td align="left">
+	 				<IMG src="${rc.contextPath}/images/nav_next.gif" border=0><br>&nbsp;
+					#if (!${searchResults.isLastPage()})
+					  <a href="tcmResultNav.luc?pageId=${searchResults.nextPageId}">NextPage</a>&nbsp;
+					#end
+				</td>
+			</tr>							
+		</table>  
+		#end		
+    </td>
+  </tr>
+   <tr>
+  	<td>
+  		&nbsp;
+	  </td>
+  </tr>
+ <tr  bgColor="#e5ecf9" height="50">
+  	<td>  
+		<FORM name="tcmResultSearchForm2" action="tcmResultSearch.luc" method="POST" >	
+			<table align="left" width="90%">
+				<tr>
+					<td align="left">	
+			   
+						<INPUT maxLength="100"  size="25" name="searchContent">			 			   
+						<INPUT type="button" value="DartSearch" onclick="doSubmit2('false')">
+				      	<INPUT type="button" value="Search in result" onclick="doSubmit2('true')">
+				      	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				      	<a href="$rc.ContextPath/tcmBasicSearch.luc">Index</a> 
+				      	<a href="$rc.ContextPath/acegilogout.luc">LogOff</a> 	    				
+					</td>	
+						
+				</tr>				
+			</table>
+		</FORM> 
+   </td>
+  </tr>	  
+  <tr>
+  	<td align="center">
+  		 @2005 DartGrid 
+	  </td>
+  </tr>
+
+ 
+  
+</body>
+</html>

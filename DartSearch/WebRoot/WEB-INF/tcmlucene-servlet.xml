@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for "example" DispatcherServlet.
+  - Heavily depended on web infrastructure, naturally.
+  -->
+
+<beans>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" >
+		<property name="basename"><value>messages</value></property>
+	</bean>
+
+		<!--
+	  - Locale resolution via cookie instead of evaluating the browser locale.
+	  - Locale changes will send a new cookie to the client.
+	  -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+
+	<!--
+	  - Theme resolution via cookie instead of the fixed one named "theme".
+	  - Theme changes will send a new cookie to the client.
+	  -->
+	<bean id="themeResolver" class="org.springframework.web.servlet.theme.CookieThemeResolver"/>
+	
+   <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath"><value>/velocity/</value></property>
+		<property name="configLocation"><value>/WEB-INF/velocity.properties</value></property>			
+   </bean>
+
+	<!-- ========================= VIEW DEFINITIONS ========================= -->
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="requestContextAttribute"><value>rc</value></property>
+		<property name="prefix"><value>/lucene/</value></property>
+		<property name="suffix"><value>.vm</value></property>
+		<property name="exposeSpringMacroHelpers"><value>true</value></property>
+		<property name="contentType"><value>text/html; charset=UTF-8</value></property>
+	</bean>
+
+	<!-- ========================= MAPPING DEFINITIONS ========================= -->
+
+	<!--
+	 - Explicit URL handler mapping instead of default BeanNameUrlHandlerMapping.
+	 -->
+	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="interceptors">
+			<list>			
+			<ref local="timeStatInterceptor"/>
+			<ref local="multiLinguaInterceptor"/> 
+			</list>
+		</property>
+		<property name="urlMap">
+			<map>
+				<entry key="/tcmBasicSearch.luc"><ref local="tcmBasicSearchController"/></entry>
+				<entry key="/tcmAdvanceSearch.luc"><ref local="tcmAdvanceSearchController"/></entry>
+				<entry key="/tcmResultSearch.luc"><ref local="tcmResultSearchController"/></entry>
+				<entry key="/tcmSecondLinkSearch.luc"><ref local="tcmSecondLinkSearchController"/></entry>				
+				<entry key="/tcmResultNav.luc"><ref local="tcmResultNavController"/></entry>
+				
+				<entry key="/acegilogin.luc"><ref local="acegiLoginController"/></entry>
+				<entry key="/acegilogout.luc"><ref local="acegiLogoutController"/></entry>
+				<entry key="/register.luc"><ref local="registerController"/></entry>
+				<entry key="/registerAffirm.luc"><ref local="registerAffirmController"/></entry>
+								
+				
+				<entry key="/secure/tableContentDetail.luc"><ref local="tableContentDetailController"/></entry>
+				
+				<!-- 
+				<entry key="/tableContentDetail.luc"><ref local="tableContentDetailController"/></entry>
+				 -->
+                <entry key="/secure/accountEditorOnSelf.luc"><ref local="accountEditorOnSelfController"/></entry>								
+				
+				<entry key="/secure/accountEditor.luc"><ref local="accountEditorController"/></entry>
+				<entry key="/secure/accessRecord.luc"><ref local="accessRecordController"/></entry>	
+				<entry key="/secure/accountResults.luc"><ref local="accountResultsController"/></entry>	
+				<entry key="/secure/accountLogOffOnFource.luc"><ref local="accountLogoffOnForceController"/></entry>
+
+				<entry key="/secure/accountStatus.luc"><ref local="accountStatusController"/></entry>								
+				<entry key="/secure/tableAccessPrivilegeSignment.luc"><ref local="tableAccessPrivilegeSignmentController"/></entry>
+				<entry key="/secure/ontologyAccessPrivilegeSignment.luc"><ref local="ontologyAccessPrivilegeSignmentController"/></entry>
+                <entry key="/secure/tablePriceSignment.luc"><ref local="tablePriceSignmentController"/></entry>
+                <entry key="/secure/accountDelete.luc"><ref local="accountDeleteController"/></entry> 
+				
+				<entry key="/userDedicatedLanguage.luc"><ref local="userDedicatedLanguageController"/></entry>           
+				
+				<entry key="/accoutExist.luc"><ref local="AccountExistContoller"/></entry>				
+				<entry key="/secure/chineseTableName.luc"><ref local="ChineseTableNameController"/></entry> 
+				
+				<entry key="/secure/tableAccessPrivilegeSignmentOnUser.luc"><ref local="tableAccessPrivilegeSignmentOnUserController"/></entry>
+				<entry key="/secure/ontologyAccessPrivilegeSignmentOnUser.luc"><ref local="ontologyAccessPrivilegeSignmentOnUserController"/></entry>
+				<entry key="/intemDetail.luc"><ref local="itemDetail"/></entry>
+			</map>
+		</property>
+	</bean>
+	
+  
+  <bean id="itemDetail" class="edu.zju.tcmsearch.web.servlet.SearchItemDetail">
+    	<property name="dbContentRetriever"><ref bean="dbContentRetriever"/></property>	
+    	<property name="successView" value="searchResults"/>	
+	</bean>
+	
+	
+	<bean id="timeStatInterceptor" class="edu.zju.tcmsearch.web.interceptor.TimeStatInterceptor"/>
+	
+    <bean id="multiLinguaInterceptor" class="edu.zju.tcmsearch.web.interceptor.MultiLinguaInterceptor">
+		<property name="realResolver"><ref local="viewResolver"/></property> 
+		<property name="resolverPrefix" value="/lucene/"/>
+		<property name="XMLContext" value="luncene-servlet.xml"/>
+	</bean>	
+	
+	<bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver"></bean>
+
+	
+	<bean id="tcmBasicSearchController" class="edu.zju.tcmsearch.web.controller.lucene.SimpleSearchController">
+	    <property name="sessionForm" value="true"/>
+		<property name="commandName"><value>simpleSearchForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.lucene.SimpleSearchForm</value></property>	
+		<property name="searcher" ref="searcher"/>
+		<property name="dbInfoRetriever" ref="dbInfoRetriever"/>		
+		<property name="formView" value="simpleSearch"/>
+		<property name="successView" value="searchResults"/>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>				
+	</bean>
+	
+	<bean id="tcmAdvanceSearchController" class="edu.zju.tcmsearch.web.controller.lucene.AdvanceSearchController">
+		<property name="sessionForm" value="true"/>
+		<property name="commandName"><value>advanceSearchForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.lucene.AdvanceSearchForm</value></property>	
+		<property name="searcher" ref="searcher"/>
+		<property name="dbInfoRetriever" ref="dbInfoRetriever"/>			
+		<property name="formView" value="advanceSearch"/>
+		<property name="successView" value="searchResults"/>	
+		<property name="ontologyThemes" ref="ontologyThemes"/>
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>				
+	</bean>	
+	
+	<bean id="registerController" class="edu.zju.tcmsearch.web.controller.account.RegisterController">
+		<property name="sessionForm" value="true"/>
+		<property name="commandName"><value>account</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.secure.domain.account.Account</value></property>				
+		<property name="formView" value="register"/>
+		<property name="successView" value="registerAffirm"/>
+		<property name="accountManager" ref="accountManager"/>	
+	</bean>	
+	
+	<bean id="registerAffirmController" class="edu.zju.tcmsearch.web.controller.account.RegisterAffirmController">
+		<property name="sessionForm" value="true"/>
+		<property name="commandName"><value>account</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.secure.domain.account.Account</value></property>				
+		<property name="formView" value="registerAffirm"/>
+		<property name="successView" value="registerSuccess"/>	
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+
+	<bean id="accountEditorController" class="edu.zju.tcmsearch.web.controller.account.AccountEditController">
+		<property name="sessionForm" value="true"/>
+		<property name="commandName"><value>account</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.secure.domain.account.Account</value></property>				
+		<property name="formView" value="accountEditor"/>
+		<property name="successView" value="accountEditSuccess"/>	
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+	
+	<bean id="accountEditorOnSelfController" class="edu.zju.tcmsearch.web.controller.account.AccountEditOnSelfController">
+		<property name="sessionForm" value="true"/>
+		<property name="commandName"><value>account</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.secure.domain.account.Account</value></property>				
+		<property name="formView" value="accountEditorOnSelf"/>
+		<property name="successView" value="accountEditOnSelfSuccess"/>	
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>		
+			
+	<bean id="accountResultsController" class="edu.zju.tcmsearch.web.controller.account.AccountResultsController">
+		<property name="successView" value="accountResults"/>	
+		<property name="accountManager" ref="accountManager"/>
+	</bean>	
+	
+	<bean id="userInfoDetailController" class="edu.zju.tcmsearch.web.controller.account.UserInfoDetailController">
+	    <property name="successView" value="userInfoDetail"/>	
+	    <property name="submitView" value="/accountResults.luc"/>			
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+	
+	<bean id="accountStatusController" class="edu.zju.tcmsearch.web.controller.account.AccountStatusController">
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+	
+	<bean id="accountDeleteController" class="edu.zju.tcmsearch.web.controller.account.AccountDeleteController">
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+
+	<bean id="accountLogoffOnForceController" class="edu.zju.tcmsearch.web.controller.account.AccountLogoffOnForceController">
+		<property name="accountManager" ref="accountManager"/>
+	</bean>			
+	
+	<bean id="accountSuspendController" class="edu.zju.tcmsearch.web.controller.account.AccountSuspendController">
+		<property name="accountManager" ref="accountManager"/>
+		<property name="userInfoManager" ref="userInfoManager"/>
+	</bean>	
+	
+	
+	<bean id="tcmResultSearchController" class="edu.zju.tcmsearch.web.controller.lucene.ResultSearchController">
+		<property name="successView" value="searchResults"/>	
+		<property name="searcher" ref="searcher"/>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>			
+	</bean>
+
+	<bean id="tcmSecondLinkSearchController" class="edu.zju.tcmsearch.web.controller.lucene.SecondLinkSearchController">
+		<property name="successView" value="searchResults"/>	
+		<property name="searcher" ref="searcher"/>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>			
+	</bean>
+   
+
+	<bean id="tableContentDetailController" class="edu.zju.tcmsearch.web.controller.lucene.TableContentDetailController">
+    	<property name="dbContentRetriever"><ref bean="dbContentRetriever"/></property>
+		<property name="successView" value="tableContent"/>
+	</bean>
+	
+	<bean id="tcmResultNavController" class="edu.zju.tcmsearch.web.controller.lucene.TcmResultNavController">
+		<property name="successView" value="searchResults"/>
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>			
+	</bean>
+	
+	<bean id="acegiLoginController" class="edu.zju.tcmsearch.web.controller.account.AcegiLoginController">
+		<property name="successView"><value>acegilogin</value></property>
+	</bean>	
+	
+    <bean id="acegiLogoutController" class="edu.zju.tcmsearch.web.controller.account.AcegiLogoutController">
+	</bean>
+	
+	<bean id="privTestController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="tablePrivTest"/>
+	</bean>				
+	
+	<bean id="accessRecordController" class="edu.zju.tcmsearch.web.controller.account.AccessRecordController">
+		<property name="successView" value="AccessRecordList"/>
+		<property name="feeManager"><ref bean = "feeManager"/></property>
+	</bean>	
+
+	<bean id="tableAccessPrivilegeSignmentController" class="edu.zju.tcmsearch.web.controller.account.TableAccessAssignmentController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="tableAccessPrivilegeDao" ref="tableAccessPrivDao"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="tableAccessAssignment"/>
+		<property name="successView" value="/secure/accountResults.luc"/>
+		<property name="commandName"><value>tableAccessAssigmentForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.secure.TableAccessAssigmentForm</value></property>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 			
+	</bean>
+	
+	
+	<bean id="ontologyAccessPrivilegeSignmentController" class="edu.zju.tcmsearch.web.controller.account.OntologyAccessAssignmentController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="ontologyAccessPrivilegeDao" ref="ontologyAccessPrivDao"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="ontologyAccessAssignment"/>
+		<property name="successView" value="/secure/accountResults.luc"/>
+		<property name="commandName"><value>ontologyAccessAssigmentForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.secure.OntologyAccessAssigmentForm</value></property>	
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 
+	</bean>	
+	
+	<bean id="tableAccessPrivilegeSignmentOnUserController" class="edu.zju.tcmsearch.web.controller.account.TableAccessAssignmentOnUserController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="tableAccessPrivilegeDao" ref="tableAccessPrivDao"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="tableAccessAssignmentOnUser"/>
+		<property name="successView" value="/secure/accountEditorOnSelf.luc"/>
+		<property name="commandName"><value>tableAccessAssigmentForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.secure.TableAccessAssigmentForm</value></property>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>	
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 		
+	</bean>	
+	
+	<bean id="ontologyAccessPrivilegeSignmentOnUserController" class="edu.zju.tcmsearch.web.controller.account.OntologyAccessAssignmentOnUserController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="ontologyAccessPrivilegeDao" ref="ontologyAccessPrivDao"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="ontologyAccessAssignmentOnUser"/>
+		<property name="successView" value="/secure/accountEditorOnSelf.luc"/>
+		<property name="commandName"><value>ontologyAccessAssigmentForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.secure.OntologyAccessAssigmentForm</value></property>	
+		<property name="accountDAO"><ref bean="AccountDAO"/></property> 
+	</bean>
+		
+	<bean id="tablePriceSignmentController" class="edu.zju.tcmsearch.web.controller.account.TablePriceController">
+		<property name="ontoService" ref="ontoService"/>
+		<property name="tablePriceDao" ref="tablePriceDao"/>
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="tablePrice"/>
+		<property name="successView" value="/secure/accountResults.luc"/>
+		<property name="commandName"><value>tablePriceForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.secure.TablePriceForm</value></property>	
+	</bean>	
+	
+	<bean id="userDedicatedLanguageController"	class="edu.zju.tcmsearch.web.controller.query.UserDedicatedLanguageController">
+		<property name="redirectView" value="index.jsp"></property>
+	</bean>
+	
+	<bean id="ChineseTableNameController" class="edu.zju.tcmsearch.web.controller.i18n.ChineseTableNameController">
+		<property name="sessionForm" value="true"/>
+		<property name="formView" value="chineseTableName"/>
+		<property name="successView" value="/secure/accountResults.luc"/>
+		<property name="commandName"><value>tableNameForm</value></property>
+		<property name="commandClass"><value>edu.zju.tcmsearch.web.form.i18n.TableNameForm</value></property>	
+		<property name="tableNameLocalization" ref="tableNameLocalization"/>
+	</bean>	
+
+	<bean id="AccountExistContoller" class="edu.zju.tcmsearch.web.controller.account.AccountExistContoller">
+		<property name="redirectView" value="register.luc"/>
+		<property name="accountManager" ref="accountManager"/>
+		<property name="parameterName" value="ACCOUNT_ID_CHECKER"/>
+	</bean>		
+</beans>
+

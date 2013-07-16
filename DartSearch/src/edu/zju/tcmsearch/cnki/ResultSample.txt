@@ -1,0 +1,25 @@
+<tr>
+<td  bgcolor=#ffffff STYLE="word-wrap: break-word  ;font-size:9pt">
+<a href="../download.aspx?filename=RV0cCNjMoBFN2cERnB1Srw0LKdmUylGMwJ2app2cvoFVxATZH1GajpEc5dDS4QETx9WUKdVd0hmWFl1UN9CWNp1UYVFdIlkV0ZHdSxWYQRFeshVblhWMjRTQzRWQrkEOHFGaIJDMzVDcwg3VGR1L4UTdUFXcOdjU&tablename=CHKJ2006" target=_blank><img src=images/download.gif border=0  ></a><a href="../detail.aspx?QueryID=6&CurRec=1"    target=_blank >1</a></td>
+<td  bgcolor=#ffffff STYLE="word-wrap: break-word  ;font-size:9pt">
+<a href="../detail.aspx?QueryID=6&CurRec=1"    target=_blank >中西医结合治疗胆囊雏石引发急性胰腺炎30例</a></td>
+<td  bgcolor=#ffffff STYLE="word-wrap: break-word  ;font-size:9pt">
+陕西中医</td>
+<td  bgcolor=#ffffff STYLE="word-wrap: break-word  ;font-size:9pt">
+2006/01</td>
+<td  bgcolor=#ffffff STYLE="word-wrap: break-word  ;font-size:9pt">
+中国医院知识仓库期刊全文库</td>
+</tr>
+
+<tr>
+<td  bgcolor=#f1f7fe align=left STYLE="word-wrap: break-word  ;font-size:9pt">
+<a href="../download.aspx?filename=3ITMxFmbYh1RSNHdtZVRPJzTJl3ULh2TYZFRQlXbxADNrJUcywWW4gGMGhnc0JDVzR1NiREWBhUVt1EUjlVRitSOrJFdjpmYqRWYjlkS19mQwlmVll0azclQrZkYhFFdrNUNlV3c0lGOip1TLNnNqVzK1EXSqllM&tablename=CHKJ2006" target=_blank><img src=images/download.gif border=0  ></a><a href="../detail.aspx?QueryID=6&CurRec=2"    target=_blank >2</a></td>
+<td  bgcolor=#f1f7fe align=left STYLE="word-wrap: break-word  ;font-size:9pt">
+<a href="../detail.aspx?QueryID=6&CurRec=2"    target=_blank >大黄虫丸治疗失代偿期肝硬化16例</a></td>
+<td  bgcolor=#f1f7fe align=left STYLE="word-wrap: break-word  ;font-size:9pt">
+陕西中医</td>
+<td  bgcolor=#f1f7fe align=left STYLE="word-wrap: break-word  ;font-size:9pt">
+2006/01</td>
+<td  bgcolor=#f1f7fe align=left STYLE="word-wrap: break-word  ;font-size:9pt">
+中国医院知识仓库期刊全文库</td>
+</tr>

@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<script>
+<!--
+function doSubmit(){
+  document.tableAccessForm.submit();
+}
+
+function doRedirect(){
+ window.location.href ="${rc.contextPath}/secure/accountEditorOnSelf.luc?AccountId=${ontologyAccessAssigmentForm.accountId}";
+}
+
+function selectAll(bool)
+{
+  var maxId = ${ontologyAccessAssigmentForm.getItemCount()};
+  for(var i=1;i<=maxId;i++){
+     var check_box = document.getElementById("check_"+i);
+     check_box.checked = bool;
+  }
+}
+
+//-->
+</script>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>帐户权限基本信息-本体访问权限</title>
+<link href="${rc.contextPath}/css/Global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">帐户权限基本信息</P>
+    <P align="center"> <input type="checkbox" onclick="selectAll(this.checked)">全选<br></P>	
+	<form action="${rc.contextPath}/secure/ontologyAccessPrivilegeSignmentOnUser.luc" method="POST" name="tableAccessForm"> 
+	<input type="hidden" name="AccountId" value="${ontologyAccessAssigmentForm.accountId}"/>
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+		    <td align="center">序号</td>
+			<td align="center">本体</td>
+			<td align="center">可访问</td>
+			<td align="center">定购</td>
+		</tr>
+		#foreach ($pItem in ${ontologyAccessAssigmentForm.privItems})
+		#set($pos = $velocityCount - 1)
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td>${pItem.ontologyURI}</td>
+			<td align="center">
+				#springBind("ontologyAccessAssigmentForm.privItems[${pos}].readPriv") 
+				<input type="hidden" name="${status.expression}" value=""/>
+	        	<input type="checkbox" name="${status.expression}" value="true" id="_check_${velocityCount}"
+	        	   #if($!{status.value}==",true") checked="checked" #end onclick='return false;'/>
+			</td>
+            <td align="center">
+				#springBind("ontologyAccessAssigmentForm.privItems[${pos}].wantReadPriv") 
+				<input type="hidden" name="${status.expression}" value=""/>
+	        	<input type="checkbox" name="${status.expression}" value="true" id="check_${velocityCount}"
+	        	   #if($!{status.value}==",true") checked="checked" #end/>
+			</td>			
+		</tr>
+		#end
+	</table>
+ 
+	<P>
+	<TABLE cellSpacing="0" cellPadding="1" border="0"  width="80" align="center">
+				<TR align="center">
+					<TD><Input type="button" value=" 保存 "  onmouseover="this.style.cursor='hand'" onclick="doSubmit()"/>&nbsp;&nbsp;</td>
+					<TD><Input type="button" value=" 返回 "  onmouseover="this.style.cursor='hand'" onclick="doRedirect()"/></td>					
+				</TR>
+	</TABLE>
+	</form>
+	<br/>
+</body>
+</html>  

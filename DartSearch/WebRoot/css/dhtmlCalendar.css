@@ -1,0 +1,85 @@
+#calContainer
+{
+    position: absolute;
+    width: 112pt;
+    visibility: hidden;
+    border: 1px solid #95b7f3;
+    background-color: white;
+    font-size: 10pt;
+    font-family: sans-serif;
+}
+
+#calContainer table td
+{
+    border: 1px solid black;
+    width: 12px;
+}
+
+
+#calContainer div.d
+{
+    display: block;
+    width: 16pt;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    background-color: #dcdee8;
+}
+
+#calContainer div.lm
+{
+    display: block;
+    width: 16pt;
+    float: left;
+    text-align: center;
+    color: #a7a7a7;
+}
+
+#calContainer div.weekend
+{
+    display: block;
+    width: 16pt;
+    float: left;
+    text-align: center;
+    color: #95b7f3;
+    background-color:#e5eefd;
+}
+
+
+#calContainer a
+{
+    display: block;
+    width: 16pt;
+    float: left;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+a#today
+{
+    background-color: #409dde;
+    font-weight: bold;
+    color: white;
+}
+
+#calContainer A:hover
+{
+    text-decoration: Underline;
+    font-weight: bold;
+    background-color: #dcdee8;
+    color: black;
+}
+
+#calContainer a.calFooter
+{
+    width: 100%;
+    background-color: #409dde;
+    font-weight: bold;
+    color: #dcdee8;
+}
+
+.button
+{
+	font-size:100%;
+}

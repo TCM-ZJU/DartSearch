@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<!--
+  - Application context definition for "example" DispatcherServlet.
+  - Heavily depended on web infrastructure, naturally.
+  -->
+
+<beans>
+	
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" >
+		<property name="basename"><value>messages</value></property>
+	</bean>
+
+		<!--
+	  - Locale resolution via cookie instead of evaluating the browser locale.
+	  - Locale changes will send a new cookie to the client.
+	  -->
+	<bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver"/>
+
+	<!--
+	  - Theme resolution via cookie instead of the fixed one named "theme".
+	  - Theme changes will send a new cookie to the client.
+	  -->
+	<bean id="themeResolver" class="org.springframework.web.servlet.theme.CookieThemeResolver"/>
+	
+   <bean id="velocityConfig" class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+		<property name="resourceLoaderPath"><value>/velocity/</value></property>
+		<property name="configLocation"><value>/WEB-INF/velocity.properties</value></property>			
+   </bean>
+
+	<!-- ========================= VIEW DEFINITIONS ========================= -->
+
+	<bean id="viewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+		<property name="requestContextAttribute"><value>rc</value></property>
+		<property name="prefix"><value>/</value></property>
+		<property name="suffix"><value>.vm</value></property>
+		<property name="exposeSpringMacroHelpers"><value>true</value></property>
+		<property name="contentType"><value>text/html; charset=UTF-8</value></property>
+	</bean>
+
+	<!-- ========================= MAPPING DEFINITIONS ========================= -->
+
+	<!--
+	 - Explicit URL handler mapping instead of default BeanNameUrlHandlerMapping.
+	 -->
+	<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="interceptors">
+			<list>			
+			<ref local="multiLinguaInterceptor"/> 
+			</list>
+		</property>			
+		<property name="urlMap">
+			<map>
+				<entry key="/ontoClassify.cla"><ref local="ontoClassifyController"/></entry>
+				<entry key="/metaCategory.cla"><ref local="metaCategoryController"/></entry>
+				<entry key="/ontoCategoryEdit.cla"><ref local="ontoCategoryEditController"/></entry>
+			</map>
+		</property>
+	</bean>
+
+    <bean id="multiLinguaInterceptor" class="edu.zju.tcmsearch.web.interceptor.MultiLinguaInterceptor">
+		<property name="realResolver"><ref local="viewResolver"/></property>
+		<property name="resolverPrefix" value="/"/> 
+		<property name="XMLContext" value="ontoclassify-servlet.xml"/>
+	</bean>	
+	<bean id="methodNameResolver" class="org.springframework.web.servlet.mvc.multiaction.ParameterMethodNameResolver"></bean>
+
+	<bean id="bannerController" class="org.springframework.web.servlet.mvc.ParameterizableViewController">
+		<property name="viewName" value="banner"/>
+	</bean>
+	
+	<bean id="ontoClassifyController" class="edu.zju.tcmsearch.web.controller.query.OntoClassifyController">
+		<property name="ontoService"><ref bean="ontoService"/></property>
+		<property name="ontoCategoryService"><ref bean="ontoCategoryService"/></property>
+		<property name="metaCategoryDAO"><ref bean="metaCategoryDAO"/></property>
+		<property name="sessionForm" value="true"/>
+		<property name="warnView" value="dartcore/ontoClassifyWarn"/>
+		<property name="successView" value="dartcore/ontoClassifySuccess"/>
+		<property name="formView" value="dartcore/ontoClassify"/>
+		<property name="welcomeView" value="dartcore/ontoClassifyWarn"/>
+		<property name="commandName"><value>ontoClassifyForm</value></property>		
+	</bean>
+
+	<bean id="metaCategoryController" class="edu.zju.tcmsearch.web.controller.query.MetaCategoryController">
+		<property name="metaCategoryDAO"><ref bean="metaCategoryDAO"/></property> 
+		<property name="expandImg" value="images/treeimg/openfld.gif"/>
+		<property name="encloseImg" value="images/treeimg/clsfld.gif"/>
+		<property name="css" value="ms-nav"/>
+		<property name="navPage" value="ontoClassify.cla"/>		
+	</bean>
+
+	<bean id="ontoCategoryEditController" class="edu.zju.tcmsearch.web.controller.query.OntoCategoryEditController">
+		<property name="metaCategoryDAO"><ref bean="metaCategoryDAO"/></property>
+		<property name="warnView" value="dartcore/ontoClassifyWarn"/>
+	</bean>
+
+</beans>
+

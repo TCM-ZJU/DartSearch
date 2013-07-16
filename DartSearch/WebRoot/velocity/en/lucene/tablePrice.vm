@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<script>
+<!--
+function doSubmit(){
+  document.tablePriceForm.submit();
+}
+function doRedirect(){
+  window.location.href ="${rc.contextPath}/secure/accountResults.luc";
+}
+//-->
+</script>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+<title>Accessing charge for table</title>
+<link href="${rc.contextPath}/css/Global.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+	<br/>
+	<P align="center" class="ms-pagetitle">Accessing charge for table</P>
+	<form action="${rc.contextPath}/secure/tablePriceSignment.luc" method="POST" name="tablePriceForm"> 
+	<table align="center" class="std_Table">
+		<tr class="Table_item">
+		    <td align="center">Index</td>
+			<td align="center">Table</td>
+			<td align="center">Free</td>
+			<td align="center">Charge</td>
+		</tr>
+		#foreach ($pItem in ${tablePriceForm.priceSet})
+		#set($pos = $velocityCount - 1)
+		<tr class="Table_grayitem">	
+			<td>${velocityCount}</td>	
+			<td>${pItem.tableId}</td>
+			<td align="center">
+				#springBind("tablePriceForm.priceSet[${pos}].freeCharge") 
+				<input type="hidden" name="${status.expression}" value=""/>
+	        	<input type="checkbox" name="${status.expression}" value="true" 
+	        	   #if(${pItem.freeCharge}==",true") checked="checked" #end >
+			</td>
+			<td align="center">
+				#springBind("tablePriceForm.priceSet[${pos}].price") 
+	        	<input type="text" name="${status.expression}" value="${status.value}"/>
+			</td>			
+		</tr>
+		#end
+	</table>
+ 
+	<P>
+	<TABLE cellSpacing="0" cellPadding="1" border="0"   width="80" align="center">
+				<TR align="center">
+					<TD><Input type="button" value=" Save "  onmouseover="this.style.cursor='hand'" onclick="doSubmit()"/>&nbsp;&nbsp;</td>
+					<TD><Input type="button" value=" Return "  onmouseover="this.style.cursor='hand'" onclick="doRedirect()"/></td>
+				</TR>
+	</TABLE>
+	</form>
+	<br/>
+</body>
+</html>  

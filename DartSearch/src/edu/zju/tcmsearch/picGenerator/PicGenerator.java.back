@@ -1,0 +1,61 @@
+package edu.zju.tcmsearch.picGenerator;
+
+import java.util.ArrayList;
+import java.util.regex.Matcher;
+
+/**
+ * @author zhm
+ *
+ */
+public class PicGenerator {
+	
+	public static String patterString="<dl><dd><div><a((?!<dd>).)*<img(((?!<dd>).)*)></a></div></dd><dt>(((?!<dd>).)*)<a href=(((?!<dd>).)*)&u=(((?!<dd>).)*)&f=(((?!<dd>).)*)&jn=(((?!<dd>).)*)\" target=\"_blank\">(((?!<dd>).)*)</a></dt></dl>";
+	
+	public static String BaiduSourceUrl="http://image.baidu.com/i?tn=baiduimage&ct=201326592&cl=2&lm=-1&pv=&word=ccntdartsearch%20中药&z=0";
+	
+	/*<dl><dd><div><a href="/i?ct=503316480&z=0" +
+			"&tn=baiduimagedetail&word=%B4%F3%BB%C6+%D6%D0%D2%A9&in=19789&cl=2&" +
+			"cm=1&sc=0&lm=-1&pn=0&rn=1&di=1464210496&ln=122" target="_blank">
+	<img src="http://t9.baidu.com/it/u=1242125256,3669035814&fm=0&gp=46.jpg"></a></div></dd><dt>
+	<font size=1>708x481 64k jpg</font><br>
+	<a href="/ir?t=1&u=http://www.baiduyy.com/uploadimages/200737132520jtyxoh.jpg" +
+			"&f=http://www.baiduyy.com/twomain/cfliebiao_11_cf3_0.html&jn=19789" target="_blank">
+	(<strong>涓嵂</strong>)<strong>澶ч粍</strong>铔拌櫕涓?/a></dt></dl>
+	*/
+	
+	public ArrayList<PictureInfo> picRetrival(String keyword){
+		if(keyword.trim().length()==0)
+			return null;
+		String picWebsiteUrl=BaiduSourceUrl.replaceAll("ccntdartsearch", keyword.trim());
+		
+		RegExMatch mp=new RegExMatch();
+		Matcher m=mp.GetMatcherFromURL(patterString,picWebsiteUrl);
+		
+		ArrayList<PictureInfo> picList=new ArrayList<PictureInfo>();
+		int counter=1;
+		while( m.find() )
+		{
+			counter++;
+			PictureInfo picture=new PictureInfo();
+			picture.setPicName(m.group(14));			
+			picture.setSmallPicLink(m.group(2));
+			picture.setBigPicLink(m.group(8));
+			picture.setOriginalWebsite(m.group(10));			
+			
+			/*System.out.println(m.group(8));
+			System.out.println(m.group(2));
+			System.out.println(m.group(12));
+			System.out.println(m.group(10));			
+			System.out.println("______________________________");*/
+			
+			picList.add(picture);
+			if(counter>12)
+				break;
+		}
+		
+		return picList;
+		
+	}
+	
+	
+}

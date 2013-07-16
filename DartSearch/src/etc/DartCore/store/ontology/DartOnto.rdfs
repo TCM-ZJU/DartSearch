@@ -1,0 +1,791 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE rdf:RDF [
+	 <!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	 <!ENTITY a 'http://protege.stanford.edu/system#'>
+	 <!ENTITY kb 'http://dart.zju.edu.cn/dartcore/kb#'>
+	 <!ENTITY v2 'http://dart.zju.edu.cn/dartcore/v2#'>
+	 <!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+]>
+<rdf:RDF xmlns:rdf="&rdf;"
+	 xmlns:a="&a;"
+	 xmlns:v2="&v2;"
+	 xmlns:kb="&kb;"
+	 xmlns:rdfs="&rdfs;">
+<rdf:Property rdf:about="&v2;针灸次数"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:针灸次数">
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;针灸器械"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:针灸器械">
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;针灸手法"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:针灸手法">
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;针灸穴位"
+	 rdfs:label="v2:针灸穴位">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;穴位分类"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:穴位分类">
+	<rdfs:domain rdf:resource="&v2;针灸穴位"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;穴位编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:穴位编号">
+	<rdfs:domain rdf:resource="&v2;针灸穴位"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;穴位名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:穴位名称">
+	<rdfs:domain rdf:resource="&v2;针灸穴位"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;针灸技巧"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:针灸技巧">
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;年龄分组"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:年龄分组">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;对抗疗法"
+	 rdfs:label="v2:对抗疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;对抗疗法编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:对抗疗法编号">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;对抗疗法名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:对抗疗法名称">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;病例采集地区"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:病例采集地区">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;病例采集时间"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:病例采集时间">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;病例采集总数量"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:病例采集总数量">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;变化指标"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:变化指标">
+	<rdfs:domain rdf:resource="&v2;临床观察"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;经络"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:经络">
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床检查"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床检查">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;疗效标准分类"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疗效标准分类">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;临床诊断"
+	 rdfs:label="v2:临床诊断">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;临床观察"
+	 rdfs:label="v2:临床观察">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;临床研究"
+	 rdfs:label="v2:临床研究">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;临床病例研究"
+	 rdfs:label="v2:临床病例研究">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;临床病例研究编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床病例研究编号">
+	<rdfs:domain rdf:resource="&v2;临床病例研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床诊断编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床诊断编号">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:domain rdf:resource="&v2;治疗方法"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;药物成分名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:药物成分名称">
+	<rdfs:domain rdf:resource="&v2;药物成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;DBName"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:DBName">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;疗效标准来源"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疗效标准来源">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;疾病"
+	 rdfs:label="v2:疾病">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;疾病编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疾病编号">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;疾病症状"
+	 rdfs:label="v2:疾病症状">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;症侯名称编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:症侯名称编号">
+	<rdfs:domain rdf:resource="&v2;疾病症状"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;疾病症状名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疾病症状名称">
+	<rdfs:domain rdf:resource="&v2;疾病症状"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;疾病名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疾病名称">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;疾病症侯"
+	 rdfs:label="v2:疾病症侯">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;疾病症侯"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疾病症侯">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;总有疗效"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:总有疗效">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;全局编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:全局编号">
+	<rdfs:domain rdf:resource="&v2;药物成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;指标项目"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:指标项目">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;指标权重"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:指标权重">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;传染途径"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:传染途径">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;传染源"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:传染源">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;按摩频次"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:按摩频次">
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;按摩手法"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:按摩手法">
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;按摩技巧"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:按摩技巧">
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;按摩时间"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:按摩时间">
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;药物编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:药物编号">
+	<rdfs:domain rdf:resource="&v2;药物成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;药物剂型"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:药物剂型">
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;药物名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:药物名称">
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;药物用法"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:药物用法">
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;药物成分"
+	 rdfs:label="v2:药物成分">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;症侯名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:症侯名称">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;观察组"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:观察组">
+	<rdfs:domain rdf:resource="&v2;临床观察"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;观察名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:观察名称">
+	<rdfs:domain rdf:resource="&v2;临床观察"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;男性观察数量"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:男性观察数量">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;观察总数量"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:观察总数量">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;观察时间"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:观察时间">
+	<rdfs:domain rdf:resource="&v2;临床观察"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;病原体"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:病原体">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究分组"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究分组">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究分类"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究分类">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究编号">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究名称">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究单位"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究单位">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床研究结果"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床研究结果">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;质量步骤编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:质量步骤编号">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;症侯编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:症侯编号">
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;症侯名"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:症侯名">
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;并发症"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:并发症">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;中医治疗"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:中医治疗">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗方法编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗方法编号">
+	<rdfs:domain rdf:resource="&v2;治疗方法"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗时间"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗时间">
+	<rdfs:domain rdf:resource="&v2;治疗方法"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗类型"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗类型">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:domain rdf:resource="&v2;治疗方法"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;诊断标准"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:诊断标准">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;诊断标准来源"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:诊断标准来源">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗器械"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗器械">
+	<rdfs:domain rdf:resource="&v2;临床诊断"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗用药"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗用药">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;治疗方法"
+	 rdfs:label="v2:治疗方法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;治疗方法处方"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗方法处方">
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗方法名称"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗方法名称">
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗药物用量"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗药物用量">
+	<rdfs:domain rdf:resource="&v2;药物成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;治疗药物用量单位"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治疗药物用量单位">
+	<rdfs:domain rdf:resource="&v2;药物成分"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;针灸疗法"
+	 rdfs:label="v2:针灸疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;按摩疗法"
+	 rdfs:label="v2:按摩疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;其他疗法"
+	 rdfs:label="v2:其他疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;中药疗法"
+	 rdfs:label="v2:中药疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdfs:Class rdf:about="&v2;西药疗法"
+	 rdfs:label="v2:西药疗法">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;治则"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:治则">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;症侯类型"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:症侯类型">
+	<rdfs:domain rdf:resource="&v2;临床病例研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdfs:Class rdf:about="&v2;ValueNode"
+	 rdfs:label="v2:ValueNode">
+	<rdfs:subClassOf rdf:resource="&rdfs;Resource"/>
+</rdfs:Class>
+<rdf:Property rdf:about="&v2;用药时间"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:用药时间">
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;biggerOrEqual"
+	 rdfs:label="v2:biggerOrEqual">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;biggerThan"
+	 rdfs:label="v2:biggerThan">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;dbtype"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:dbtype">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Resource"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;equalTo"
+	 rdfs:label="v2:equalTo">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;isKeyNode"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="v2:isKeyNode">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;isSelected"
+	 a:maxCardinality="1"
+	 a:range="boolean"
+	 rdfs:label="v2:isSelected">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;临床观察编号"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:临床观察编号">
+	<rdfs:domain rdf:resource="&v2;临床观察"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;lessOrEqual"
+	 rdfs:label="v2:lessOrEqual">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;lessThan"
+	 rdfs:label="v2:lessThan">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;like"
+	 rdfs:label="v2:like">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;疾病病原"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:疾病病原">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;value"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:value">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&v2;valueType"
+	 a:maxCardinality="1"
+	 rdfs:label="v2:valueType">
+	<rdfs:domain rdf:resource="&v2;ValueNode"/>
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;对抗疗法临床病例"
+	 a:maxCardinality="1"
+	 rdfs:label="对抗疗法临床病例">
+	<rdfs:domain rdf:resource="&v2;对抗疗法"/>
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床病例研究与临床研究"
+	 a:maxCardinality="1"
+	 rdfs:label="临床病例研究与临床研究">
+	<rdfs:range rdf:resource="&v2;临床研究"/>
+	<rdfs:domain rdf:resource="&v2;临床病例研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床研究与对抗疗法"
+	 a:maxCardinality="1"
+	 rdfs:label="临床研究与对抗疗法">
+	<rdfs:range rdf:resource="&v2;对抗疗法"/>
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床研究与临床诊断"
+	 a:maxCardinality="1"
+	 rdfs:label="临床研究与临床诊断">
+	<rdfs:range rdf:resource="&v2;临床诊断"/>
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床研究与临床观察"
+	 a:maxCardinality="1"
+	 rdfs:label="临床研究与临床观察">
+	<rdfs:range rdf:resource="&v2;临床观察"/>
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床研究与疾病"
+	 a:maxCardinality="1"
+	 rdfs:label="临床研究与疾病">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;疾病"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;DartOnto_Slot_32"
+	 a:maxCardinality="1"
+	 rdfs:label="DartOnto_Slot_32">
+	<rdfs:range rdf:resource="&rdfs;Literal"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;处方成分"
+	 a:maxCardinality="1"
+	 rdfs:label="处方成分">
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症状与治疗方法"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症状与治疗方法">
+	<rdfs:domain rdf:resource="&v2;疾病症状"/>
+	<rdfs:range rdf:resource="&v2;治疗方法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症状与疾病"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症状与疾病">
+	<rdfs:range rdf:resource="&v2;疾病"/>
+	<rdfs:domain rdf:resource="&v2;疾病症状"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症状与疾病症侯"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症状与疾病症侯">
+	<rdfs:domain rdf:resource="&v2;疾病症状"/>
+	<rdfs:range rdf:resource="&v2;疾病症侯"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症侯与疾病症状"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症侯与疾病症状">
+	<rdfs:range rdf:resource="&v2;疾病症状"/>
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症侯与治疗方法"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症侯与治疗方法">
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+	<rdfs:range rdf:resource="&v2;治疗方法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病症侯与疾病"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病症侯与疾病">
+	<rdfs:range rdf:resource="&v2;疾病"/>
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病与疾病症状"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病与疾病症状">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;疾病症状"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病与疾病症侯"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病与疾病症侯">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;疾病症侯"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;疾病与治疗方法"
+	 a:maxCardinality="1"
+	 rdfs:label="疾病与治疗方法">
+	<rdfs:domain rdf:resource="&v2;疾病"/>
+	<rdfs:range rdf:resource="&v2;治疗方法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;西药用药时间"
+	 a:maxCardinality="1"
+	 rdfs:label="西药用药时间">
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;男性观察数量"
+	 a:maxCardinality="1"
+	 rdfs:label="男性观察数量">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;处方名称"
+	 a:maxCardinality="1"
+	 rdfs:label="处方名称">
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;症侯类型"
+	 a:maxCardinality="1"
+	 rdfs:label="症侯类型">
+	<rdfs:domain rdf:resource="&v2;疾病症侯"/>
+	<rdfs:range rdf:resource="&v2;ValueNode"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;针灸疗法与针灸穴位"
+	 a:maxCardinality="1"
+	 rdfs:label="针灸疗法与针灸穴位">
+	<rdfs:range rdf:resource="&v2;针灸穴位"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;针灸疗法与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="针灸疗法与临床病例研究">
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+	<rdfs:domain rdf:resource="&v2;针灸疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;按摩疗法与针灸穴位"
+	 a:maxCardinality="1"
+	 rdfs:label="按摩疗法与针灸穴位">
+	<rdfs:range rdf:resource="&v2;针灸穴位"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;按摩疗法与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="按摩疗法与临床病例研究">
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+	<rdfs:domain rdf:resource="&v2;按摩疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;其他疗法与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="其他疗法与临床病例研究">
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+	<rdfs:domain rdf:resource="&v2;其他疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;中药疗法与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="中药疗法与临床病例研究">
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+	<rdfs:domain rdf:resource="&v2;中药疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;西药疗法与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="西药疗法与临床病例研究">
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+	<rdfs:domain rdf:resource="&v2;西药疗法"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;临床研究与临床病例研究"
+	 a:maxCardinality="1"
+	 rdfs:label="临床研究与临床病例研究">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;临床病例研究"/>
+</rdf:Property>
+<rdf:Property rdf:about="&kb;治疗方法与临床研究"
+	 a:maxCardinality="1"
+	 rdfs:label="治疗方法与临床研究">
+	<rdfs:domain rdf:resource="&v2;临床研究"/>
+	<rdfs:range rdf:resource="&v2;治疗方法"/>
+</rdf:Property>
+</rdf:RDF>
